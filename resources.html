@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources · KNCV Knowledge Exchange</title>
+<meta name="description" content="Articles, publications, research reports, videos and guides from the KNCV Knowledge Exchange resource library.">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="resources">
+<main>
+  <section class="page-hero annot" data-note="01 · Header + library search">
+    <div class="container">
+      <nav class="breadcrumb"><a href="home.html">Home</a> / Resources</nav>
+      <span class="eyebrow">Resource library</span>
+      <h1>Resources &amp; publications</h1>
+      <p class="lead" style="margin-top:16px">Articles, research, guides and videos to support your learning and practice.</p>
+      <form class="hero-search" onsubmit="return false" role="search" style="max-width:640px">
+        <input id="resource-search" placeholder="Search resources by keyword, topic or author…" aria-label="Search resources">
+        <button id="resource-search-btn">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- TYPE TABS + TOPICS -->
+  <section style="padding:40px 0 0">
+    <div class="container annot" data-note="02 · Type & topic categorisation" style="padding-top:44px">
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <div class="tabs"><button class="active" id="type-all">All</button><button id="type-articles">Articles</button><button id="type-publications">Publications</button><button id="type-reports">Research reports</button><button id="type-videos">Videos</button><button id="type-guides">Guides</button></div>
+        <select class="input" id="resource-sort"><option>Sort: Newest</option><option>Most downloaded</option><option>A – Z</option></select>
+      </div>
+      <div class="chips" style="margin:0">
+        <span class="small muted" style="align-self:center;margin-right:4px">Topics:</span>
+        <button class="chip active">All topics</button><button class="chip">Diagnosis</button><button class="chip">Treatment</button><button class="chip">DR-TB</button><button class="chip">Community</button><button class="chip">Policy</button><button class="chip">Data &amp; M&amp;E</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES & PUBLICATIONS -->
+  <section style="padding-top:48px" class="annot" data-note="03 · Articles & publications">
+    <div class="container" style="padding-top:20px">
+      <div class="section-head reveal"><div><h2>Articles &amp; publications</h2></div><a class="link-arrow" href="#">View all →</a></div>
+      <div class="grid g3">
+        <a class="card reveal" href="#" id="art-1"><div class="ph"><span>Article image</span></div><div class="card-body"><div class="meta"><span class="tag">Article</span><span class="tag">Diagnosis</span></div><h3>Article headline over two lines of text</h3><p>Short teaser text summarising the article.</p></div><div class="card-foot"><span>12 Oct 2026 · 6 min</span><span class="link-arrow">Read →</span></div></a>
+        <a class="card reveal" href="#" id="art-2"><div class="ph"><span>Publication cover</span></div><div class="card-body"><div class="meta"><span class="tag">Publication</span><span class="tag">Policy</span></div><h3>Publication title goes here</h3><p>Short teaser text summarising the publication.</p></div><div class="card-foot"><span>Sep 2026 · Journal</span><span class="link-arrow">Read →</span></div></a>
+        <a class="card reveal" href="#" id="art-3"><div class="ph"><span>Article image</span></div><div class="card-body"><div class="meta"><span class="tag">Article</span><span class="tag">Community</span></div><h3>Article headline over two lines of text</h3><p>Short teaser text summarising the article.</p></div><div class="card-foot"><span>02 Sep 2026 · 4 min</span><span class="link-arrow">Read →</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPORTS & DOWNLOADS -->
+  <section class="section-white annot" data-note="04 · Research reports & downloadable materials">
+    <div class="container" style="padding-top:20px">
+      <div class="section-head reveal"><div><h2>Research reports &amp; downloads</h2><p>Reports, toolkits and templates available to download.</p></div></div>
+      <div class="reveal">
+        <div class="res-row"><div class="file-ico">PDF</div><div><h4>Research report title — national TB prevalence survey</h4><p class="small muted">Report · 2026 · 4.2 MB · Topic: Data &amp; M&amp;E</p></div><a class="btn btn-secondary btn-sm" href="#">Download ↓</a></div>
+        <div class="res-row"><div class="file-ico">PDF</div><div><h4>Technical brief title — new diagnostic algorithms</h4><p class="small muted">Brief · 2026 · 1.1 MB · Topic: Diagnosis</p></div><a class="btn btn-secondary btn-sm" href="#">Download ↓</a></div>
+        <div class="res-row"><div class="file-ico">DOCX</div><div><h4>Toolkit / template title — patient support plan</h4><p class="small muted">Toolkit · 2025 · 320 KB · Topic: Treatment</p></div><a class="btn btn-secondary btn-sm" href="#">Download ↓</a></div>
+        <div class="res-row"><div class="file-ico">XLSX</div><div><h4>Data tool title — case-finding calculator</h4><p class="small muted">Tool · 2025 · 860 KB · Topic: Data &amp; M&amp;E</p></div><a class="btn btn-secondary btn-sm" href="#">Download ↓</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS & GUIDES -->
+  <section class="annot" data-note="05 · Videos, guides & learning resources">
+    <div class="container" style="padding-top:20px">
+      <div class="section-head reveal"><div><h2>Videos, guides &amp; learning resources</h2></div><a class="link-arrow" href="#">View all →</a></div>
+      <div class="grid g4">
+        <a class="card reveal" href="#"><div class="ph video"><span>12:30</span></div><div class="card-body"><div class="meta"><span class="tag">Video</span></div><h4>Webinar recording title</h4></div></a>
+        <a class="card reveal" href="#"><div class="ph video"><span>08:15</span></div><div class="card-body"><div class="meta"><span class="tag">Video</span></div><h4>Explainer video title</h4></div></a>
+        <a class="card reveal" href="#"><div class="ph"><span>Guide cover</span></div><div class="card-body"><div class="meta"><span class="tag">Guide</span></div><h4>Step-by-step practical guide</h4></div></a>
+        <a class="card reveal" href="#"><div class="ph"><span>Job aid</span></div><div class="card-body"><div class="meta"><span class="tag">Job aid</span></div><h4>Quick reference job aid</h4></div></a>
+      </div>
+      <nav class="pagination" aria-label="Pagination"><a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">›</a></nav>
+    </div>
+  </section>
+
+  <!-- LINKS TO COURSES -->
+  <section class="section-white annot" data-note="06 · Links to relevant courses">
+    <div class="container" style="padding-top:20px">
+      <div class="split">
+        <div class="reveal">
+          <span class="eyebrow">Go deeper</span>
+          <h2>Turn resources into skills</h2>
+          <p class="lead" style="margin-top:14px">Each resource links to related courses so learners can build structured knowledge on the same topic.</p>
+          <a class="btn btn-primary" id="resources-explore-courses" href="courses.html" style="margin-top:24px">Explore Courses →</a>
+        </div>
+        <div class="grid reveal" style="gap:12px">
+          <a class="res-row" href="course-detail.html" style="margin:0"><div class="ph" style="min-height:56px;width:56px"><span></span></div><div><h4>Introduction to TB Diagnosis</h4><p class="small muted">Related to: Diagnosis · 6 hrs · Beginner</p></div><span class="link-arrow">→</span></a>
+          <a class="res-row" href="course-detail.html" style="margin:0"><div class="ph" style="min-height:56px;width:56px"><span></span></div><div><h4>Drug-resistant TB Management</h4><p class="small muted">Related to: DR-TB · 12 hrs · Intermediate</p></div><span class="link-arrow">→</span></a>
+          <a class="res-row" href="course-detail.html" style="margin:0"><div class="ph" style="min-height:56px;width:56px"><span></span></div><div><h4>Data for Decision-making</h4><p class="small muted">Related to: Data · 4 hrs · Beginner</p></div><span class="link-arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/layout.js"></script>
+</body>
+</html>

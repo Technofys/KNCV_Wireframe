@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses · KNCV Knowledge Exchange</title>
+<meta name="description" content="Browse the KNCV Knowledge Exchange course catalogue – search and filter courses by topic, level, duration and format.">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="courses">
+<main>
+  <section class="page-hero annot" data-note="01 · Page header + search">
+    <div class="container">
+      <nav class="breadcrumb"><a href="home.html">Home</a> / Courses</nav>
+      <span class="eyebrow">Course catalogue</span>
+      <h1>Explore our courses</h1>
+      <p class="lead" style="margin-top:16px">Short intro to the catalogue. Find a course by topic, level or format and enrol through the learning platform.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:40px">
+    <div class="container">
+      <!-- Categories -->
+      <div class="chips annot" data-note="02 · Categories" style="padding-top:40px">
+        <button class="chip active" id="cat-all">All courses (42)</button>
+        <button class="chip" id="cat-diagnosis">Diagnosis</button>
+        <button class="chip" id="cat-treatment">Treatment &amp; care</button>
+        <button class="chip" id="cat-drtb">Drug-resistant TB</button>
+        <button class="chip" id="cat-community">Community</button>
+        <button class="chip" id="cat-data">Data &amp; M&amp;E</button>
+        <button class="chip" id="cat-leadership">Leadership</button>
+      </div>
+
+      <div class="catalog">
+        <!-- Filters -->
+        <aside class="filters annot" data-note="03 · Filters" style="padding-top:48px">
+          <div class="filter-group"><h4>Level <span class="muted small">Clear</span></h4>
+            <div class="check"><label><input type="checkbox"> Beginner</label><span>14</span></div>
+            <div class="check"><label><input type="checkbox"> Intermediate</label><span>18</span></div>
+            <div class="check"><label><input type="checkbox"> Advanced</label><span>10</span></div>
+          </div>
+          <div class="filter-group"><h4>Duration</h4>
+            <div class="check"><label><input type="checkbox"> &lt; 2 hours</label><span>8</span></div>
+            <div class="check"><label><input type="checkbox"> 2 – 10 hours</label><span>22</span></div>
+            <div class="check"><label><input type="checkbox"> 10+ hours</label><span>12</span></div>
+          </div>
+          <div class="filter-group"><h4>Format</h4>
+            <div class="check"><label><input type="checkbox"> Self-paced</label><span>28</span></div>
+            <div class="check"><label><input type="checkbox"> Facilitated cohort</label><span>9</span></div>
+            <div class="check"><label><input type="checkbox"> Webinar series</label><span>5</span></div>
+          </div>
+          <div class="filter-group"><h4>Language</h4>
+            <select class="input" style="width:100%" id="filter-language"><option>All languages</option><option>English</option><option>French</option><option>Spanish</option></select>
+          </div>
+          <div class="filter-group"><h4>Other</h4>
+            <div class="check"><label><input type="checkbox"> Certificate</label><span>30</span></div>
+            <div class="check"><label><input type="checkbox"> Free</label><span>35</span></div>
+          </div>
+          <button class="btn btn-primary" style="width:100%;margin-top:12px" id="apply-filters">Apply filters</button>
+        </aside>
+
+        <!-- Results -->
+        <div>
+          <div class="toolbar annot" data-note="04 · Search, sort & view" style="padding-top:44px">
+            <label class="searchbox"><span>⌕</span><input id="course-search" placeholder="Search courses by keyword…"></label>
+            <select class="input" id="course-sort"><option>Sort: Most popular</option><option>Newest</option><option>A – Z</option><option>Duration</option></select>
+            <div class="tabs"><button class="active" aria-label="Grid view">▦</button><button aria-label="List view">☰</button></div>
+          </div>
+          <p class="small muted" style="margin-bottom:16px">Showing 1–9 of 42 courses</p>
+
+          <div class="grid g3 annot" data-note="05 · Course cards — level, duration, description">
+            <a class="card reveal" href="course-detail.html" id="cc-1"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Beginner</span><span class="tag">Diagnosis</span></div><h3>Introduction to TB Diagnosis</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 6 hrs · Self-paced</span><span>★ 4.8</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-2"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Intermediate</span><span class="tag">DR-TB</span></div><h3>Drug-resistant TB Management</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 12 hrs · Cohort</span><span>★ 4.9</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-3"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Advanced</span><span class="tag">Community</span></div><h3>Community-based TB Care</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 8 hrs · Self-paced</span><span>★ 4.7</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-4"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Beginner</span><span class="tag">Data</span></div><h3>Data for Decision-making</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 4 hrs · Self-paced</span><span>★ 4.6</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-5"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Intermediate</span><span class="tag">Treatment</span></div><h3>Patient-centred Treatment</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 10 hrs · Cohort</span><span>★ 4.8</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-6"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Advanced</span><span class="tag">Leadership</span></div><h3>Leading TB Programmes</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 15 hrs · Cohort</span><span>★ 4.9</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-7"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Beginner</span><span class="tag">Infection control</span></div><h3>TB Infection Prevention</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 3 hrs · Self-paced</span><span>★ 4.5</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-8"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Intermediate</span><span class="tag">Paediatric</span></div><h3>Childhood TB Essentials</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 5 hrs · Self-paced</span><span>★ 4.7</span></div></a>
+            <a class="card reveal" href="course-detail.html" id="cc-9"><div class="ph"><span>Course image</span></div><div class="card-body"><div class="meta"><span class="tag">Beginner</span><span class="tag">Webinar</span></div><h3>TB &amp; HIV Co-infection</h3><p>Short description of what the learner will achieve in this course.</p></div><div class="card-foot"><span>⏱ 2 hrs · Webinar</span><span>★ 4.6</span></div></a>
+          </div>
+
+          <nav class="pagination" aria-label="Pagination"><a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">›</a></nav>
+          <p class="sticky-note">Clicking a course card opens the Course Detail page → “Enroll Now” links out to the LMS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-white" style="padding:64px 0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div><h2>Can’t find what you need?</h2><p>Tell us what you’d like to learn or ask about tailored training for your organisation.</p></div>
+        <a class="btn btn-primary" id="courses-request" href="contact.html">Request a course</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/layout.js"></script>
+</body>
+</html>

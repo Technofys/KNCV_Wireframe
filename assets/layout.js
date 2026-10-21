@@ -1,0 +1,76 @@
+/* KNCV Knowledge Exchange — wireframe shared layout
+   Injects the site header and footer so every page stays consistent. */
+(function () {
+  const page = document.body.dataset.page || '';
+  const nav = [
+    ['home', 'home.html', 'Home'],
+    ['about', 'about.html', 'About'],
+    ['courses', 'courses.html', 'Courses'],
+    ['resources', 'resources.html', 'Resources'],
+    ['contact', 'contact.html', 'Contact'],
+  ];
+  const navActive = page === 'course-detail' ? 'courses' : page;
+
+  const header = page === 'sitemap' ? '' : `
+  <header class="site-header annot" data-note="Global header · sticky nav">
+    <div class="container">
+      <a href="home.html" class="logo" id="logo-link"><span class="logo-mark">LOGO</span><span>KNCV<small>Knowledge Exchange</small></span></a>
+      <nav class="main-nav" aria-label="Primary">${nav.map(n => `<a id="nav-${n[0]}" class="${n[0] === navActive ? 'active' : ''}" href="${n[1]}">${n[2]}</a>`).join('')}</nav>
+      <div class="header-actions">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>`;
+
+  const footer = `
+  <footer class="site-footer annot" data-note="Global footer">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <a href="home.html" class="logo"><span class="logo-mark">LOGO</span><span>KNCV<small style="color:#8a919c">Knowledge Exchange</small></span></a>
+          <p class="small" style="margin-top:16px;max-width:280px">Short brand statement about KNCV and the Knowledge Exchange learning platform.</p>
+          <form class="newsletter" onsubmit="return false"><input id="newsletter-email" placeholder="Email address" aria-label="Email"><button id="newsletter-submit">Subscribe</button></form>
+        </div>
+        <div><h4>Learn</h4><ul><li><a href="courses.html">All courses</a></li><li><a href="courses.html">Categories</a></li><li><a href="#lms">Learner dashboard ↗</a></li></ul></div>
+        <div><h4>Explore</h4><ul><li><a href="resources.html">Resources</a></li><li><a href="resources.html">Publications</a></li><li><a href="resources.html">Videos &amp; guides</a></li></ul></div>
+        <div><h4>Organisation</h4><ul><li><a href="about.html">About KNCV</a></li><li><a href="about.html#faculty">Faculty</a></li><li><a href="about.html#partners">Partners</a></li></ul></div>
+        <div><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="contact.html#support">Technical support</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KNCV Tuberculosis Foundation · Knowledge Exchange</span>
+        <span><a href="#">Privacy notice</a> · <a href="#">Cookie settings</a> · <a href="#">Accessibility</a> · in · X · ▶</span>
+      </div>
+    </div>
+  </footer>`;
+
+  document.body.insertAdjacentHTML('afterbegin', header);
+  document.body.insertAdjacentHTML('beforeend', footer);
+
+  // Annotation toggle — press "A" to show/hide section labels
+  document.addEventListener('keydown', e => {
+    if (e.key.toLowerCase() !== 'a' || e.target.closest('input, textarea, select')) return;
+    document.body.classList.toggle('hide-notes');
+  });
+
+  // Simple interactivity for chips & tabs
+  document.querySelectorAll('.chips, .tabs').forEach(group => {
+    group.addEventListener('click', e => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      group.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+    });
+  });
+
+  // LMS links
+  document.querySelectorAll('a[href="#lms"]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    alert('Wireframe note: this links out to the LMS (e.g. learn.kncv.org) for sign-in / enrolment.');
+  }));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  }), { threshold: .08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
