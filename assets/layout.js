@@ -30,16 +30,15 @@
         <div>
           <a href="home.html" class="logo"><span class="logo-mark">LOGO</span><span>KNCV<small style="color:#8a919c">Knowledge Exchange</small></span></a>
           <p class="small" style="margin-top:16px;max-width:280px">Practical TB training, knowledge hubs, and peer-to-peer exchange for healthcare professionals worldwide.</p>
-          <form class="newsletter" onsubmit="return false"><input id="newsletter-email" placeholder="Email address" aria-label="Email"><button id="newsletter-submit">Subscribe</button></form>
         </div>
         <div><h4>Learn</h4><ul><li><a href="courses.html">All courses</a></li><li><a href="courses.html">Categories</a></li><li><a href="#lms">Learner dashboard ↗</a></li></ul></div>
-        <div><h4>Resources</h4><ul><li><a href="resources.html">All resources</a></li><li><a href="resources.html#webinars">Webinars</a></li><li><a href="resources.html#toolkits">Toolkits &amp; Hubs</a></li><li><a href="resources.html#knowledge-base">Knowledge Base</a></li></ul></div>
+        <div><h4>Resources</h4><ul><li><a href="resources.html">Resource Hubs</a></li><li><a href="webinars.html">Webinars</a></li><li><a href="publications.html">Publications</a></li></ul></div>
         <div><h4>Community &amp; About</h4><ul><li><a href="community.html">Community of Practice</a></li><li><a href="about.html">About KNCV</a></li><li><a href="about.html#faculty">Faculty</a></li><li><a href="about.html#partners">Partners</a></li></ul></div>
         <div><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="contact.html#support">Technical support</a></li></ul></div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 KNCV Tuberculosis Foundation · Knowledge Exchange</span>
-        <span><a href="contact.html#privacy">Privacy notice</a> · <a href="#">Cookie settings</a> · <a href="#">Accessibility</a> · in · X · ▶</span>
+        <span><a href="contact.html#privacy">Privacy notice</a> · <a href="#">Cookie settings</a> · <a href="#">Accessibility</a></span>
       </div>
     </div>
   </footer>`;

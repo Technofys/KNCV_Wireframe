@@ -38,28 +38,6 @@ img { max-width: 100%; display: block; }
 
 .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
-/* ---------- Wireframe toolbar (meta, not part of site) ---------- */
-.wf-bar {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--dark); color: #cfd4dc;
-  font: 500 12px/1 'JetBrains Mono', monospace;
-}
-.wf-bar .container { display: flex; align-items: center; gap: 16px; height: 38px; }
-.wf-bar strong { color: #fff; letter-spacing: .04em; }
-.wf-bar .wf-pages { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
-.wf-bar .wf-pages a {
-  padding: 6px 9px; border-radius: 4px; transition: background .2s, color .2s;
-}
-.wf-bar .wf-pages a:hover { background: rgba(255,255,255,.08); color: #fff; }
-.wf-bar .wf-pages a.active { background: var(--note); color: #fff; }
-.wf-toggle {
-  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
-  background: none; border: 1px solid #4a515c; color: #cfd4dc;
-  font: inherit; padding: 6px 10px; border-radius: 4px;
-}
-.wf-toggle:hover { border-color: #8a919c; color: #fff; }
-.wf-toggle .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--note); }
-body.hide-notes .wf-toggle .dot { background: #4a515c; }
 
 /* ---------- Annotations ---------- */
 .annot { position: relative; }
@@ -378,9 +356,6 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
 .site-footer a:hover { color: #fff; }
 .site-footer .logo { color: #fff; }
 .site-footer .logo-mark { background: #3a404a; border-color: #6b727d; color: #cfd4dc; }
-.newsletter { display: flex; margin-top: 18px; max-width: 320px; }
-.newsletter input { flex: 1; height: 42px; border: 1px solid #4a515c; background: #333943; color: #fff; padding: 0 12px; border-radius: 8px 0 0 8px; font: inherit; outline: none; }
-.newsletter button { border: 0; background: #fff; color: var(--ink); font: 600 13px Inter; padding: 0 14px; border-radius: 0 8px 8px 0; cursor: pointer; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid #3c424c; margin-top: 48px; padding-top: 24px; font-size: 13px; }
 
 /* ---------- Sitemap overview page ---------- */
@@ -421,7 +396,6 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
   .checklist { grid-template-columns: 1fr; }
   .hero .ph { min-height: 280px; }
   .cta-band { padding: 36px; }
-  .wf-bar .wf-pages { display: none; }
 }
 @media (max-width: 560px) {
   .g4, .logos, .sitemap, .site-footer .cols { grid-template-columns: 1fr 1fr; }
