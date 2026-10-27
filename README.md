@@ -1,23 +1,29 @@
-# KNCV Knowledge Exchange - Wireframes
+# KNCV Knowledge Exchange - Website Wireframes
 
-Interactive website wireframes for KNCV Knowledge Exchange.
+Interactive and simple low-fidelity wireframes for the **KNCV Knowledge Exchange** platform.
 
-## Structure
-- **Simple Wireframe (`/simple`)**: Low-fidelity, minimalist black-and-white wireframes with layout boxes and text placeholders.
-  - `simple/home.html` - 01. Home
-  - `simple/about.html` - 02. About
-  - `simple/courses.html` - 03. Courses Catalogue
-  - `simple/course-detail.html` - 03b. Course Detail
-  - `simple/resources.html` - 05. Resources Library
-  - `simple/contact.html` - 06. Contact & Support
-- **Interactive UI Wireframe (Root `/`)**: Mid-fidelity interactive wireframes with collapsible modules, tabs, search, and section annotations.
-  - `index.html` - Sitemap & Website Architecture
-  - `home.html` - 01. Home
-  - `about.html` - 02. About
-  - `courses.html` - 03. Courses
-  - `course-detail.html` - Course Detail
-  - `resources.html` - 05. Resources
-  - `contact.html` - 06. Contact
+## Page Architecture & Sections
+
+| Page | File | Sections & Key Subpages |
+|---|---|---|
+| **01. Home** | `home.html` / `simple/home.html` | Hero, Knowledge Exchange introduction, featured courses, About KNCV, learning opportunities, featured resources, Explore Courses CTA |
+| **02. About** | `about.html` / `simple/about.html` | About KNCV, mission and vision, objectives, knowledge-sharing approach, faculty and experts, partners |
+| **03. Courses** | `courses.html` / `simple/courses.html` | Course catalogue, categories and filters, course cards, course details subpage (`course-detail.html`), learning outcomes, faculty information |
+| **04. Resources** | `resources.html` / `simple/resources.html` | Webinars (live & recorded), Publications & research, Ascent DR-TB Toolkit, People-Centered Framework Knowledge Hub, Global DAT Task Force – Learning Hub, Knowledge Base |
+| **05. Community of Practice** | `community.html` / `simple/community.html` | Community overview, thematic groups, discussions, events & peer sessions, announcements, member contributions, shared resources & tools |
+| **06. Contact** | `contact.html` / `simple/contact.html` | General enquiry form, contact information, technical support, learner support, FAQs, privacy notice and consent |
+
+---
+
+## Wireframe Versions
+
+### 1. Interactive UI Wireframes (Root `/`)
+- **Location:** `index.html` (Sitemap & Overview), `home.html`, `about.html`, `courses.html`, `course-detail.html`, `resources.html`, `community.html`, `contact.html`
+- **Features:** Clean greyscale UI with interactive tabs, collapsible course modules & FAQ accordions, filters, sticky navigation, and section annotations (press **`A`** on any page to toggle section labels).
+
+### 2. Simple Low-Fidelity Wireframes (`/simple`)
+- **Location:** `simple/home.html`, `simple/about.html`, `simple/courses.html`, `simple/course-detail.html`, `simple/resources.html`, `simple/community.html`, `simple/contact.html`
+- **Features:** Ultra-clean black-and-white structural wireframes using boxes, image placeholders, and layout text bars.
 
 ## How to View
-Simply open `index.html` or `simple/home.html` in any web browser.
+Open `index.html` (for the interactive wireframe sitemap) or `simple/home.html` (for the simple wireframe) in any modern web browser.

@@ -1,7 +1,7 @@
 /* Simple wireframe — shared header & footer */
 (function () {
   const page = document.body.dataset.page;
-  const links = [['home', 'Home'], ['about', 'About'], ['courses', 'Courses'], ['resources', 'Resources'], ['contact', 'Contact']];
+  const links = [['home', 'Home'], ['about', 'About'], ['courses', 'Courses'], ['resources', 'Resources'], ['community', 'Community of Practice'], ['contact', 'Contact']];
   const active = page === 'course-detail' ? 'courses' : page;
   document.body.insertAdjacentHTML('afterbegin', `
   <header><div class="wrap">

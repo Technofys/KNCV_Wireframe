@@ -37,7 +37,7 @@
             <div class="field"><label for="f-topic">Enquiry type <span class="req">*</span></label><select class="input" id="f-topic"><option>General enquiry</option><option>Course information</option><option>Partnership</option><option>Learner support</option><option>Technical issue</option></select></div>
           </div>
           <div class="field"><label for="f-msg">Message <span class="req">*</span></label><textarea class="input" id="f-msg" required></textarea></div>
-          <label class="check"><input type="checkbox" id="f-consent" required><span>I consent to KNCV processing my personal data to respond to this enquiry, as described in the <a href="#" style="text-decoration:underline">Privacy Notice</a>. <span class="req">*</span></span></label>
+          <label class="check"><input type="checkbox" id="f-consent" required><span>I consent to KNCV processing my personal data to respond to this enquiry, as described in the <a href="#privacy" style="text-decoration:underline">Privacy Notice</a>. <span class="req">*</span></span></label>
           <label class="check"><input type="checkbox" id="f-newsletter"><span>I would like to receive updates about new courses and resources (optional).</span></label>
           <div class="ph" style="min-height:64px;max-width:300px"><span>reCAPTCHA</span></div>
           <div><button class="btn btn-primary" id="f-submit" type="submit">Send message →</button></div>
@@ -80,6 +80,27 @@
         <details><summary>I forgot my password — what do I do?</summary><div>Answer placeholder text.</div></details>
         <details><summary>Can my organisation request tailored training?</summary><div>Answer placeholder text.</div></details>
         <details><summary>Which languages are courses available in?</summary><div>Answer placeholder text.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY NOTICE & CONSENT -->
+  <section id="privacy" class="annot" data-note="05 · Privacy notice & consent information">
+    <div class="container">
+      <div class="block reveal" style="padding:32px">
+        <div style="display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap">
+          <div class="ico" style="width:52px;height:52px;border-radius:10px;background:var(--fill-2);display:grid;place-items:center;font-size:22px">🔒</div>
+          <div style="flex:1;min-width:280px">
+            <h3>Privacy Notice &amp; Consent Information</h3>
+            <p class="small muted" style="margin-top:6px">In accordance with GDPR and applicable international data protection standards, KNCV Tuberculosis Foundation processes personal data solely to respond to your inquiries, facilitate course enrolments, and provide learner support.</p>
+            <div class="grid g3" style="gap:16px;margin-top:20px">
+              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Data Controller</h4><p class="small muted">KNCV Tuberculosis Foundation, The Hague, Netherlands.</p></div>
+              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Your Rights</h4><p class="small muted">You may request access, rectification, or deletion of your data at privacy@kncvtbc.org.</p></div>
+              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Consent Withdrawal</h4><p class="small muted">You can revoke inquiry or newsletter consent at any time without penalty.</p></div>
+            </div>
+          </div>
+          <div><a class="btn btn-secondary btn-sm" href="#">Download Full Policy (PDF) ↓</a></div>
+        </div>
       </div>
     </div>
   </section>

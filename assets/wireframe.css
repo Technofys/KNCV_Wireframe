@@ -384,7 +384,7 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-top: 1px solid #3c424c; margin-top: 48px; padding-top: 24px; font-size: 13px; }
 
 /* ---------- Sitemap overview page ---------- */
-.sitemap { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.sitemap { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
 .sm-col { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: transform .2s, box-shadow .2s; }
 .sm-col:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .sm-col header { padding: 18px; border-bottom: 1px solid var(--line); background: var(--fill); }
