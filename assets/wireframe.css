@@ -147,7 +147,10 @@ section { padding: 80px 0; }
 .breadcrumb a:hover { color: var(--ink); text-decoration: underline; }
 
 body[data-page="courses"],
-body[data-page="course-detail"] {
+body[data-page="course-detail"],
+body[data-page="resources"],
+body[data-page="publications"],
+body[data-page="webinars"] {
   background: var(--paper);
 }
 
@@ -813,9 +816,9 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
 /* ---------- Knowledge & Resources Editorial Grid ---------- */
 .editorial-section {
   padding: 64px 0 88px;
-  background: #F7F9FB;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  border-top: none;
+  border-bottom: none;
 }
 .editorial-section .container {
   max-width: 1240px;
