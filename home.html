@@ -12,26 +12,68 @@
   <section class="hero annot" data-note="01 · Hero — Knowledge Exchange introduction">
     <div class="container split">
       <div>
-        <span class="eyebrow">KNCV Knowledge Exchange</span>
-        <h1>Learn, share and grow with global TB expertise</h1>
-        <p class="lead">One-line introduction to the Knowledge Exchange: practical courses, expert faculty and open resources for health professionals worldwide.</p>
-        <form class="hero-search" onsubmit="return false" role="search">
-          <input id="hero-search-input" placeholder="Search courses, topics or resources…" aria-label="Search">
-          <button id="hero-search-btn">Search</button>
-        </form>
-        <div class="hero-actions">
-          <a class="btn btn-primary" id="hero-cta-explore" href="courses.html">Explore Courses →</a>
-          <a class="btn btn-secondary" id="hero-cta-about" href="about.html">About the Exchange</a>
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Global Tuberculosis Knowledge Hub</span>
         </div>
+        <h1>Learn, share and grow with global TB expertise</h1>
+        <p class="lead">Practical courses, interactive webinars, expert faculty, and open-access clinical resources designed for frontline clinicians and program managers worldwide.</p>
+        
+        <div class="hero-search-wrapper">
+          <form class="hero-search" onsubmit="return false" role="search">
+            <span class="hero-search-icon">🔍</span>
+            <input id="hero-search-input" placeholder="Search courses, clinical guides or webinars…" aria-label="Search">
+            <button id="hero-search-btn">Search Courses</button>
+          </form>
+          <div class="hero-quick-tags">
+            <span>Popular:</span>
+            <a href="courses.html">DR-TB</a>
+            <a href="courses.html">CAD4TB AI</a>
+            <a href="courses.html">Childhood TB</a>
+            <a href="courses.html">GeneXpert</a>
+            <a href="resources.html">WHO Guidelines</a>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="hero-cta-explore" href="courses.html" style="padding:14px 24px;font-size:15px">Explore Courses →</a>
+          <a class="btn btn-secondary" id="hero-cta-about" href="about.html" style="padding:14px 22px;font-size:15px">About the Exchange</a>
+        </div>
+
         <div class="hero-stats">
-          <div><b>40+</b><span>Courses</span></div>
-          <div><b>12k</b><span>Learners</span></div>
-          <div><b>80+</b><span>Countries</span></div>
-          <div><b>300+</b><span>Resources</span></div>
+          <div class="hero-stat-item"><b>40+</b><span>Interactive Courses</span></div>
+          <div class="hero-stat-item"><b>12k+</b><span>Health Workers</span></div>
+          <div class="hero-stat-item"><b>80+</b><span>Partner Countries</span></div>
+          <div class="hero-stat-item"><b>300+</b><span>Clinical Resources</span></div>
         </div>
       </div>
-      <div class="reveal" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1.5px solid var(--line);min-height:360px">
-        <img src="assets/img/hero-knowledge-institute.jpg" alt="KNCV Knowledge Institute learners and field work" style="width:100%;height:100%;min-height:360px;object-fit:cover;display:block">
+
+      <!-- HERO VISUAL SHOWCASE -->
+      <div class="hero-showcase reveal">
+        <div class="hero-showcase-backdrop"></div>
+        
+        <!-- Top-Right Floating Badge -->
+        <div class="floating-badge fb-top-right">
+          <div class="fb-icon-box fb-icon-green">✓</div>
+          <div class="fb-content">
+            <b>WHO 2026 Guidelines</b>
+            <span>Updated Clinical Modules</span>
+          </div>
+        </div>
+
+        <!-- Main Hero Image Card -->
+        <div class="hero-image-card">
+          <img src="assets/img/hero-knowledge-exchange.jpg" alt="Diverse healthcare professionals and doctors reviewing digital TB diagnostics in modern clinic" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+
+        <!-- Bottom-Left Floating Badge -->
+        <div class="floating-badge fb-bottom-left">
+          <div class="fb-icon-box fb-icon-blue">★</div>
+          <div class="fb-content">
+            <b>4.9 / 5.0 Rating</b>
+            <span>12,000+ Enrolled Learners</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
