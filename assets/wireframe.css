@@ -142,9 +142,14 @@ section { padding: 80px 0; }
 .split { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
 
 /* ---------- Page hero (inner pages) ---------- */
-.page-hero { background: var(--bg); border-bottom: none; padding: 84px 0 76px; }
+.page-hero { background: var(--paper); border-bottom: none; padding: 84px 0 76px; }
 .breadcrumb { font-size: 13px; color: var(--ink-3); margin-bottom: 18px; }
 .breadcrumb a:hover { color: var(--ink); text-decoration: underline; }
+
+body[data-page="courses"],
+body[data-page="course-detail"] {
+  background: var(--paper);
+}
 
 /* ---------- Home hero ---------- */
 .hero {
