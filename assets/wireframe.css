@@ -456,14 +456,117 @@ section { padding: 80px 0; }
 .logos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
 .logos .ph { min-height: 72px; }
 
-/* CTA band */
+/* CTA band — Light Editorial Card with Soft Glow Accents */
 .cta-band {
-  background: var(--dark); color: #fff; border-radius: 18px; padding: 56px;
-  display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+  background: linear-gradient(135deg, #F0F7FF 0%, #E8F3FE 55%, #F4F9FF 100%);
+  border: 1px solid #D6E6F9;
+  border-radius: 22px;
+  padding: 50px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 36, 68, 0.04);
 }
-.cta-band p { color: #b9bfc8; margin-top: 10px; max-width: 520px; }
-.cta-band .btn-primary { background: #fff; color: var(--ink); border-color: #fff; }
-.cta-band .btn-secondary { background: transparent; color: #fff; border-color: #6b727d; }
+.cta-band::before {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: -40px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(186, 220, 255, 0.6) 0%, rgba(240, 247, 255, 0) 72%);
+  pointer-events: none;
+}
+.cta-band::after {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: 18%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 228, 255, 0.55) 0%, rgba(240, 247, 255, 0) 72%);
+  pointer-events: none;
+}
+.cta-band-content {
+  position: relative;
+  z-index: 1;
+}
+.cta-accent-bar {
+  display: block;
+  width: 48px;
+  height: 5px;
+  background: #93C5FD;
+  border-radius: 99px;
+  margin-bottom: 14px;
+}
+.cta-band h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0F2444;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 10px 0;
+}
+.cta-band p {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 540px;
+}
+.cta-band-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.cta-band .btn-primary,
+.cta-btn-navy {
+  background: #0B2545;
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 26px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(11, 37, 69, 0.18);
+  transition: all 0.22s ease;
+}
+.cta-band .btn-primary:hover,
+.cta-btn-navy:hover {
+  background: #1D4ED8;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(29, 78, 216, 0.3);
+}
+.cta-band .btn-secondary {
+  background: #FFFFFF;
+  color: #0F2444 !important;
+  border: 1px solid #CBD5E1;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.cta-band .btn-secondary:hover {
+  background: #F8FAFC;
+  border-color: #94A3B8;
+  color: #0B2545 !important;
+  transform: translateY(-1px);
+}
 
 /* ---------- Forms ---------- */
 .field { display: flex; flex-direction: column; gap: 6px; }
@@ -630,8 +733,11 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
   .steps { grid-template-columns: 1fr 1fr; gap: 32px; }
   .step::after { display: none; }
   .checklist { grid-template-columns: 1fr; }
-  .hero .ph { min-height: 280px; }
-  .cta-band { padding: 36px; }
+  .cta-band { padding: 36px 28px; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .cta-band h2 { font-size: 26px; }
+  .cta-band-actions { width: 100%; }
+  .cta-band-actions .btn-primary,
+  .cta-band-actions .btn-secondary { width: 100%; justify-content: center; }
 }
 @media (max-width: 560px) {
   .g4, .logos, .sitemap, .site-footer .cols { grid-template-columns: 1fr 1fr; }
