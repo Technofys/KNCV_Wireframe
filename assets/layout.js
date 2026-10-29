@@ -27,14 +27,14 @@
       <nav class="main-nav" aria-label="Primary">
         ${nav.map(n => {
           if (n[0] === 'resources') {
-            const isAct = ['resources', 'webinars', 'publications'].includes(page);
+            const isAct = ['resources', 'webinars', 'publications', 'toolkits'].includes(page);
             return `
             <div class="nav-item-dropdown">
               <a id="nav-resources" class="${isAct ? 'active' : ''}" href="resources.html" style="display:inline-flex;align-items:center;gap:5px">
                 Resources <span style="font-size:10px;opacity:.7">▾</span>
               </a>
               <div class="nav-dropdown-menu">
-                <a href="resources.html">Tool kits</a>
+                <a href="toolkits.html">Tool kits</a>
                 <a href="webinars.html">Webinars</a>
                 <a href="publications.html">Publications</a>
               </div>

@@ -150,7 +150,8 @@ body[data-page="courses"],
 body[data-page="course-detail"],
 body[data-page="resources"],
 body[data-page="publications"],
-body[data-page="webinars"] {
+body[data-page="webinars"],
+body[data-page="toolkits"] {
   background: var(--paper);
 }
 
@@ -1038,6 +1039,110 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
   .editorial-card .card-title-wrap .card-arrow {
     transition: none !important;
     transform: none !important;
+  }
+}
+
+/* ---------- Dedicated Toolkits 2x2 Grid ---------- */
+.toolkits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.toolkit-card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04), 0 4px 12px rgba(16, 24, 40, 0.03);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+  position: relative;
+}
+.toolkit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(16, 24, 40, 0.09), 0 2px 8px rgba(16, 24, 40, 0.03);
+  border-color: #CBD5E1;
+}
+.toolkit-card .card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #E2E8F0;
+}
+.toolkit-card .card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.toolkit-card:hover .card-media img {
+  transform: scale(1.03);
+}
+.toolkit-card .card-body-editorial {
+  padding: 24px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 14px;
+}
+.toolkit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+.toolkit-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #F8FAFC;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 6px;
+  border: 1px solid #E2E8F0;
+  white-space: nowrap;
+}
+.toolkit-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 18px;
+  border-top: 1px solid #F1F4F8;
+  margin-top: auto;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.toolkit-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0B2545;
+  color: #FFFFFF !important;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.toolkit-btn-primary:hover {
+  background: #1D4ED8;
+  transform: translateY(-1px);
+}
+.toolkit-badge-meta {
+  font-size: 12.5px;
+  color: #64748B;
+  font-weight: 500;
+}
+@media (max-width: 900px) {
+  .toolkits-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 }
 
