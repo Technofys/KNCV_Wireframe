@@ -16,7 +16,35 @@
   <header class="site-header annot" data-note="Global header · sticky nav">
     <div class="container">
       <a href="home.html" class="logo" id="logo-link"><span class="logo-mark">LOGO</span><span>KNCV<small>Knowledge Exchange</small></span></a>
-      <nav class="main-nav" aria-label="Primary">${nav.map(n => `<a id="nav-${n[0]}" class="${n[0] === navActive ? 'active' : ''}" href="${n[1]}">${n[2]}</a>`).join('')}</nav>
+      <nav class="main-nav" aria-label="Primary">
+        ${nav.map(n => {
+          if (n[0] === 'resources') {
+            const isAct = ['resources', 'webinars', 'publications'].includes(page);
+            return `
+            <div class="nav-item-dropdown">
+              <a id="nav-resources" class="${isAct ? 'active' : ''}" href="resources.html" style="display:inline-flex;align-items:center;gap:5px">
+                Resources <span style="font-size:10px;opacity:.7">▾</span>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="resources.html#toolkits">
+                  <span style="font-size:16px">🧰</span>
+                  <span><b>1. Tool kits</b></span>
+                  <span class="nav-dd-badge">★ Priority</span>
+                </a>
+                <a href="webinars.html">
+                  <span style="font-size:16px">🎥</span>
+                  <span>2. Webinars</span>
+                </a>
+                <a href="publications.html">
+                  <span style="font-size:16px">📖</span>
+                  <span>3. Publications</span>
+                </a>
+              </div>
+            </div>`;
+          }
+          return `<a id="nav-${n[0]}" class="${n[0] === navActive ? 'active' : ''}" href="${n[1]}">${n[2]}</a>`;
+        }).join('')}
+      </nav>
       <div class="header-actions">
         <button class="icon-btn menu-btn" id="menu-btn" aria-label="Menu">☰</button>
       </div>

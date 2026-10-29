@@ -12,68 +12,294 @@
   <section class="page-hero annot" data-note="01 · Resources & Knowledge Hubs overview">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / Resources</nav>
-      <span class="eyebrow">04 · Resource Library &amp; Hubs</span>
+      <span class="eyebrow">Resource Library &amp; Hubs</span>
       <h1>Resources &amp; Knowledge Hubs</h1>
-      <p class="lead" style="margin-top:16px">Access webinars, publications, specialized implementation toolkits, and interactive knowledge hubs designed for TB professionals worldwide.</p>
+      <p class="lead" style="margin-top:14px">Access field-tested implementation toolkits, specialized webinars, and peer-reviewed scientific publications for global TB elimination.</p>
+
+      <!-- 3-DROPDOWN MENUS BAR -->
+      <div class="resources-dropdown-bar reveal" id="resource-nav-bar">
+        <div class="dropdown-bar-header">
+          <span class="dropdown-bar-title">Direct Resource Navigation</span>
+          <span class="dropdown-bar-hint">Select a category to jump directly or browse items:</span>
+        </div>
+        <div class="dropdown-group-row">
+          
+          <!-- 1. TOOL KITS (MOST IMPORTANT) -->
+          <div class="custom-dropdown dropdown-primary" id="dropdown-toolkits">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span class="dropdown-label">
+                <span class="dropdown-priority-badge">★ Priority</span>
+                <span class="dropdown-text">1. Tool kits</span>
+              </span>
+              <span class="dropdown-arrow">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-header">
+                <b>TB Implementation Toolkits &amp; Hubs</b>
+                <span>Most important operational resources</span>
+              </div>
+              <a class="dropdown-item" href="#toolkit-ascent">
+                <span class="di-icon">💊</span>
+                <span class="di-text">
+                  <b>ASCENT DR-TB Toolkit</b>
+                  <span>Digital adherence technologies for drug-resistant TB</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="#toolkit-people-centred">
+                <span class="di-icon">🤝</span>
+                <span class="di-text">
+                  <b>People-Centred Framework Hub</b>
+                  <span>Holistic, patient-first TB care &amp; stigma mitigation</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="#toolkit-global-dat">
+                <span class="di-icon">📱</span>
+                <span class="di-text">
+                  <b>Global DAT Task Force Learning Hub</b>
+                  <span>Digital Adherence Technologies best practices</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="#toolkit-knowledge-base">
+                <span class="di-icon">📚</span>
+                <span class="di-text">
+                  <b>KNCV Clinical Knowledge Base</b>
+                  <span>Standard operating procedures, clinical guidelines &amp; job aids</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. WEBINARS -->
+          <div class="custom-dropdown" id="dropdown-webinars">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span class="dropdown-label">
+                <span class="dropdown-text">2. Webinars</span>
+              </span>
+              <span class="dropdown-arrow">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-header">
+                <b>Webinars &amp; Interactive Learning</b>
+                <span>Live sessions and on-demand recordings</span>
+              </div>
+              <a class="dropdown-item" href="webinars.html">
+                <span class="di-icon">🎥</span>
+                <span class="di-text">
+                  <b>All Webinar Series Page →</b>
+                  <span>Browse full catalogue of clinical webinars</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="webinars.html#featured">
+                <span class="di-icon">▶</span>
+                <span class="di-text">
+                  <b>Featured Clinical Webinar</b>
+                  <span>TB Diagnostics &amp; CAD4TB AI in Primary Care</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="webinars.html#recordings">
+                <span class="di-icon">🗂️</span>
+                <span class="di-text">
+                  <b>Webinar Video Archive</b>
+                  <span>Pediatric TB, drug safety, and community adherence</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. PUBLICATIONS -->
+          <div class="custom-dropdown" id="dropdown-publications">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              <span class="dropdown-label">
+                <span class="dropdown-text">3. Publications</span>
+              </span>
+              <span class="dropdown-arrow">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-header">
+                <b>Evidence &amp; Research Library</b>
+                <span>Scientific publications and practical manuals</span>
+              </div>
+              <a class="dropdown-item" href="publications.html">
+                <span class="di-icon">📖</span>
+                <span class="di-text">
+                  <b>All Publications Page →</b>
+                  <span>Explore books, scientific papers, and briefs</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="publications.html#featured-publication">
+                <span class="di-icon">★</span>
+                <span class="di-text">
+                  <b>Featured: "Everything is TB"</b>
+                  <span>Flagship 2026 comprehensive TB publication</span>
+                </span>
+              </a>
+              <a class="dropdown-item" href="publications.html#reports">
+                <span class="di-icon">📄</span>
+                <span class="di-text">
+                  <b>Clinical Practice Guides (PDF)</b>
+                  <span>Field implementation guides and WHO policy briefs</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 2. 6-CARD RESOURCE HUBS GRID -->
-  <section id="hubs-overview" class="annot" data-note="02 · 6 Resource Hubs & Toolkits Grid">
+  <!-- 2. SECTION 1: TOOL KITS & HUBS (MOST IMPORTANT) -->
+  <section id="toolkits" class="annot" data-note="02 · Implementation Toolkits (Priority)" style="padding-top:48px">
     <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="tag" style="background:#fef3c7;color:#b45309;border-color:#fde68a;font-weight:700">★ 1. Most Important</span>
+          <h2 style="margin-top:10px">TB Implementation Toolkits &amp; Learning Hubs</h2>
+          <p>Comprehensive operational toolkits, standard operating procedures (SOPs), and clinical frameworks designed to support national programs and healthcare workers.</p>
+        </div>
+      </div>
+
       <div class="hub-grid reveal">
-        <!-- 1. Our Webinars -> Next Page -->
-        <a class="hub-tile" href="webinars.html" id="tile-webinars">
-          <img class="hub-img" src="assets/img/hub-webinars.jpg" alt="Our Webinars">
-          <div class="hub-content">
-            <span class="hub-title">Our webinars</span>
-            <span class="hub-badge">KNCV Webinar Series</span>
-          </div>
-        </a>
-
-        <!-- 2. Our Publications -> Next Page -->
-        <a class="hub-tile" href="publications.html" id="tile-publications">
-          <img class="hub-img" src="assets/img/hub-publications.jpg" alt="Our Publications">
-          <div class="hub-content">
-            <span class="hub-title">Our Publications</span>
-          </div>
-        </a>
-
-        <!-- 3. ASCENT DR-TB Toolkit -->
-        <a class="hub-tile" href="#" id="tile-ascent">
+        <!-- Toolkit 1: ASCENT DR-TB Toolkit -->
+        <a class="hub-tile" href="#" id="toolkit-ascent">
           <img class="hub-img" src="assets/img/hub-ascent-toolkit.jpg" alt="ASCENT DR-TB Toolkit">
           <div class="hub-content">
             <span class="hub-title">ASCENT DR-TB Toolkit</span>
+            <span class="hub-badge" style="background:rgba(245,158,11,0.85);color:#fff;border-color:transparent">★ Priority Toolkit</span>
           </div>
         </a>
 
-        <!-- 4. People-Centred Framework Knowledge Hub -->
-        <a class="hub-tile" href="#" id="tile-people-centred">
+        <!-- Toolkit 2: People-Centred Framework Hub -->
+        <a class="hub-tile" href="#" id="toolkit-people-centred">
           <img class="hub-img" src="assets/img/hub-people-centred.jpg" alt="People-Centred Framework Knowledge Hub">
           <div class="hub-content">
             <span class="hub-title">People-Centred Framework Knowledge Hub</span>
+            <span class="hub-badge">Patient Care</span>
           </div>
         </a>
 
-        <!-- 5. Global DAT Task Force - Learning Hub -->
-        <a class="hub-tile" href="#" id="tile-global-dat">
+        <!-- Toolkit 3: Global DAT Task Force Learning Hub -->
+        <a class="hub-tile" href="#" id="toolkit-global-dat">
           <img class="hub-img" src="assets/img/hub-dat-learning.jpg" alt="Global DAT Task Force - Learning Hub">
           <div class="hub-content">
             <span class="hub-title">Global DAT Task Force - Learning Hub</span>
+            <span class="hub-badge">Digital Health</span>
           </div>
         </a>
 
-        <!-- 6. Visit our knowledge base here -->
-        <a class="hub-tile" href="#" id="tile-knowledge-base">
+        <!-- Toolkit 4: KNCV Clinical Knowledge Base -->
+        <a class="hub-tile" href="#" id="toolkit-knowledge-base">
           <img class="hub-img" src="assets/img/hub-knowledge-base.jpg" alt="Visit our knowledge base here">
           <div class="hub-content">
-            <span class="hub-title">Visit our knowledge base here</span>
+            <span class="hub-title">KNCV Clinical Knowledge Base &amp; SOPs</span>
+            <span class="hub-badge">Guidelines</span>
           </div>
         </a>
       </div>
     </div>
   </section>
+
+  <!-- 3. SECTION 2: WEBINARS -->
+  <section id="webinars" class="section-white annot" data-note="03 · Webinars Section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Category 02</span>
+          <h2>2. Webinars &amp; Interactive Learning</h2>
+          <p>Live expert panels and on-demand clinical webinar recordings covering cutting-edge TB innovations.</p>
+        </div>
+        <a class="btn btn-primary" href="webinars.html" id="btn-browse-webinars">Open Webinars Library →</a>
+      </div>
+
+      <div class="reveal" style="background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)">
+        <div style="display:grid;grid-template-columns:1.1fr 1fr;align-items:center" class="webinar-preview-row">
+          <div style="height:100%;min-height:280px;position:relative">
+            <img src="assets/img/hub-webinars.jpg" alt="KNCV Webinar Series" style="width:100%;height:100%;object-fit:cover;display:block">
+            <span style="position:absolute;top:16px;left:16px;background:rgba(0,0,0,0.75);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:99px">▶ 12+ On-Demand Sessions</span>
+          </div>
+          <div style="padding:36px 32px">
+            <span class="tag" style="margin-bottom:12px">Webinar Series</span>
+            <h3 style="font-size:22px;margin-bottom:10px">Interactive Clinical Webinars</h3>
+            <p style="color:var(--ink-2);line-height:1.6;margin-bottom:20px">Engage with international TB specialists, researchers, and national program coordinators discussing rapid molecular testing, surgical options, and patient-centered adherence.</p>
+            <a class="link-arrow" href="webinars.html" style="font-weight:700">Explore all webinar recordings &amp; schedule →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECTION 3: PUBLICATIONS -->
+  <section id="publications" class="annot" data-note="04 · Publications Section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Category 03</span>
+          <h2>3. Publications &amp; Scientific Evidence</h2>
+          <p>Access flagship books, operational research papers, policy briefs, and downloadable practical field guides.</p>
+        </div>
+        <a class="btn btn-primary" href="publications.html" id="btn-browse-publications">Browse Publications →</a>
+      </div>
+
+      <div class="reveal" style="background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)">
+        <div style="display:grid;grid-template-columns:1fr 1.1fr;align-items:center" class="pub-preview-row">
+          <div style="padding:36px 32px">
+            <span class="tag" style="margin-bottom:12px">Featured Book &amp; Research</span>
+            <h3 style="font-size:22px;margin-bottom:10px">"Everything is TB" &amp; Field Guides</h3>
+            <p style="color:var(--ink-2);line-height:1.6;margin-bottom:20px">From comprehensive epidemiologic reports to pocket-sized clinical flowcharts, download validated materials to improve case-finding and treatment outcomes in your facility.</p>
+            <a class="link-arrow" href="publications.html" style="font-weight:700">View publications &amp; download reports →</a>
+          </div>
+          <div style="height:100%;min-height:280px;position:relative">
+            <img src="assets/img/hub-publications.jpg" alt="KNCV Publications" style="width:100%;height:100%;object-fit:cover;display:block">
+            <span style="position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.75);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:99px">PDF Downloads</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <script src="assets/layout.js"></script>
+<script>
+  // Interactive Dropdown Menu Handler
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.custom-dropdown');
+
+    dropdowns.forEach(dd => {
+      const toggle = dd.querySelector('.dropdown-toggle');
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = dd.classList.contains('open');
+        // Close other open dropdowns
+        dropdowns.forEach(d => {
+          d.classList.remove('open');
+          d.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          dd.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.custom-dropdown')) {
+        dropdowns.forEach(d => {
+          d.classList.remove('open');
+          d.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach(d => {
+          d.classList.remove('open');
+          d.querySelector('.dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+  });
+</script>
 </body>
 </html>
