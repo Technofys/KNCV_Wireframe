@@ -107,4 +107,63 @@
     if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
   }), { threshold: .08 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Number Counter Animation
+  function initCounters() {
+    const statsCounters = document.querySelectorAll('.hero-stats b, .stat-number');
+    if (!statsCounters.length) return;
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const b = entry.target;
+        observer.unobserve(b);
+
+        const rawText = b.textContent.trim();
+        const target = b.dataset.target ? parseFloat(b.dataset.target) : parseFloat(rawText.replace(/[^0-9.]/g, ''));
+        if (isNaN(target)) return;
+
+        const prefix = b.dataset.prefix || '';
+        let suffix = b.dataset.suffix;
+        if (suffix === undefined) {
+          const match = rawText.match(/[^0-9.,\s]+$/);
+          suffix = match ? match[0] : '';
+        }
+        const useComma = b.dataset.format === 'comma' || rawText.includes(',');
+        const start = b.dataset.start ? parseFloat(b.dataset.start) : 0;
+        const duration = 1800;
+
+        let startTime = null;
+        b.classList.add('counting');
+
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsed = timestamp - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          // Smooth easeOutQuart curve
+          const ease = 1 - Math.pow(1 - progress, 4);
+          const current = Math.floor(start + (target - start) * ease);
+
+          const formatted = useComma ? current.toLocaleString('en-US') : current;
+          b.textContent = prefix + formatted + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            const finalFormatted = useComma ? target.toLocaleString('en-US') : target;
+            b.textContent = prefix + finalFormatted + suffix;
+            b.classList.remove('counting');
+            b.classList.add('counted');
+          }
+        }
+
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.15 });
+
+    statsCounters.forEach(el => counterObserver.observe(el));
+  }
+
+  initCounters();
 })();
