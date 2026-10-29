@@ -34,7 +34,7 @@
                 Resources <span style="font-size:10px;opacity:.7">▾</span>
               </a>
               <div class="nav-dropdown-menu">
-                <a href="toolkits.html">Tool kits</a>
+                <a href="toolkits.html">Toolkit</a>
                 <a href="webinars.html">Webinars</a>
                 <a href="publications.html">Publications</a>
               </div>
@@ -66,7 +66,7 @@
           <p class="small" style="margin-top:16px;max-width:280px">Practical TB training, knowledge hubs, and peer-to-peer exchange for healthcare professionals worldwide.</p>
         </div>
         <div><h4>Learn</h4><ul><li><a href="courses.html">All courses</a></li><li><a href="courses.html">Categories</a></li><li><a href="#lms">Learner dashboard ↗</a></li></ul></div>
-        <div><h4>Resources</h4><ul><li><a href="resources.html">Resource Hubs</a></li><li><a href="webinars.html">Webinars</a></li><li><a href="publications.html">Publications</a></li></ul></div>
+        <div><h4>Resources</h4><ul><li><a href="resources.html">Resource Hubs</a></li><li><a href="toolkits.html">Toolkit</a></li><li><a href="webinars.html">Webinars</a></li><li><a href="publications.html">Publications</a></li></ul></div>
         <div><h4>Community &amp; About</h4><ul><li><a href="community.html">Community of Practice</a></li><li><a href="about.html">About KNCV</a></li><li><a href="about.html#faculty">Faculty</a></li><li><a href="about.html#partners">Partners</a></li></ul></div>
         <div><h4>Support</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="contact.html#faq">FAQ</a></li><li><a href="contact.html#support">Technical support</a></li></ul></div>
       </div>
