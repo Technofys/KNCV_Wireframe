@@ -26,19 +26,9 @@
                 Resources <span style="font-size:10px;opacity:.7">▾</span>
               </a>
               <div class="nav-dropdown-menu">
-                <a href="resources.html#toolkits">
-                  <span style="font-size:16px">🧰</span>
-                  <span><b>1. Tool kits</b></span>
-                  <span class="nav-dd-badge">★ Priority</span>
-                </a>
-                <a href="webinars.html">
-                  <span style="font-size:16px">🎥</span>
-                  <span>2. Webinars</span>
-                </a>
-                <a href="publications.html">
-                  <span style="font-size:16px">📖</span>
-                  <span>3. Publications</span>
-                </a>
+                <a href="resources.html">Tool kits</a>
+                <a href="webinars.html">Webinars</a>
+                <a href="publications.html">Publications</a>
               </div>
             </div>`;
           }

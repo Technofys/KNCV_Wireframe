@@ -1066,41 +1066,31 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 280px;
+  min-width: 170px;
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.12);
-  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.1);
+  padding: 6px;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(8px);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(6px);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 100;
 }
 .nav-dropdown-menu a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 8px;
+  display: block;
+  padding: 8px 14px;
+  border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
   color: var(--ink);
-  transition: background 0.15s;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
 }
 .nav-dropdown-menu a:hover {
   background: var(--fill);
-}
-.nav-dropdown-menu .nav-dd-badge {
-  font-size: 10px;
-  font-weight: 700;
-  background: #fef3c7;
-  color: #b45309;
-  padding: 2px 7px;
-  border-radius: 99px;
-  margin-left: auto;
-  text-transform: uppercase;
+  color: var(--ink);
 }
 
 /* Resources Page 3-Dropdown Bar */
