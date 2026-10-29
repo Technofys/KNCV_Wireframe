@@ -305,16 +305,20 @@ body[data-page="toolkits"] {
   font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.025em;
-  color: var(--ink);
+  color: #000000 !important;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
-  transition: color 0.25s ease, transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 .hero-stat-item b.counting {
-  color: #1D4ED8;
+  color: #000000 !important;
 }
 .hero-stat-item b.counted {
+  color: #000000 !important;
   animation: counterPop 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-stat-item:hover b {
+  color: #000000 !important;
 }
 .hero-stat-item span {
   font-size: 12.5px;
@@ -325,8 +329,8 @@ body[data-page="toolkits"] {
 }
 @keyframes counterPop {
   0% { transform: scale(0.96); }
-  50% { transform: scale(1.08); color: #2563EB; }
-  100% { transform: scale(1); color: var(--ink); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 /* Hero Showcase Frame (Right Side) */
