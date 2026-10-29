@@ -1,0 +1,16 @@
+{
+  "name": "kncv-wireframe",
+  "version": "1.0.0",
+  "description": "KNCV Knowledge Exchange Wireframe",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "wireframe",
+    "kncv"
+  ],
+  "author": "",
+  "license": "ISC"
+}
