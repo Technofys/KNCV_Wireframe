@@ -39,28 +39,15 @@ img { max-width: 100%; display: block; }
 .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 
-/* ---------- Annotations ---------- */
-.annot { position: relative; }
-.annot::before {
-  content: attr(data-note);
-  position: absolute; top: 10px; left: 10px; z-index: 5;
-  font: 600 11px/1 'JetBrains Mono', monospace;
-  color: var(--note); background: var(--note-bg);
-  border: 1px dashed var(--note); border-radius: 4px;
-  padding: 5px 8px; letter-spacing: .02em; pointer-events: none;
-}
-.annot { outline: 1px dashed transparent; outline-offset: -1px; transition: outline-color .2s; }
-.annot:hover { outline-color: rgba(47, 111, 237, .45); }
-body.hide-notes .annot::before { display: none; }
-body.hide-notes .annot:hover { outline-color: transparent; }
+/* ---------- Annotations (Removed per user request) ---------- */
+.annot { position: relative; outline: none !important; }
+.annot::before { display: none !important; }
+.annot:hover { outline-color: transparent !important; }
+body.hide-notes .annot::before { display: none !important; }
+body.hide-notes .annot:hover { outline-color: transparent !important; }
 
-.sticky-note {
-  font: 500 12px/1.5 'JetBrains Mono', monospace;
-  color: var(--note); background: var(--note-bg);
-  border-left: 3px solid var(--note);
-  padding: 10px 14px; border-radius: 4px; margin-top: 16px;
-}
-body.hide-notes .sticky-note { display: none; }
+.sticky-note { display: none !important; }
+body.hide-notes .sticky-note { display: none !important; }
 
 /* ---------- Site header ---------- */
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
@@ -520,14 +507,11 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
 }
 .synergy-header .eyebrow {
   display: inline-block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--note);
-  background: var(--note-bg);
-  padding: 4px 12px;
-  border-radius: 99px;
+  color: var(--ink-3);
   margin-bottom: 12px;
 }
 .synergy-header h3 {
