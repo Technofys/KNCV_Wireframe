@@ -52,13 +52,15 @@ body.hide-notes .sticky-note { display: none !important; }
 /* ---------- Site header ---------- */
 .site-header { background: var(--paper); border-bottom: 1px solid var(--line); }
 .site-header .container { display: flex; align-items: center; height: 72px; gap: 32px; }
-.logo { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.01em; }
-.logo-mark {
-  width: 36px; height: 36px; border-radius: 8px; background: var(--fill-2);
-  border: 1.5px solid var(--ink-3); display: grid; place-items: center;
-  font-size: 11px; font-weight: 700; color: var(--ink-2);
+.logo { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.01em; text-decoration: none; }
+.logo:hover { opacity: .92; }
+.logo-mark-svg {
+  display: block; flex-shrink: 0; border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(29, 78, 216, 0.22);
+  transition: transform .2s ease;
 }
-.logo small { display: block; font-weight: 500; font-size: 11px; color: var(--ink-3); }
+.logo:hover .logo-mark-svg { transform: scale(1.05); }
+.logo small { display: block; font-weight: 500; font-size: 11px; color: var(--ink-3); margin-top: 1px; }
 .main-nav { display: flex; gap: 6px; margin-left: auto; }
 .main-nav a {
   padding: 8px 14px; border-radius: 6px; font-weight: 500; color: var(--ink-2);

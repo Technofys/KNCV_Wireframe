@@ -15,7 +15,15 @@
   const header = page === 'sitemap' ? '' : `
   <header class="site-header annot" data-note="Global header · sticky nav">
     <div class="container">
-      <a href="home.html" class="logo" id="logo-link"><span class="logo-mark">LOGO</span><span>KNCV<small>Knowledge Exchange</small></span></a>
+      <a href="home.html" class="logo" id="logo-link">
+        <svg class="logo-mark-svg" width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="38" height="38" rx="10" fill="#1D4ED8" />
+          <path d="M19 7V31" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+          <path d="M13 14H25" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+          <path d="M10 21H28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <span>KNCV<small>Knowledge Exchange</small></span>
+      </a>
       <nav class="main-nav" aria-label="Primary">
         ${nav.map(n => {
           if (n[0] === 'resources') {
@@ -46,7 +54,15 @@
     <div class="container">
       <div class="cols">
         <div>
-          <a href="home.html" class="logo"><span class="logo-mark">LOGO</span><span>KNCV<small style="color:#8a919c">Knowledge Exchange</small></span></a>
+          <a href="home.html" class="logo">
+            <svg class="logo-mark-svg" width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="38" height="38" rx="10" fill="#2563EB" />
+              <path d="M19 7V31" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+              <path d="M13 14H25" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+              <path d="M10 21H28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            <span>KNCV<small style="color:#8a919c">Knowledge Exchange</small></span>
+          </a>
           <p class="small" style="margin-top:16px;max-width:280px">Practical TB training, knowledge hubs, and peer-to-peer exchange for healthcare professionals worldwide.</p>
         </div>
         <div><h4>Learn</h4><ul><li><a href="courses.html">All courses</a></li><li><a href="courses.html">Categories</a></li><li><a href="#lms">Learner dashboard ↗</a></li></ul></div>
