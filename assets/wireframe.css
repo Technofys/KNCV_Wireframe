@@ -637,9 +637,51 @@ body[data-page="toolkits"] {
 }
 .tabs button.active { background: var(--paper); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.08); }
 
-/* Logos & Partner Cards */
+/* Logos & Partner Cards — Continuous Infinite Marquee */
 .logos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; }
 .logos .ph { min-height: 72px; }
+
+.partners-marquee-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 14px 0 20px;
+  mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 7%, #000 93%, transparent 100%);
+}
+
+.partners-marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+.partners-marquee-group {
+  display: flex;
+  gap: 22px;
+  padding-right: 22px;
+  flex-shrink: 0;
+  animation: marqueeContinuous 26s linear infinite;
+  will-change: transform;
+}
+
+.partners-marquee-wrap:hover .partners-marquee-group {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeContinuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.partners-marquee-group .partner-card {
+  width: 204px;
+  min-width: 204px;
+  flex-shrink: 0;
+}
 
 .partner-card {
   background: var(--paper);
