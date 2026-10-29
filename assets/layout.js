@@ -134,7 +134,7 @@
         const duration = 1800;
 
         let startTime = null;
-        b.classList.add('counting');
+        b.style.setProperty('color', '#000000', 'important');
 
         function step(timestamp) {
           if (!startTime) startTime = timestamp;
@@ -147,13 +147,14 @@
 
           const formatted = useComma ? current.toLocaleString('en-US') : current;
           b.textContent = prefix + formatted + suffix;
+          b.style.setProperty('color', '#000000', 'important');
 
           if (progress < 1) {
             requestAnimationFrame(step);
           } else {
             const finalFormatted = useComma ? target.toLocaleString('en-US') : target;
             b.textContent = prefix + finalFormatted + suffix;
-            b.classList.remove('counting');
+            b.style.setProperty('color', '#000000', 'important');
             b.classList.add('counted');
           }
         }
