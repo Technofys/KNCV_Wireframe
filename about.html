@@ -42,145 +42,148 @@
         <div class="feature reveal"><div class="ico">03</div><h4>Connect people</h4><p>Foster a global learning network.</p></div>
         <div class="feature reveal"><div class="ico">04</div><h4>Open access</h4><p>Make learning accessible to all.</p></div>
       </div>
-      <!-- STRATEGIC SYNERGY VENN DIAGRAM -->
-      <div class="synergy-card reveal" id="synergy-diagram">
-        <div class="synergy-header">
-          <span class="eyebrow">Strategic Foundation</span>
-          <h3>The KNCV Knowledge Institute Model</h3>
-          <p>The intersection of three core disciplines driving evidence-based tuberculosis elimination and sustainable health systems worldwide.</p>
+    </div>
+  </section>
+
+  <!-- 3. STRATEGIC SYNERGY: KNCV KNOWLEDGE INSTITUTE MODEL -->
+  <section class="section-white synergy-section annot" data-note="03 · Strategic Synergy Diagram" id="synergy-model">
+    <div class="container">
+      <div class="synergy-header reveal">
+        <span class="eyebrow">Strategic Foundation</span>
+        <h2>The KNCV Knowledge Institute Model</h2>
+        <p>The intersection of three core disciplines driving evidence-based tuberculosis elimination and sustainable health systems worldwide.</p>
+      </div>
+
+      <div class="synergy-visual reveal">
+        <svg class="synergy-svg" viewBox="0 0 720 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <!-- Innovation Gradient (Yellow / Amber) -->
+            <linearGradient id="grad-innovation" x1="100" y1="60" x2="420" y2="380" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.92" />
+              <stop offset="60%" stop-color="#FBBF24" stop-opacity="0.84" />
+              <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.76" />
+            </linearGradient>
+
+            <!-- Collaboration Gradient (Coral / Rose Red) -->
+            <linearGradient id="grad-collaboration" x1="620" y1="60" x2="300" y2="380" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FECDD3" stop-opacity="0.92" />
+              <stop offset="60%" stop-color="#FB7185" stop-opacity="0.84" />
+              <stop offset="100%" stop-color="#E11D48" stop-opacity="0.76" />
+            </linearGradient>
+
+            <!-- Quality Assurance Gradient (Sky / Azure Blue) -->
+            <linearGradient id="grad-quality" x1="360" y1="200" x2="360" y2="550" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.92" />
+              <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.84" />
+              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.76" />
+            </linearGradient>
+
+            <!-- Hub Shadow -->
+            <filter id="hub-shadow" x="220" y="180" width="280" height="210" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.12" />
+              <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06" />
+            </filter>
+          </defs>
+
+          <!-- BACKGROUND ORBIT ACCENTS -->
+          <circle cx="360" cy="285" r="245" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.8" />
+          <circle cx="360" cy="285" r="275" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="2 8" opacity="0.5" />
+
+          <!-- VENN CIRCLE 1: INNOVATION (TOP-LEFT) -->
+          <g class="venn-group" data-target="p-innovation" id="venn-innovation">
+            <circle class="venn-circle" cx="275" cy="230" r="175" fill="url(#grad-innovation)" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+            <!-- Icon & Label Group -->
+            <g transform="translate(145, 155)" class="venn-label">
+              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(180,83,9,0.22))" />
+              <path d="M20 10C15.58 10 12 13.58 12 18C12 20.73 13.37 23.13 15.48 24.57C15.82 24.8 16.03 25.19 16.03 25.6V26.5C16.03 27.05 16.48 27.5 17.03 27.5H22.97C23.52 27.5 23.97 27.05 23.97 26.5V25.6C23.97 25.19 24.18 24.8 24.52 24.57C26.63 23.13 28 20.73 28 18C28 13.58 24.42 10 20 10ZM17.5 29H22.5V29.5C22.5 29.78 22.28 30 22 30H18C17.72 30 17.5 29.78 17.5 29.5V29Z" fill="#D97706" />
+              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#78350F" letter-spacing="-0.02em">Innovation</text>
+              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#92400E" letter-spacing="0.01em">Digital Health &amp; Diagnostics</text>
+            </g>
+          </g>
+
+          <!-- VENN CIRCLE 2: COLLABORATION (TOP-RIGHT) -->
+          <g class="venn-group" data-target="p-collaboration" id="venn-collaboration">
+            <circle class="venn-circle" cx="445" cy="230" r="175" fill="url(#grad-collaboration)" stroke="#E11D48" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+            <!-- Icon & Label Group -->
+            <g transform="translate(420, 155)" class="venn-label">
+              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(190,18,60,0.22))" />
+              <path d="M20 11C16.69 11 14 13.69 14 17C14 20.31 16.69 23 20 23C23.31 23 26 20.31 26 17C26 13.69 23.31 11 20 11ZM12 25.5C9.8 25.5 8 27.3 8 29.5V30H20V28.2L18.4 26.6C16.8 25.8 14.5 25.5 12 25.5ZM28 25.5C25.5 25.5 23.2 25.8 21.6 26.6L20 28.2V30H32V29.5C32 27.3 30.2 25.5 28 25.5Z" fill="#E11D48" />
+              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#881337" letter-spacing="-0.02em">Collaboration</text>
+              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#9F1239" letter-spacing="0.01em">Global Alliances &amp; NTPs</text>
+            </g>
+          </g>
+
+          <!-- VENN CIRCLE 3: QUALITY ASSURANCE (BOTTOM) -->
+          <g class="venn-group" data-target="p-quality" id="venn-quality">
+            <circle class="venn-circle" cx="360" cy="375" r="175" fill="url(#grad-quality)" stroke="#0284C7" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+            <!-- Icon & Label Group -->
+            <g transform="translate(245, 435)" class="venn-label">
+              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(2,132,199,0.22))" />
+              <path d="M20 10L13 13V19.09C13 23.41 15.98 27.42 20 28.5C24.02 27.42 27 23.41 27 19.09V13L20 10ZM18.3 22.8L15.2 19.7L16.6 18.3L18.3 20L23.4 14.9L24.8 16.3L18.3 22.8Z" fill="#0284C7" />
+              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#0C4A6E" letter-spacing="-0.02em">Quality Assurance</text>
+              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#0369A1" letter-spacing="0.01em">Evidence Standards &amp; Rigor</text>
+            </g>
+          </g>
+
+          <!-- CENTRAL INTERSECTION: KNCV KNOWLEDGE INSTITUTE -->
+          <g class="synergy-center-hub" id="venn-core">
+            <circle cx="360" cy="285" r="74" fill="#FFFFFF" fill-opacity="0.98" filter="url(#hub-shadow)" />
+            <circle cx="360" cy="285" r="70" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="3 3" />
+            <circle cx="360" cy="285" r="66" fill="#FFFFFF" />
+
+            <!-- KNCV Emblem Mark -->
+            <g transform="translate(346, 234)">
+              <rect width="28" height="28" rx="8" fill="#1D4ED8" />
+              <path d="M14 6V22M6 14H22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
+            </g>
+
+            <!-- Central Badge Typography -->
+            <text x="360" y="278" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="11" fill="#1D4ED8" text-anchor="middle" letter-spacing="0.14em">KNCV</text>
+            <text x="360" y="296" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="14.5" fill="#0F172A" text-anchor="middle" letter-spacing="-0.02em">Knowledge Institute</text>
+            <text x="360" y="314" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="9.5" fill="#64748B" text-anchor="middle" letter-spacing="0.06em">STRATEGIC SYNERGY</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- 3-PILLARS STRATEGIC BREAKDOWN GRID -->
+      <div class="synergy-pillars reveal">
+        <div class="pillar-item p-innovation" data-circle="venn-innovation">
+          <span class="pillar-badge">💡 Pillar 01</span>
+          <h4>Innovation</h4>
+          <p>Pioneering modern digital health, artificial intelligence for chest X-ray screening, and breakthrough point-of-care molecular diagnostic technologies.</p>
+          <div class="pillar-tags">
+            <span>AI Screening (CAD4TB)</span>
+            <span>Digital Adherence</span>
+            <span>Point-of-Care TB</span>
+          </div>
         </div>
 
-        <div class="synergy-visual">
-          <svg class="synergy-svg" viewBox="0 0 720 580" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <!-- Innovation Gradient (Yellow / Amber) -->
-              <linearGradient id="grad-innovation" x1="100" y1="60" x2="420" y2="380" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.9" />
-                <stop offset="60%" stop-color="#FBBF24" stop-opacity="0.82" />
-                <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.75" />
-              </linearGradient>
-
-              <!-- Collaboration Gradient (Coral / Rose Red) -->
-              <linearGradient id="grad-collaboration" x1="620" y1="60" x2="300" y2="380" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#FECDD3" stop-opacity="0.9" />
-                <stop offset="60%" stop-color="#FB7185" stop-opacity="0.82" />
-                <stop offset="100%" stop-color="#E11D48" stop-opacity="0.75" />
-              </linearGradient>
-
-              <!-- Quality Assurance Gradient (Sky / Azure Blue) -->
-              <linearGradient id="grad-quality" x1="360" y1="200" x2="360" y2="550" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.9" />
-                <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.82" />
-                <stop offset="100%" stop-color="#0284C7" stop-opacity="0.75" />
-              </linearGradient>
-
-              <!-- Hub Shadow -->
-              <filter id="hub-shadow" x="220" y="210" width="280" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.14" />
-                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.08" />
-              </filter>
-            </defs>
-
-            <!-- BACKGROUND ORBIT ACCENTS -->
-            <circle cx="360" cy="285" r="245" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7" />
-            <circle cx="360" cy="285" r="275" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="2 8" opacity="0.4" />
-
-            <!-- VENN CIRCLE 1: INNOVATION (TOP-LEFT) -->
-            <g class="venn-group" data-target="p-innovation" id="venn-innovation">
-              <circle class="venn-circle" cx="275" cy="230" r="175" fill="url(#grad-innovation)" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
-              <!-- Icon & Label Group -->
-              <g transform="translate(145, 155)" class="venn-label">
-                <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.92" filter="drop-shadow(0 2px 6px rgba(180,83,9,0.2))" />
-                <path d="M20 10C15.58 10 12 13.58 12 18C12 20.73 13.37 23.13 15.48 24.57C15.82 24.8 16.03 25.19 16.03 25.6V26.5C16.03 27.05 16.48 27.5 17.03 27.5H22.97C23.52 27.5 23.97 27.05 23.97 26.5V25.6C23.97 25.19 24.18 24.8 24.52 24.57C26.63 23.13 28 20.73 28 18C28 13.58 24.42 10 20 10ZM17.5 29H22.5V29.5C22.5 29.78 22.28 30 22 30H18C17.72 30 17.5 29.78 17.5 29.5V29Z" fill="#D97706" />
-                <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#78350F" letter-spacing="-0.02em">Innovation</text>
-                <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#92400E" letter-spacing="0.01em">Digital Health &amp; Diagnostics</text>
-              </g>
-            </g>
-
-            <!-- VENN CIRCLE 2: COLLABORATION (TOP-RIGHT) -->
-            <g class="venn-group" data-target="p-collaboration" id="venn-collaboration">
-              <circle class="venn-circle" cx="445" cy="230" r="175" fill="url(#grad-collaboration)" stroke="#E11D48" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
-              <!-- Icon & Label Group -->
-              <g transform="translate(420, 155)" class="venn-label">
-                <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.92" filter="drop-shadow(0 2px 6px rgba(190,18,60,0.2))" />
-                <path d="M20 11C16.69 11 14 13.69 14 17C14 20.31 16.69 23 20 23C23.31 23 26 20.31 26 17C26 13.69 23.31 11 20 11ZM12 25.5C9.8 25.5 8 27.3 8 29.5V30H20V28.2L18.4 26.6C16.8 25.8 14.5 25.5 12 25.5ZM28 25.5C25.5 25.5 23.2 25.8 21.6 26.6L20 28.2V30H32V29.5C32 27.3 30.2 25.5 28 25.5Z" fill="#E11D48" />
-                <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#881337" letter-spacing="-0.02em">Collaboration</text>
-                <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#9F1239" letter-spacing="0.01em">Global Alliances &amp; NTPs</text>
-              </g>
-            </g>
-
-            <!-- VENN CIRCLE 3: QUALITY ASSURANCE (BOTTOM) -->
-            <g class="venn-group" data-target="p-quality" id="venn-quality">
-              <circle class="venn-circle" cx="360" cy="375" r="175" fill="url(#grad-quality)" stroke="#0284C7" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
-              <!-- Icon & Label Group -->
-              <g transform="translate(245, 435)" class="venn-label">
-                <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.92" filter="drop-shadow(0 2px 6px rgba(2,132,199,0.2))" />
-                <path d="M20 10L13 13V19.09C13 23.41 15.98 27.42 20 28.5C24.02 27.42 27 23.41 27 19.09V13L20 10ZM18.3 22.8L15.2 19.7L16.6 18.3L18.3 20L23.4 14.9L24.8 16.3L18.3 22.8Z" fill="#0284C7" />
-                <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#0C4A6E" letter-spacing="-0.02em">Quality Assurance</text>
-                <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#0369A1" letter-spacing="0.01em">Evidence Standards &amp; Rigor</text>
-              </g>
-            </g>
-
-            <!-- CENTRAL INTERSECTION: KNCV KNOWLEDGE INSTITUTE -->
-            <g class="synergy-center-hub" id="venn-core">
-              <circle cx="360" cy="285" r="74" fill="#FFFFFF" fill-opacity="0.96" filter="url(#hub-shadow)" />
-              <circle cx="360" cy="285" r="70" stroke="url(#grad-quality)" stroke-width="2" stroke-dasharray="3 3" opacity="0.6" />
-              <circle cx="360" cy="285" r="66" fill="#FFFFFF" />
-
-              <!-- KNCV Emblem Mark -->
-              <g transform="translate(346, 234)">
-                <rect width="28" height="28" rx="8" fill="#1D4ED8" />
-                <path d="M14 6V22M6 14H22" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" />
-              </g>
-
-              <!-- Central Badge Typography -->
-              <text x="360" y="278" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="11" fill="#1D4ED8" text-anchor="middle" letter-spacing="0.14em">KNCV</text>
-              <text x="360" y="296" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="14.5" fill="#0F172A" text-anchor="middle" letter-spacing="-0.02em">Knowledge Institute</text>
-              <text x="360" y="314" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="9.5" fill="#64748B" text-anchor="middle" letter-spacing="0.06em">STRATEGIC SYNERGY</text>
-            </g>
-          </svg>
+        <div class="pillar-item p-collaboration" data-circle="venn-collaboration">
+          <span class="pillar-badge">🤝 Pillar 02</span>
+          <h4>Collaboration</h4>
+          <p>Uniting National TB Programmes, WHO, international universities, frontline healthcare workers, and affected communities across 30+ countries.</p>
+          <div class="pillar-tags">
+            <span>Community of Practice</span>
+            <span>WHO Co-Design</span>
+            <span>Peer-to-Peer Exchange</span>
+          </div>
         </div>
 
-        <!-- 3-PILLARS STRATEGIC BREAKDOWN GRID -->
-        <div class="synergy-pillars">
-          <div class="pillar-item p-innovation" data-circle="venn-innovation">
-            <span class="pillar-badge">💡 Pillar 01</span>
-            <h4>Innovation</h4>
-            <p>Pioneering modern digital health, artificial intelligence for chest X-ray screening, and breakthrough point-of-care molecular diagnostic technologies.</p>
-            <div class="pillar-tags">
-              <span>AI Screening (CAD4TB)</span>
-              <span>Digital Adherence</span>
-              <span>Point-of-Care TB</span>
-            </div>
-          </div>
-
-          <div class="pillar-item p-collaboration" data-circle="venn-collaboration">
-            <span class="pillar-badge">🤝 Pillar 02</span>
-            <h4>Collaboration</h4>
-            <p>Uniting National TB Programmes, WHO, international universities, frontline healthcare workers, and affected communities across 30+ countries.</p>
-            <div class="pillar-tags">
-              <span>Community of Practice</span>
-              <span>WHO Co-Design</span>
-              <span>Peer-to-Peer Exchange</span>
-            </div>
-          </div>
-
-          <div class="pillar-item p-quality" data-circle="venn-quality">
-            <span class="pillar-badge">🛡️ Pillar 03</span>
-            <h4>Quality Assurance</h4>
-            <p>Upholding clinical standards, ISO laboratory accreditation, evidence validation, and continuous clinical audit to deliver peer-reviewed excellence.</p>
-            <div class="pillar-tags">
-              <span>Standardized SOPs</span>
-              <span>Lab Accreditation</span>
-              <span>Accredited Training</span>
-            </div>
+        <div class="pillar-item p-quality" data-circle="venn-quality">
+          <span class="pillar-badge">🛡️ Pillar 03</span>
+          <h4>Quality Assurance</h4>
+          <p>Upholding clinical standards, ISO laboratory accreditation, evidence validation, and continuous clinical audit to deliver peer-reviewed excellence.</p>
+          <div class="pillar-tags">
+            <span>Standardized SOPs</span>
+            <span>Lab Accreditation</span>
+            <span>Accredited Training</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. KNOWLEDGE SHARING APPROACH -->
+  <!-- 4. KNOWLEDGE SHARING APPROACH -->
   <section class="section-white annot" data-note="03 · Knowledge-sharing approach">
     <div class="container">
       <div class="center reveal" style="margin-bottom:56px">
