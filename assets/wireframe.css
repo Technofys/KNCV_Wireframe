@@ -938,15 +938,6 @@ textarea.input { height: 140px; padding: 12px 14px; resize: vertical; }
   filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
 }
 
-.synergy-center-hub {
-  cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  transform-origin: 360px 285px;
-}
-.synergy-center-hub:hover {
-  transform: scale(1.05);
-}
-
 .synergy-pillars {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
