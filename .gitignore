@@ -1,0 +1,8 @@
+node_modules/
+.agents/
+scratch/
+*.log
+*-results.json
+axe-baseline.json
+.DS_Store
+Thumbs.db

@@ -6,116 +6,126 @@
 <meta name="description" content="Scientific publications, peer-reviewed articles, policy briefs, and technical guidelines from KNCV Tuberculosis Foundation.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="resources">
-<main>
+<body data-page="publications" class="hide-notes">
+<main id="main-content" tabindex="-1">
   <!-- 1. PAGE HERO -->
   <section class="page-hero annot" data-note="01 · Publications header & breadcrumb">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / <a href="resources.html">Resources</a> / Publications</nav>
-      <span class="eyebrow">Evidence &amp; Research</span>
       <h1>Our Publications</h1>
-      <p class="lead" style="margin-top:16px">Browse peer-reviewed journal papers, policy briefs, multi-country clinical guidelines, and annual programme reports published by KNCV researchers and collaborators.</p>
+      <p class="lead" style="margin-top:16px">Browse peer-reviewed journal papers, policy briefs, multi-country clinical guidelines, and annual programme reports published by KNCV TB Plus researchers and global collaborators.</p>
     </div>
   </section>
 
   <!-- 2. PUBLICATIONS LIST & FILTERS -->
-  <section id="publications" class="section-white annot" data-note="02 · Publications catalog & downloads">
+  <section id="publications" class="section-white annot" data-note="02 · Publications catalog & downloads" style="padding-top:32px">
     <div class="container">
       <div class="section-head reveal">
         <div>
+          <span class="eyebrow">Evidence &amp; Research</span>
           <h2>Research Papers, Briefs &amp; Guidelines</h2>
           <p>Download open-access articles and technical documents.</p>
         </div>
-        <select class="input" id="pub-sort" style="width:180px"><option>Sort: Newest</option><option>Most downloaded</option><option>Topic</option></select>
-      </div>
-
-      <div class="chips" style="margin-bottom:28px">
-        <button class="chip active">All Publications (84)</button>
-        <button class="chip">Peer-Reviewed Papers</button>
-        <button class="chip">Policy Briefs</button>
-        <button class="chip">Technical Guidelines</button>
-        <button class="chip">Annual Reports</button>
-      </div>
-
-      <!-- Featured Publication Banner -->
-      <div class="block reveal" style="padding:0;overflow:hidden;margin-bottom:32px;display:grid;grid-template-columns:240px 1fr;align-items:center;background:var(--paper)">
-        <div style="height:210px;background:#1d2127;overflow:hidden">
-          <img src="assets/img/hub-publications.jpg" alt="Featured Publication" style="width:100%;height:100%;object-fit:cover;display:block">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <label class="searchbox" style="min-width:260px">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></svg>
+            <input type="search" id="pub-search" aria-label="Search publications by keyword or author" placeholder="Search title, author, journal…">
+          </label>
+          <select class="input" id="pub-sort" aria-label="Sort publications" style="width:185px">
+            <option value="newest">Sort: Newest</option>
+            <option value="downloads">Most downloaded</option>
+            <option value="topic">Topic (A-Z)</option>
+          </select>
         </div>
-        <div style="padding:24px 28px">
-          <span class="tag solid">Featured Release</span>
-          <h3 style="margin-top:8px">Everything is TB: Research &amp; Clinical Insights</h3>
-          <p class="small muted" style="margin-top:4px">Key lessons and epidemiological evidence synthesized by KNCV authors and global partners.</p>
-          <div style="margin-top:14px;display:flex;gap:10px">
-            <a class="btn btn-primary btn-sm" href="#">Download Summary (PDF) ↓</a>
-            <a class="btn btn-secondary btn-sm" href="#">View Full Paper ↗</a>
+      </div>
+
+      <div class="chips" id="pub-category-chips" role="group" aria-label="Filter publications by category" style="margin-bottom:32px">
+        <button type="button" class="chip active" data-pub-cat="all">All Publications (84)</button>
+        <button type="button" class="chip" data-pub-cat="peer-reviewed">Peer-Reviewed Papers</button>
+        <button type="button" class="chip" data-pub-cat="policy-brief">Policy Briefs</button>
+        <button type="button" class="chip" data-pub-cat="guidelines">Technical Guidelines</button>
+        <button type="button" class="chip" data-pub-cat="report">Annual Reports</button>
+      </div>
+
+      <!-- Featured Publication Banner (Warm Stone Editorial Feature Spread) -->
+      <div class="featured-pub-banner reveal">
+        <div style="min-height:220px;background:var(--fill);overflow:hidden">
+          <img src="assets/img/hub-publications.jpg" alt="Featured Publication: Everything is TB" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
+        </div>
+        <div style="padding:32px 36px;display:flex;flex-direction:column;justify-content:center">
+          <div><span class="tag solid">Featured Release</span></div>
+          <h3 style="margin-top:12px;font-size:22px">Everything is TB: Research &amp; Clinical Insights</h3>
+          <p class="small muted" style="margin-top:6px">Key lessons and epidemiological evidence synthesized by KNCV TB Plus authors and global partners.</p>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#download-featured-summary" data-modal-title="Everything is TB: Research & Clinical Insights (PDF · 2.8 MB)" data-modal-desc="Executive synthesis of KNCV TB Plus multi-country operational research, diagnostic innovations, and person-centred care outcomes.">Download Summary (PDF) ↓</a>
+            <a class="btn btn-secondary btn-sm js-resource-modal" href="#view-featured-paper" data-modal-title="Full Publication · Everything is TB (2026 Compendium)" data-modal-desc="Open-access full text compendium containing 14 peer-reviewed studies and country implementation evaluations.">View Full Paper ↗</a>
           </div>
         </div>
       </div>
 
-      <div class="reveal">
+      <div class="reveal" id="publications-list">
         <!-- Paper 1 -->
-        <div class="res-row">
+        <div class="res-row" data-pub-cat="peer-reviewed" data-date="2026-10" data-downloads="1420" data-topic="Digital Adherence">
           <div class="file-ico">PDF</div>
           <div>
             <div class="meta"><span class="tag">Peer-Reviewed</span><span class="tag">Lancet ID</span></div>
-            <h4>Cost-effectiveness of Digital Adherence Technologies in Drug-Resistant Tuberculosis: Multi-country Evidence</h4>
+            <h3>Cost-effectiveness of Digital Adherence Technologies in Drug-Resistant Tuberculosis: Multi-country Evidence</h3>
             <p class="small muted">Authors: KNCV Research Consortium · October 2026 · 1.8 MB · Open Access</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download PDF ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#pub-1" data-modal-title="Cost-effectiveness of Digital Adherence Technologies in DR-TB (PDF · 1.8 MB)" data-modal-desc="Published in The Lancet Infectious Diseases (October 2026) by the KNCV Research Consortium.">Download PDF ↓</a>
         </div>
 
         <!-- Paper 2 -->
-        <div class="res-row">
+        <div class="res-row" data-pub-cat="policy-brief" data-date="2026-09" data-downloads="980" data-topic="People-Centered Care">
           <div class="file-ico">PDF</div>
           <div>
             <div class="meta"><span class="tag">Policy Brief</span><span class="tag">People-Centered</span></div>
-            <h4>Operationalizing People-Centered TB Care: From Policy to Clinic Benchmarks</h4>
+            <h3>Operationalizing People-Centered TB Care: From Policy to Clinic Benchmarks</h3>
             <p class="small muted">KNCV Tuberculosis Foundation · September 2026 · 950 KB</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download PDF ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#pub-2" data-modal-title="Operationalizing People-Centered TB Care (PDF · 950 KB)" data-modal-desc="KNCV TB Plus Policy Brief (September 2026) outlining clinic-level benchmarks and quality indicators.">Download PDF ↓</a>
         </div>
 
         <!-- Paper 3 -->
-        <div class="res-row">
+        <div class="res-row" data-pub-cat="guidelines" data-date="2026-08" data-downloads="1650" data-topic="DR-TB Management">
           <div class="file-ico">PDF</div>
           <div>
             <div class="meta"><span class="tag">Guidelines</span><span class="tag">Ascent Toolkit</span></div>
-            <h4>Standard Operating Procedures for Differentiated Care in DR-TB Management</h4>
+            <h3>Standard Operating Procedures for Differentiated Care in DR-TB Management</h3>
             <p class="small muted">Ascent DR-TB Project · August 2026 · 2.4 MB</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download PDF ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#pub-3" data-modal-title="SOPs for Differentiated Care in DR-TB Management (PDF · 2.4 MB)" data-modal-desc="Technical guidelines developed under the ASCENT DR-TB Project (August 2026).">Download PDF ↓</a>
         </div>
 
         <!-- Paper 4 -->
-        <div class="res-row">
+        <div class="res-row" data-pub-cat="report" data-date="2026-06" data-downloads="1120" data-topic="Global DAT Report">
           <div class="file-ico">PDF</div>
           <div>
             <div class="meta"><span class="tag">Report</span><span class="tag">Global DAT</span></div>
-            <h4>Global DAT Task Force Annual Report: Technology Adoption Trends 2025–2026</h4>
+            <h3>Global DAT Task Force Annual Report: Technology Adoption Trends 2025-2026</h3>
             <p class="small muted">Global DAT Task Force · June 2026 · 3.6 MB</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download PDF ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#pub-4" data-modal-title="Global DAT Task Force Annual Report 2025-2026 (PDF · 3.6 MB)" data-modal-desc="Annual synthesis of global digital adherence technology adoption across 28 high-burden countries.">Download PDF ↓</a>
         </div>
 
         <!-- Paper 5 -->
-        <div class="res-row">
+        <div class="res-row" data-pub-cat="peer-reviewed" data-date="2026-05" data-downloads="890" data-topic="Diagnostics">
           <div class="file-ico">PDF</div>
           <div>
             <div class="meta"><span class="tag">Peer-Reviewed</span><span class="tag">IJTLD</span></div>
-            <h4>Decentralized Diagnostics for Drug-Resistant Tuberculosis: Evaluating Specimen Referral Networks</h4>
+            <h3>Decentralized Diagnostics for Drug-Resistant Tuberculosis: Evaluating Specimen Referral Networks</h3>
             <p class="small muted">Authors: KNCV Diagnostics Team · May 2026 · 2.1 MB · Open Access</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download PDF ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#pub-5" data-modal-title="Decentralized Diagnostics for DR-TB (PDF · 2.1 MB)" data-modal-desc="Published in the International Journal of Tuberculosis and Lung Disease (May 2026) by the KNCV Diagnostics Team.">Download PDF ↓</a>
         </div>
       </div>
 
-      <nav class="pagination reveal" aria-label="Pagination" style="margin-top:40px"><a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">›</a></nav>
+      <nav class="pagination reveal" aria-label="Pagination" style="margin-top:40px"><a href="#publications-list" aria-label="Previous page">‹</a><a class="active" href="#publications-list" aria-current="page">1</a><a href="#publications-list">2</a><a href="#publications-list">3</a><a href="#publications-list">4</a><a href="#publications-list" aria-label="Next page">›</a></nav>
     </div>
   </section>
 
   <!-- BACK TO RESOURCES -->
-  <section class="annot" data-note="03 · Navigation back to Resources Hub">
+  <section class="section-sand annot" data-note="03 · Navigation back to Resources Hub" style="padding:56px 0">
     <div class="container center">
       <a class="btn btn-secondary" href="resources.html">← Back to Resources &amp; Hubs</a>
     </div>

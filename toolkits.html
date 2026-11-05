@@ -4,38 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Toolkits · KNCV Knowledge Exchange</title>
-<meta name="description" content="Field-tested clinical, operational, and diagnostic toolkits developed by KNCV Tuberculosis Foundation — including PCF, Global DAT, Stool-based Testing, and TB Stigma Reduction.">
+<meta name="description" content="Field-tested clinical, operational, and diagnostic toolkits developed by KNCV Tuberculosis Foundation, including PCF, Global DAT, Stool-based Testing, and TB Stigma Reduction.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="toolkits">
-<main>
+<body data-page="toolkits" class="hide-notes">
+<main id="main-content" tabindex="-1">
   <!-- 1. PAGE HERO -->
   <section class="page-hero annot" data-note="01 · Toolkits overview & breadcrumb">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / <a href="resources.html">Resources</a> / Toolkits</nav>
-      <span class="eyebrow">Implementation Toolkits</span>
       <h1>Clinical &amp; Operational Toolkits</h1>
-      <p class="lead" style="margin-top:14px">Evidence-based toolkits, laboratory protocols, and standard operating procedures developed by KNCV Tuberculosis Foundation to empower frontline healthcare providers, researchers, and national TB programs worldwide.</p>
+      <p class="lead" style="margin-top:16px">Evidence-based toolkits, laboratory protocols, and standard operating procedures developed by KNCV TB Plus to empower frontline healthcare providers, researchers, and national TB programmes worldwide.</p>
     </div>
   </section>
 
   <!-- 2. TOOLKITS SHOWCASE (4 CORE ITEMS) -->
-  <section class="section-white" style="padding:48px 0 88px">
+  <section class="section-white annot" data-note="02 · 2x2 Core Implementation Toolkits Grid" style="padding:48px 0 64px">
     <div class="container">
-      
-      <div class="editorial-header reveal">
-        <div class="editorial-header-text">
-          <span class="editorial-eyebrow">FIELD-TESTED RESOURCES</span>
-          <h2 class="editorial-heading">Core Implementation Toolkits</h2>
-          <p class="editorial-lead">Practical, open-access tools, clinical algorithms, and deployment roadmaps designed for immediate public health application.</p>
-        </div>
-      </div>
-
-      <!-- 2x2 Clean User-Friendly Grid -->
+      <h2 class="sr-only">Core Implementation Toolkits</h2>
       <div class="toolkits-grid">
 
         <!-- ITEM 1: PCF -->
-        <a class="editorial-card reveal" href="#pcf-toolkit" id="pcf" aria-label="PCF - People-Centred Framework">
+        <a class="editorial-card reveal" href="#pcf-toolkit" id="pcf">
           <div class="card-media">
             <img src="assets/img/hub-people-centred.jpg" alt="Healthcare specialists reviewing People-Centred Framework" loading="lazy" style="object-position: center 20%;">
           </div>
@@ -43,10 +33,10 @@
             <div class="card-header-group">
               <span class="card-category">Patient Care Framework</span>
               <div class="card-title-wrap">
-                <h3 class="card-title">PCF</h3>
+                <h3 class="card-title">PCF (People-Centred Framework)</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
-              <p class="card-desc">Comprehensive operational toolkit to systematically map patient pathways, eliminate barriers to diagnosis, address care delays, and implement patient-first TB programming.</p>
+              <p class="card-desc">Comprehensive operational toolkit to systematically map patient pathways, eliminate barriers to diagnosis, address care delays, and implement people-first TB programming.</p>
             </div>
             <div class="card-footer-editorial">
               <span class="card-action-text">Explore toolkit</span>
@@ -56,7 +46,7 @@
         </a>
 
         <!-- ITEM 2: Global Digital Adherence Tool -->
-        <a class="editorial-card reveal" href="#dat-toolkit" id="dat" aria-label="Global Digital Adherence Tool">
+        <a class="editorial-card reveal" href="#dat-toolkit" id="dat">
           <div class="card-media">
             <img src="assets/img/hub-dat-learning.jpg" alt="Digital adherence clinician demonstrating smart medication pillbox and mobile tracking in clinic" loading="lazy" style="object-position: center 15%;">
           </div>
@@ -67,7 +57,7 @@
                 <h3 class="card-title">Global Digital Adherence Tool</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
-              <p class="card-desc">International implementation framework for digital adherence technologies (DAT), supporting national programs in rolling out smart pillboxes, Video Observed Therapy, and adherence platforms.</p>
+              <p class="card-desc">International implementation framework for digital adherence technologies (DAT), supporting national programmes in rolling out smart pillboxes, Video Observed Therapy, and adherence platforms.</p>
             </div>
             <div class="card-footer-editorial">
               <span class="card-action-text">Explore toolkit</span>
@@ -77,18 +67,18 @@
         </a>
 
         <!-- ITEM 3: Stool-based Testing for TB -->
-        <a class="editorial-card reveal" href="#stool-testing-toolkit" id="stool-testing" aria-label="Stool-based Testing for TB">
+        <a class="editorial-card reveal" href="#stool-testing-toolkit" id="stool-testing">
           <div class="card-media">
-            <img src="assets/img/hub-stool-testing.jpg" alt="Laboratory scientist performing molecular diagnostic testing for pediatric tuberculosis" loading="lazy">
+            <img src="assets/img/hub-stool-testing.jpg" alt="Laboratory scientist performing molecular diagnostic testing for pediatric tuberculosis" loading="lazy" style="object-position: center 20%;">
           </div>
           <div class="card-body-editorial">
             <div class="card-header-group">
-              <span class="card-category cat-toolkit">Non-Invasive Diagnostics</span>
+              <span class="card-category">Non-Invasive Diagnostics</span>
               <div class="card-title-wrap">
                 <h3 class="card-title">Stool-based Testing for TB</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
-              <p class="card-desc">Standard operating procedures and clinical guidance for stool specimen molecular testing with GeneXpert Ultra to diagnose tuberculosis in children and patients unable to produce sputum.</p>
+              <p class="card-desc">Standard operating procedures and clinical guidance for Simple One-Step (SOS) stool specimen molecular testing with GeneXpert Ultra to diagnose tuberculosis in children.</p>
             </div>
             <div class="card-footer-editorial">
               <span class="card-action-text">Explore toolkit</span>
@@ -98,9 +88,9 @@
         </a>
 
         <!-- ITEM 4: Stigma Toolkit -->
-        <a class="editorial-card reveal" href="#stigma-toolkit" id="stigma" aria-label="Stigma Toolkit">
+        <a class="editorial-card reveal" href="#stigma-toolkit" id="stigma">
           <div class="card-media">
-            <img src="assets/img/hub-stigma-toolkit.jpg" alt="Compassionate healthcare counselor reassuring patient and family with stigma reduction guidance booklet" loading="lazy">
+            <img src="assets/img/hub-stigma-toolkit.jpg" alt="Compassionate healthcare counselor reassuring patient and family with stigma reduction guidance booklet" loading="lazy" style="object-position: center 20%;">
           </div>
           <div class="card-body-editorial">
             <div class="card-header-group">
@@ -109,7 +99,7 @@
                 <h3 class="card-title">Stigma Toolkit</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
-              <p class="card-desc">Actionable toolkit providing validated measurement scales and intervention modules to identify, monitor, and eliminate tuberculosis stigma and discrimination in healthcare facilities.</p>
+              <p class="card-desc">Actionable toolkit providing validated measurement scales and intervention modules to identify, monitor, and eliminate tuberculosis stigma and discrimination in communities and facilities.</p>
             </div>
             <div class="card-footer-editorial">
               <span class="card-action-text">Explore toolkit</span>
@@ -122,17 +112,130 @@
     </div>
   </section>
 
-  <!-- 3. CAN'T FIND WHAT YOU NEED CTA -->
-  <section class="section-white" style="padding:64px 0 88px">
+  <!-- 3. DETAILED TOOLKIT MODULES & SOPs (Open 2-Column Specification Layouts) -->
+  <section class="section-sand annot" data-note="03 · Toolkit Modules, SOPs & Downloads">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Operational Modules &amp; SOPs</span>
+          <h2>Toolkit Specifications &amp; Downloads</h2>
+          <p>Each KNCV TB Plus toolkit includes implementation guides, training slide decks, and field-ready data collection templates.</p>
+        </div>
+      </div>
+
+      <!-- Detail 1: PCF -->
+      <article class="toolkit-detail-card reveal" id="pcf-toolkit">
+        <div>
+          <span class="eyebrow">Toolkit 01 · Patient Care Framework</span>
+          <h3>PCF (People-Centred Framework) Knowledge Hub</h3>
+          <div class="meta" style="margin-top:12px">
+            <span class="tag solid">Updated 2026</span>
+            <span class="tag">WHO Co-Design</span>
+          </div>
+          <div class="meta" style="margin-top:22px">
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#download-pcf-pack" data-modal-title="PCF Implementation Package (ZIP · 6.4 MB)" data-modal-desc="Includes the full People-Centred Framework Operational Manual, Excel PPA Data Consolidation Workbook, and Facilitator Slide Deck.">Download Full Toolkit (ZIP) ↓</a>
+            <a class="btn btn-secondary btn-sm" href="courses.html">Related Course →</a>
+          </div>
+        </div>
+        <div>
+          <p style="color:var(--ink-2);line-height:1.65;margin-bottom:20px">Developed in collaboration with WHO and national TB programmes, the People-Centred Framework aligns national strategic planning with the continuum of patient care, from community awareness and care-seeking to diagnostic confirmation and treatment completion.</p>
+          <ul class="checklist">
+            <li>Patient Pathway Analysis (PPA) &amp; Cascade-of-Care Diagnostic Tool</li>
+            <li>Root-Cause Barrier Assessment for Missing Persons with TB (FTMP)</li>
+            <li>National Strategic Plan (NSP) Prioritization Matrix &amp; Costing Templates</li>
+            <li>District-Level Quarterly Programme Review Facilitation Guide</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Detail 2: Global DAT -->
+      <article class="toolkit-detail-card reveal" id="dat-toolkit">
+        <div>
+          <span class="eyebrow">Toolkit 02 · Digital Health &amp; Adherence</span>
+          <h3>Global Digital Adherence Tool (DAT) Learning Hub</h3>
+          <div class="meta" style="margin-top:12px">
+            <span class="tag solid">ASCENT / Global DAT</span>
+            <span class="tag">DHIS2 Ready</span>
+          </div>
+          <div class="meta" style="margin-top:22px">
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#download-dat-pack" data-modal-title="Global DAT Implementation Toolkit (ZIP · 5.2 MB)" data-modal-desc="Includes the ASCENT Digital Adherence Operational Guide, Smart Pillbox Clinician Desk Reference, and DHIS2 Integration Blueprint.">Download Full Toolkit (ZIP) ↓</a>
+            <a class="btn btn-secondary btn-sm" href="courses.html">Related Course →</a>
+          </div>
+        </div>
+        <div>
+          <p style="color:var(--ink-2);line-height:1.65;margin-bottom:20px">Synthesizing implementation evidence from the ASCENT project across five countries, this toolkit guides Ministries of Health through selecting, procuring, and integrating smart medication boxes (evriMED), 99DOTS labels, and Video-Supported Treatment (VST).</p>
+          <ul class="checklist">
+            <li>Country Readiness &amp; Digital Infrastructure Assessment Checklist</li>
+            <li>Differentiated Care Clinical Algorithm for Adherence Escalation</li>
+            <li>DHIS2 &amp; Everwell Hub Interoperability Technical Specification</li>
+            <li>Healthcare Worker &amp; Patient Onboarding Job Aids (EN / FR / ES)</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Detail 3: Stool-based Testing -->
+      <article class="toolkit-detail-card reveal" id="stool-testing-toolkit">
+        <div>
+          <span class="eyebrow">Toolkit 03 · Non-Invasive Diagnostics</span>
+          <h3>Stool-based Testing for TB (Simple One-Step Method)</h3>
+          <div class="meta" style="margin-top:12px">
+            <span class="tag solid">WHO-Endorsed SOS Method</span>
+            <span class="tag">Paediatric TB</span>
+          </div>
+          <div class="meta" style="margin-top:22px">
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#download-stool-pack" data-modal-title="SOS Stool-based Testing Toolkit (ZIP · 4.8 MB)" data-modal-desc="Includes the Laboratory SOP, Caregiver Visual Collection Poster, and Paediatric Clinician Diagnostic Flowchart.">Download Full Toolkit (ZIP) ↓</a>
+            <a class="btn btn-secondary btn-sm" href="courses.html">Related Course →</a>
+          </div>
+        </div>
+        <div>
+          <p style="color:var(--ink-2);line-height:1.65;margin-bottom:20px">Pioneered by KNCV TB Plus laboratory specialists, the Simple One-Step (SOS) stool processing method enables rapid molecular diagnosis of paediatric TB using standard Xpert MTB/RIF Ultra cartridges without requiring invasive gastric aspiration or complex laboratory equipment.</p>
+          <ul class="checklist">
+            <li>Laboratory Bench-Top SOP: Simple One-Step (SOS) Stool Processing</li>
+            <li>Paediatric Clinical Algorithm for Non-Invasive Specimen Collection</li>
+            <li>Caregiver Illustrated Instruction Leaflet for Stool Sample Collection</li>
+            <li>External Quality Assessment (EQA) &amp; Biosafety Checklist</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Detail 4: Stigma Toolkit -->
+      <article class="toolkit-detail-card reveal" id="stigma-toolkit">
+        <div>
+          <span class="eyebrow">Toolkit 04 · Human Rights &amp; Community</span>
+          <h3>TB Stigma Measurement &amp; Reduction Toolkit</h3>
+          <div class="meta" style="margin-top:12px">
+            <span class="tag solid">Validated Scales</span>
+            <span class="tag">Community-Led</span>
+          </div>
+          <div class="meta" style="margin-top:22px">
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#download-stigma-pack" data-modal-title="TB Stigma Reduction Toolkit (ZIP · 3.9 MB)" data-modal-desc="Includes the Stigma Assessment Survey Instruments, Health Worker Sensitization Curriculum, and Community Peer Champion Manual.">Download Full Toolkit (ZIP) ↓</a>
+            <a class="btn btn-secondary btn-sm" href="courses.html">Related Course →</a>
+          </div>
+        </div>
+        <div>
+          <p style="color:var(--ink-2);line-height:1.65;margin-bottom:20px">Addresses self-stigma, secondary stigma among family members, and institutional stigma in healthcare facilities through validated survey instruments and participatory community intervention modules.</p>
+          <ul class="checklist">
+            <li>Validated Van Rie TB Stigma Measurement Scales &amp; Scoring Guide</li>
+            <li>Health Worker Sensitization &amp; Respectful Care Workshop Curriculum</li>
+            <li>Peer Champion Psychosocial Counselling Flipchart &amp; Field Guide</li>
+            <li>Community-Led Monitoring (CLM) Stigma Scorecard</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. TECHNICAL SUPPORT CTA -->
+  <section class="section-white" style="padding:64px 0 92px">
     <div class="container">
       <div class="cta-band reveal">
         <div class="cta-band-content">
           <span class="cta-accent-bar"></span>
-          <h2>Can’t find what you need?</h2>
-          <p>Tell us what you’d like to learn or ask about tailored training for your organisation.</p>
+          <h2>Need implementation support?</h2>
+          <p>Reach out to our global technical consultants for tailored implementation guidance, SOP adaptation, or country programme support.</p>
         </div>
         <div class="cta-band-actions">
-          <a class="btn btn-primary" id="toolkits-request-course" href="contact.html">Request a course →</a>
+          <a class="btn btn-primary" id="toolkits-request-course" href="contact.html">Request technical support →</a>
         </div>
       </div>
     </div>

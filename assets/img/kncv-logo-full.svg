@@ -1,18 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" fill="none">
-  <defs>
-    <linearGradient id="kncv-full-grad" x1="10" y1="10" x2="70" y2="70" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2563EB" />
-      <stop offset="100%" stop-color="#1D4ED8" />
-    </linearGradient>
-  </defs>
-  <!-- Emblem Badge -->
-  <rect x="10" y="10" width="60" height="60" rx="16" fill="url(#kncv-full-grad)" />
-  <!-- International TB Crusade Double Cross -->
-  <path d="M40 20V60" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
-  <path d="M30 32H50" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
-  <path d="M24 44H56" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
-  
-  <!-- Wordmark -->
-  <text x="86" y="44" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" fill="#0F172A" letter-spacing="-0.03em">KNCV</text>
-  <text x="88" y="62" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="700" font-size="11.5" fill="#475569" letter-spacing="0.08em">KNOWLEDGE EXCHANGE</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80" fill="none" role="img" aria-label="KNCV TB Plus Knowledge Exchange">
+  <!-- Official KNCV TB Plus Straight-Edged Emblem (#D91033 Red, #1C1D1B Black, #FFFFFF White) -->
+  <rect x="8" y="10" width="60" height="60" fill="#D91033" />
+  <rect x="8" y="64" width="60" height="6" fill="#1C1D1B" />
+  <!-- International TB Double Cross -->
+  <path d="M38 18V56" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" />
+  <path d="M26 30H50" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" />
+  <path d="M22 43H54" stroke="#FFFFFF" stroke-width="5" stroke-linecap="square" />
+  <!-- Wordmark (Syntax / Calibri Typography) -->
+  <text x="84" y="42" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="26" fill="#1C1D1B" letter-spacing="0.02em">KNCV TB PLUS</text>
+  <text x="84" y="60" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="11.5" fill="#D91033" letter-spacing="0.08em">KNOWLEDGE EXCHANGE</text>
 </svg>

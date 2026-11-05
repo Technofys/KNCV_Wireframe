@@ -2,86 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About · KNCV Knowledge Exchange</title>
-<meta name="description" content="About KNCV and the Knowledge Exchange – mission, vision, knowledge-sharing approach, faculty and partners.">
-<link rel="stylesheet" href="assets/wireframe.css?v=20261029_marquee">
-<style>
-/* Continuous Infinite Partner Marquee */
-.partners-marquee-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding: 14px 0 20px;
-  mask-image: linear-gradient(to right, transparent 0%, #000000 7%, #000000 93%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000000 7%, #000000 93%, transparent 100%);
-}
-.partners-marquee-track {
-  display: flex !important;
-  width: max-content !important;
-}
-.partners-marquee-group {
-  display: flex !important;
-  gap: 22px !important;
-  padding-right: 22px !important;
-  flex-shrink: 0 !important;
-  animation: marqueeContinuous 26s linear infinite !important;
-  will-change: transform;
-}
-.partners-marquee-wrap:hover .partners-marquee-group {
-  animation-play-state: paused !important;
-}
-@keyframes marqueeContinuous {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
-}
-.partners-marquee-group .partner-card {
-  width: 204px !important;
-  min-width: 204px !important;
-  max-width: 204px !important;
-  flex-shrink: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-}
-</style>
+<title>About · KNCV TB Plus Knowledge Exchange</title>
+<meta name="description" content="About KNCV TB Plus and the Knowledge Exchange: mission, vision, tagline, people-first approach, faculty and partners.">
+<link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="about">
-<main>
-  <!-- 1. PAGE HERO / ABOUT -->
-  <section class="page-hero annot" data-note="01 · About KNCV & the Knowledge Exchange">
+<body data-page="about" class="hide-notes">
+<main id="main-content" tabindex="-1">
+  <!-- 1. PAGE HERO / ABOUT (Page 2 of Brand Guide: Who we are) -->
+  <section class="page-hero annot" data-note="01 · About KNCV TB Plus & the Knowledge Exchange">
     <div class="container split">
       <div>
         <nav class="breadcrumb"><a href="home.html">Home</a> / About</nav>
-        <span class="eyebrow">About us</span>
         <h1>Sharing knowledge to end tuberculosis</h1>
-        <p class="lead" style="margin-top:18px">Introductory paragraph about KNCV Tuberculosis Foundation and how the Knowledge Exchange brings decades of expertise to professionals worldwide.</p>
+        <p class="lead" style="margin-top:18px">KNCV TB Plus (KNCV) is a global non-profit organisation. Since its establishment in 1903, KNCV’s mission has been to save lives and end human suffering through the promotion of health and the global elimination of tuberculosis (TB) and other related diseases.</p>
         <div class="hero-stats">
-          <div class="hero-stat-item"><b class="stat-number" data-target="1903" data-start="1880" data-suffix="" style="color:#000000 !important">1903</b><span>Founded</span></div>
-          <div class="hero-stat-item"><b class="stat-number" data-target="25" data-suffix="+" style="color:#000000 !important">25+</b><span>Countries</span></div>
-          <div class="hero-stat-item"><b class="stat-number" data-target="120" data-suffix="" style="color:#000000 !important">120</b><span>Experts</span></div>
+          <div class="hero-stat-item"><b>1903</b><span>Established</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="515" data-suffix="">515</b><span>Staff Worldwide</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="97.2" data-decimals="1" data-suffix="%">97.2%</b><span>Mission-Related Goals</span></div>
         </div>
       </div>
-      <div class="reveal" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1.5px solid var(--line);min-height:360px">
-        <img src="assets/img/about-hero-leadership.jpg" alt="KNCV International Leadership and Global Health Experts" style="width:100%;height:100%;min-height:360px;object-fit:cover;display:block">
+      <div class="reveal framed-photo">
+        <img src="assets/img/course-3-community.jpg" alt="KNCV healthcare professionals and community clinicians at a Community Health Center">
       </div>
     </div>
   </section>
 
-  <!-- 2. MISSION VISION OBJECTIVES -->
-  <section class="annot" data-note="02 · Mission, vision & objectives">
+  <!-- 2. MISSION, VISION, APPROACH & OBJECTIVES (Exact Page 2 Brand Guide Statements) -->
+  <section class="section-white annot" data-note="02 · Official Mission, Vision, Approach & Objectives">
     <div class="container">
-      <div class="grid g2 reveal" style="margin-bottom:24px">
-        <div class="feature" style="padding:36px"><span class="eyebrow">Our mission</span><h2 style="font-size:24px">Mission statement placeholder in one or two strong lines.</h2><div class="line w90"></div><div class="line w60"></div></div>
-        <div class="feature" style="padding:36px"><span class="eyebrow">Our vision</span><h2 style="font-size:24px">Vision statement placeholder in one or two strong lines.</h2><div class="line w90"></div><div class="line w60"></div></div>
+      <div class="grid g2 reveal" style="gap:36px;margin-bottom:48px">
+        <div class="vision-mission-card">
+          <h2 class="eyebrow">Our vision</h2>
+          <p class="statement-text">Healthy people in a world free of TB and other related diseases.</p>
+          <p class="statement-desc">We emphasize the positive, optimistic message that tuberculosis is a curable disease, giving our work a human face while remaining sincere, resilient, and grounded in reality.</p>
+        </div>
+        <div class="vision-mission-card">
+          <h2 class="eyebrow">Our mission</h2>
+          <p class="statement-text">To save lives and end human suffering through the promotion of health and the global elimination of tuberculosis and other related diseases.</p>
+          <p class="statement-desc"><strong>Our tagline:</strong> KNCV: Together we can end TB.</p>
+        </div>
       </div>
-      <h3 class="reveal" style="margin:40px 0 18px">Objectives</h3>
-      <div class="grid g4">
-        <div class="feature reveal"><div class="ico">01</div><h4>Build capacity</h4><p>Strengthen skills of health workers.</p></div>
-        <div class="feature reveal"><div class="ico">02</div><h4>Share evidence</h4><p>Translate research into practice.</p></div>
-        <div class="feature reveal"><div class="ico">03</div><h4>Connect people</h4><p>Foster a global learning network.</p></div>
-        <div class="feature reveal"><div class="ico">04</div><h4>Open access</h4><p>Make learning accessible to all.</p></div>
+
+      <div class="editorial-callout reveal" style="margin-bottom:56px">
+        <span class="eyebrow">Our approach</span>
+        <h3 style="font-size:22px;margin-bottom:10px">Putting people first through innovative, effective, and sustainable strategies</h3>
+        <p style="font-size:16.5px;color:var(--kncv-black);line-height:1.65">We always put people first through innovative, effective, and sustainable strategies that demonstrate positive impact on people’s health and accelerate the global decline of TB and other related diseases. In our strategy we aim for system readiness to scale-up through effective interventions for prevention, diagnosis and treatment.</p>
+      </div>
+
+      <h3 class="reveal" style="margin:0 0 24px;text-transform:uppercase;letter-spacing:0.04em;font-size:15px;color:var(--ink-3)">Knowledge Exchange Objectives</h3>
+      <div class="grid g4 features-grid">
+        <div class="feature reveal"><div class="ico">01</div><h4>Build capacity</h4><p>Strengthen clinical and programmatic competencies of health workforces worldwide.</p></div>
+        <div class="feature reveal"><div class="ico">02</div><h4>Share evidence</h4><p>Translate scientific research and field-tested innovations into daily clinical practice.</p></div>
+        <div class="feature reveal"><div class="ico">03</div><h4>Connect people</h4><p>Foster an active global learning network across National TB Programmes and civil society.</p></div>
+        <div class="feature reveal"><div class="ico">04</div><h4>Open access</h4><p>Ensure training, toolkits, and standard operating procedures remain accessible to all.</p></div>
       </div>
     </div>
   </section>
@@ -96,68 +69,69 @@
       </div>
 
       <div class="synergy-visual reveal">
-        <svg class="synergy-svg" viewBox="0 0 720 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="synergy-svg" role="img" aria-labelledby="synergy-svg-title synergy-svg-desc" viewBox="0 0 720 580" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <title id="synergy-svg-title">The KNCV Knowledge Institute Synergy Diagram</title>
+          <desc id="synergy-svg-desc">Three intersecting circles representing Innovation (Digital Health and Diagnostics), Collaboration (Global Alliances and NTPs), and Quality Assurance (Evidence Standards and Rigor).</desc>
           <defs>
-            <!-- Innovation Gradient (Yellow / Amber) -->
+            <!-- Innovation Gradient (KNCV Warm Amber / Ochre) -->
             <linearGradient id="grad-innovation" x1="100" y1="60" x2="420" y2="380" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.92" />
               <stop offset="60%" stop-color="#FBBF24" stop-opacity="0.84" />
-              <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.76" />
+              <stop offset="100%" stop-color="#C47900" stop-opacity="0.78" />
             </linearGradient>
 
-            <!-- Collaboration Gradient (Coral / Rose Red) -->
+            <!-- Collaboration Gradient (KNCV Red #E4032E) -->
             <linearGradient id="grad-collaboration" x1="620" y1="60" x2="300" y2="380" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#FECDD3" stop-opacity="0.92" />
               <stop offset="60%" stop-color="#FB7185" stop-opacity="0.84" />
-              <stop offset="100%" stop-color="#E11D48" stop-opacity="0.76" />
+              <stop offset="100%" stop-color="#E4032E" stop-opacity="0.78" />
             </linearGradient>
 
-            <!-- Quality Assurance Gradient (Sky / Azure Blue) -->
+            <!-- Quality Assurance Gradient (KNCV Teal / Blue) -->
             <linearGradient id="grad-quality" x1="360" y1="200" x2="360" y2="550" gradientUnits="userSpaceOnUse">
               <stop offset="0%" stop-color="#BAE6FD" stop-opacity="0.92" />
               <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.84" />
-              <stop offset="100%" stop-color="#0284C7" stop-opacity="0.76" />
+              <stop offset="100%" stop-color="#005F6B" stop-opacity="0.78" />
             </linearGradient>
-
           </defs>
 
           <!-- BACKGROUND ORBIT ACCENTS -->
-          <circle cx="360" cy="285" r="245" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.8" />
-          <circle cx="360" cy="285" r="275" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="2 8" opacity="0.5" />
+          <circle cx="360" cy="285" r="245" stroke="#D2CFC7" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.8" />
+          <circle cx="360" cy="285" r="275" stroke="#E4E1DA" stroke-width="1" stroke-dasharray="2 8" opacity="0.6" />
 
           <!-- VENN CIRCLE 1: INNOVATION (TOP-LEFT) -->
-          <g class="venn-group" data-target="p-innovation" id="venn-innovation">
-            <circle class="venn-circle" cx="275" cy="230" r="175" fill="url(#grad-innovation)" stroke="#F59E0B" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+          <g class="venn-group" data-target="p-innovation" id="venn-innovation" aria-label="Pillar 1: Innovation - Digital Health and Diagnostics">
+            <circle class="venn-circle" cx="275" cy="230" r="175" fill="url(#grad-innovation)" stroke="#C47900" stroke-width="2" stroke-opacity="0.45" style="mix-blend-mode: multiply;" />
             <!-- Icon & Label Group -->
             <g transform="translate(145, 155)" class="venn-label">
               <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(180,83,9,0.22))" />
-              <path d="M20 10C15.58 10 12 13.58 12 18C12 20.73 13.37 23.13 15.48 24.57C15.82 24.8 16.03 25.19 16.03 25.6V26.5C16.03 27.05 16.48 27.5 17.03 27.5H22.97C23.52 27.5 23.97 27.05 23.97 26.5V25.6C23.97 25.19 24.18 24.8 24.52 24.57C26.63 23.13 28 20.73 28 18C28 13.58 24.42 10 20 10ZM17.5 29H22.5V29.5C22.5 29.78 22.28 30 22 30H18C17.72 30 17.5 29.78 17.5 29.5V29Z" fill="#D97706" />
-              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#78350F" letter-spacing="-0.02em">Innovation</text>
-              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#92400E" letter-spacing="0.01em">Digital Health &amp; Diagnostics</text>
+              <path d="M20 10C15.58 10 12 13.58 12 18C12 20.73 13.37 23.13 15.48 24.57C15.82 24.8 16.03 25.19 16.03 25.6V26.5C16.03 27.05 16.48 27.5 17.03 27.5H22.97C23.52 27.5 23.97 27.05 23.97 26.5V25.6C23.97 25.19 24.18 24.8 24.52 24.57C26.63 23.13 28 20.73 28 18C28 13.58 24.42 10 20 10ZM17.5 29H22.5V29.5C22.5 29.78 22.28 30 22 30H18C17.72 30 17.5 29.78 17.5 29.5V29Z" fill="#C47900" />
+              <text x="52" y="18" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="21" fill="#1C1D1B" letter-spacing="-0.01em">Innovation</text>
+              <text x="52" y="36" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="12.5" fill="#78350F" letter-spacing="0.01em">Digital Health &amp; Diagnostics</text>
             </g>
           </g>
 
           <!-- VENN CIRCLE 2: COLLABORATION (TOP-RIGHT) -->
-          <g class="venn-group" data-target="p-collaboration" id="venn-collaboration">
-            <circle class="venn-circle" cx="445" cy="230" r="175" fill="url(#grad-collaboration)" stroke="#E11D48" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+          <g class="venn-group" data-target="p-collaboration" id="venn-collaboration" aria-label="Pillar 2: Collaboration - Global Alliances and National TB Programmes">
+            <circle class="venn-circle" cx="445" cy="230" r="175" fill="url(#grad-collaboration)" stroke="#E4032E" stroke-width="2" stroke-opacity="0.45" style="mix-blend-mode: multiply;" />
             <!-- Icon & Label Group -->
             <g transform="translate(420, 155)" class="venn-label">
-              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(190,18,60,0.22))" />
-              <path d="M20 11C16.69 11 14 13.69 14 17C14 20.31 16.69 23 20 23C23.31 23 26 20.31 26 17C26 13.69 23.31 11 20 11ZM12 25.5C9.8 25.5 8 27.3 8 29.5V30H20V28.2L18.4 26.6C16.8 25.8 14.5 25.5 12 25.5ZM28 25.5C25.5 25.5 23.2 25.8 21.6 26.6L20 28.2V30H32V29.5C32 27.3 30.2 25.5 28 25.5Z" fill="#E11D48" />
-              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#881337" letter-spacing="-0.02em">Collaboration</text>
-              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#9F1239" letter-spacing="0.01em">Global Alliances &amp; NTPs</text>
+              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(228,3,46,0.22))" />
+              <path d="M20 11C16.69 11 14 13.69 14 17C14 20.31 16.69 23 20 23C23.31 23 26 20.31 26 17C26 13.69 23.31 11 20 11ZM12 25.5C9.8 25.5 8 27.3 8 29.5V30H20V28.2L18.4 26.6C16.8 25.8 14.5 25.5 12 25.5ZM28 25.5C25.5 25.5 23.2 25.8 21.6 26.6L20 28.2V30H32V29.5C32 27.3 30.2 25.5 28 25.5Z" fill="#E4032E" />
+              <text x="52" y="18" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="21" fill="#1C1D1B" letter-spacing="-0.01em">Collaboration</text>
+              <text x="52" y="36" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="12.5" fill="#881337" letter-spacing="0.01em">Global Alliances &amp; NTPs</text>
             </g>
           </g>
 
           <!-- VENN CIRCLE 3: QUALITY ASSURANCE (BOTTOM) -->
-          <g class="venn-group" data-target="p-quality" id="venn-quality">
-            <circle class="venn-circle" cx="360" cy="375" r="175" fill="url(#grad-quality)" stroke="#0284C7" stroke-width="2" stroke-opacity="0.4" style="mix-blend-mode: multiply;" />
+          <g class="venn-group" data-target="p-quality" id="venn-quality" aria-label="Pillar 3: Quality Assurance - Evidence Standards and Rigor">
+            <circle class="venn-circle" cx="360" cy="375" r="175" fill="url(#grad-quality)" stroke="#005F6B" stroke-width="2" stroke-opacity="0.45" style="mix-blend-mode: multiply;" />
             <!-- Icon & Label Group -->
             <g transform="translate(245, 435)" class="venn-label">
-              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(2,132,199,0.22))" />
-              <path d="M20 10L13 13V19.09C13 23.41 15.98 27.42 20 28.5C24.02 27.42 27 23.41 27 19.09V13L20 10ZM18.3 22.8L15.2 19.7L16.6 18.3L18.3 20L23.4 14.9L24.8 16.3L18.3 22.8Z" fill="#0284C7" />
-              <text x="52" y="18" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="21" fill="#0C4A6E" letter-spacing="-0.02em">Quality Assurance</text>
-              <text x="52" y="36" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="12" fill="#0369A1" letter-spacing="0.01em">Evidence Standards &amp; Rigor</text>
+              <circle cx="20" cy="20" r="22" fill="#FFFFFF" fill-opacity="0.96" filter="drop-shadow(0 2px 6px rgba(0,95,107,0.22))" />
+              <path d="M20 10L13 13V19.09C13 23.41 15.98 27.42 20 28.5C24.02 27.42 27 23.41 27 19.09V13L20 10ZM18.3 22.8L15.2 19.7L16.6 18.3L18.3 20L23.4 14.9L24.8 16.3L18.3 22.8Z" fill="#005F6B" />
+              <text x="52" y="18" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="21" fill="#1C1D1B" letter-spacing="-0.01em">Quality Assurance</text>
+              <text x="52" y="36" font-family="'Syntax', 'Syntax LT Std', 'Calibri', sans-serif" font-weight="700" font-size="12.5" fill="#005F6B" letter-spacing="0.01em">Evidence Standards &amp; Rigor</text>
             </g>
           </g>
         </svg>
@@ -165,9 +139,9 @@
 
       <!-- 3-PILLARS STRATEGIC BREAKDOWN GRID -->
       <div class="synergy-pillars reveal">
-        <div class="pillar-item p-innovation" data-circle="venn-innovation">
+        <div class="pillar-item p-innovation" data-circle="venn-innovation" id="p-innovation">
           <span class="pillar-badge">💡 Pillar 01</span>
-          <h4>Innovation</h4>
+          <h3>Innovation</h3>
           <p>Pioneering modern digital health, artificial intelligence for chest X-ray screening, and breakthrough point-of-care molecular diagnostic technologies.</p>
           <div class="pillar-tags">
             <span>AI Screening (CAD4TB)</span>
@@ -176,9 +150,9 @@
           </div>
         </div>
 
-        <div class="pillar-item p-collaboration" data-circle="venn-collaboration">
+        <div class="pillar-item p-collaboration" data-circle="venn-collaboration" id="p-collaboration">
           <span class="pillar-badge">🤝 Pillar 02</span>
-          <h4>Collaboration</h4>
+          <h3>Collaboration</h3>
           <p>Uniting National TB Programmes, WHO, international universities, frontline healthcare workers, and affected communities across 30+ countries.</p>
           <div class="pillar-tags">
             <span>Community of Practice</span>
@@ -187,9 +161,9 @@
           </div>
         </div>
 
-        <div class="pillar-item p-quality" data-circle="venn-quality">
+        <div class="pillar-item p-quality" data-circle="venn-quality" id="p-quality">
           <span class="pillar-badge">🛡️ Pillar 03</span>
-          <h4>Quality Assurance</h4>
+          <h3>Quality Assurance</h3>
           <p>Upholding clinical standards, ISO laboratory accreditation, evidence validation, and continuous clinical audit to deliver peer-reviewed excellence.</p>
           <div class="pillar-tags">
             <span>Standardized SOPs</span>
@@ -201,60 +175,121 @@
     </div>
   </section>
 
-  <!-- 4. KNOWLEDGE SHARING APPROACH -->
-  <section class="section-white annot" data-note="03 · Knowledge-sharing approach">
-    <div class="container">
-      <div class="center reveal" style="margin-bottom:56px">
-        <span class="eyebrow">How we work</span>
-        <h2>Our knowledge-sharing approach</h2>
-        <p class="lead">Short description of the learning methodology — from evidence to practice.</p>
-      </div>
-      <div class="steps reveal">
-        <div class="step"><h4>Capture</h4><p>Collect field experience and research evidence.</p></div>
-        <div class="step"><h4>Design</h4><p>Turn knowledge into practical learning content.</p></div>
-        <div class="step"><h4>Deliver</h4><p>Offer courses, resources and live sessions.</p></div>
-        <div class="step"><h4>Apply &amp; improve</h4><p>Learners apply skills; feedback improves content.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. FACULTY -->
-  <section id="faculty" class="annot" data-note="04 · Faculty & subject-matter experts">
+  <!-- 4. KNOWLEDGE SHARING APPROACH (Open 4-Column Horizontal Process Row) -->
+  <section class="section-white annot" data-note="04 · Knowledge-sharing approach">
     <div class="container">
       <div class="section-head reveal">
-        <div><span class="eyebrow">Faculty</span><h2>Faculty &amp; subject-matter experts</h2><p>Meet the experts who design and teach our courses.</p></div>
-        <div class="chips" style="margin:0"><button class="chip active">All</button><button class="chip">Clinical</button><button class="chip">Programme</button><button class="chip">Research</button></div>
+        <div>
+          <span class="eyebrow">How we work</span>
+          <h2>Our knowledge-sharing approach</h2>
+          <p>Programmatic, integrated, patient-centred, and continuous learning from field evidence to national scale-up.</p>
+        </div>
       </div>
-      <div class="grid g4">
-        <div class="team-card reveal"><img src="assets/img/faculty-1.jpg" alt="Dr. Full Name" style="width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.1)"><h4>Dr. Full Name</h4><p>Senior TB Consultant</p><div class="meta" style="justify-content:center;margin-top:12px"><span class="tag">Diagnosis</span></div></div>
-        <div class="team-card reveal"><img src="assets/img/faculty-2.jpg" alt="Dr. Full Name" style="width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.1)"><h4>Dr. Full Name</h4><p>Epidemiologist</p><div class="meta" style="justify-content:center;margin-top:12px"><span class="tag">Data</span></div></div>
-        <div class="team-card reveal"><img src="assets/img/faculty-3.jpg" alt="Full Name" style="width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.1)"><h4>Full Name</h4><p>Programme Advisor</p><div class="meta" style="justify-content:center;margin-top:12px"><span class="tag">Community</span></div></div>
-        <div class="team-card reveal"><img src="assets/img/faculty-4.jpg" alt="Dr. Full Name" style="width:84px;height:84px;border-radius:50%;object-fit:cover;margin:0 auto 12px;display:block;box-shadow:0 4px 12px rgba(0,0,0,0.1)"><h4>Dr. Full Name</h4><p>Clinical Specialist</p><div class="meta" style="justify-content:center;margin-top:12px"><span class="tag">DR-TB</span></div></div>
+      <div class="steps reveal">
+        <div class="step"><h3>Assess &amp; Capture</h3><p>Collect field experience, epidemiological data, and operational research evidence.</p></div>
+        <div class="step"><h3>Design</h3><p>Turn clinical evidence into practical toolkits, SOPs, and structured learning modules.</p></div>
+        <div class="step"><h3>Deliver</h3><p>Offer self-paced courses, facilitated cohorts, and live technical briefings.</p></div>
+        <div class="step"><h3>Scale &amp; Improve</h3><p>Health workers apply skills in clinics; continuous feedback strengthens national TB programmes.</p></div>
       </div>
-      <div class="center" style="margin-top:32px"><a class="btn btn-secondary" id="view-all-faculty" href="#">View all faculty</a></div>
     </div>
   </section>
 
-  <!-- 5. PARTNERS -->
-  <section id="partners" class="section-white annot" data-note="05 · Partners & collaborators">
+  <!-- 5. FACULTY (Unboxed 4:5 Editorial Portraits) -->
+  <section id="faculty" class="section-sand annot" data-note="05 · Faculty & subject-matter experts">
     <div class="container">
-      <div class="center reveal" style="margin-bottom:40px">
-        <span class="eyebrow">Partners</span>
-        <h2>Partners &amp; collaborators</h2>
-        <p class="lead">Organisations we work with to deliver learning and impact.</p>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Faculty</span>
+          <h2>Faculty &amp; subject-matter experts</h2>
+          <p>Meet the KNCV TB Plus clinical consultants, epidemiologists, and programme specialists who design and teach our courses.</p>
+        </div>
+        <div class="chips" id="faculty-chips" style="margin:0" role="group" aria-label="Filter faculty by specialty">
+          <button type="button" class="chip active" data-faculty-filter="all">All</button>
+          <button type="button" class="chip" data-faculty-filter="clinical">Clinical</button>
+          <button type="button" class="chip" data-faculty-filter="programme">Programme</button>
+          <button type="button" class="chip" data-faculty-filter="research">Research</button>
+        </div>
       </div>
-      <!-- Infinite Marquee Partner Showcase -->
-      <div class="partners-marquee-wrap reveal" style="position:relative;overflow:hidden;width:100%;padding:14px 0 20px">
-        <div class="partners-marquee-track" style="display:flex;width:max-content">
+      <div class="grid g4" id="faculty-grid">
+        <div class="team-card reveal" data-faculty-role="clinical research">
+          <img src="assets/img/faculty-1.jpg" alt="Dr. Carlos Rodriguez, Senior TB Consultant">
+          <h3>Dr. Carlos Rodriguez</h3>
+          <p>Senior TB Consultant</p>
+          <div class="meta" style="margin-top:12px"><span class="tag solid">Diagnosis</span><span class="tag">Triage</span></div>
+        </div>
+        <div class="team-card reveal" data-faculty-role="research programme">
+          <img src="assets/img/faculty-2.jpg" alt="Grace Mensah, Community &amp; Epidemiological Advisor">
+          <h3>Grace Mensah, MPH</h3>
+          <p>Epidemiologist &amp; Field Lead</p>
+          <div class="meta" style="margin-top:12px"><span class="tag">Data &amp; M&amp;E</span><span class="tag">FTMP</span></div>
+        </div>
+        <div class="team-card reveal" data-faculty-role="programme">
+          <img src="assets/img/faculty-3.jpg" alt="Dr. Samuel Okafor, Programme &amp; Clinical Advisor">
+          <h3>Dr. Samuel Okafor</h3>
+          <p>Senior Programme Advisor</p>
+          <div class="meta" style="margin-top:12px"><span class="tag">Community</span><span class="tag">Primary Care</span></div>
+        </div>
+        <div class="team-card reveal" data-faculty-role="clinical">
+          <img src="assets/img/faculty-4.jpg" alt="Dr. Elena Rostova, DR-TB Clinical Specialist">
+          <h3>Dr. Elena Rostova</h3>
+          <p>DR-TB Clinical Specialist</p>
+          <div class="meta" style="margin-top:12px"><span class="tag">DR-TB</span><span class="tag">Childhood TB</span></div>
+        </div>
+      </div>
+      <div style="margin-top:36px"><a class="btn btn-secondary" id="view-all-faculty" href="courses.html">Explore faculty-led courses →</a></div>
+    </div>
+  </section>
+
+  <!-- 6. PARTNERS (Co-branding rules Page 12: Equal optical size, Government logos precede) -->
+  <section id="partners" class="section-white annot" data-note="06 · Partners & collaborators">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Co-branding &amp; Alliances</span>
+          <h2>Partners &amp; collaborators</h2>
+          <p>Working alongside Ministries of Health, government agencies, and multilateral partners worldwide to end TB.</p>
+        </div>
+        <div class="partners-controls" style="margin:0">
+          <button type="button" class="btn btn-ghost btn-sm" id="marquee-toggle" aria-pressed="false">Pause scroll</button>
+        </div>
+      </div>
+      <div class="partners-marquee-wrap reveal" id="partners-marquee">
+        <div class="partners-marquee-track">
           <!-- Marquee Group 1 -->
-          <div class="partners-marquee-group" style="display:flex;gap:22px;padding-right:22px;flex-shrink:0">
-            <!-- 1. Stop TB Partnership -->
+          <div class="partners-marquee-group">
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#FFF1F2;color:#E11D48">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 7v10M7 12h10" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M4 10h16M12 3l9 7H3l9-7zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">Ministry of Foreign Affairs</b>
+                <span class="partner-tag">The Netherlands</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3L4 7v6c0 5 3.5 9.5 8 10.5 4.5-1 8-5.5 8-10.5V7l-8-4z"/><path d="M8 10h8M8 14h8"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">USAID</b>
+                <span class="partner-tag">Challenge TB Partner</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M9 10h6M10 14h4"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">World Health Organization</b>
+                <span class="partner-tag">Global TB Programme</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
               </div>
               <div class="partner-info">
                 <b class="partner-name">Stop TB Partnership</b>
@@ -262,14 +297,9 @@
               </div>
             </div>
 
-            <!-- 2. The Global Fund -->
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#F0F9FF;color:#0284C7">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M3.6 9h16.8M3.6 15h16.8" />
-                  <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8"/></svg>
               </div>
               <div class="partner-info">
                 <b class="partner-name">The Global Fund</b>
@@ -277,70 +307,52 @@
               </div>
             </div>
 
-            <!-- 3. USAID Global Health -->
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#EFF6FF;color:#1E40AF">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3L4 7v6c0 5 3.5 9.5 8 10.5 4.5-1 8-5.5 8-10.5V7l-8-4z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v16M8 8c-3 0-5 2-5 5s2 5 5 5h1M16 8c3 0 5 2 5 5s-2 5-5 5h-1"/></svg>
               </div>
               <div class="partner-info">
-                <b class="partner-name">USAID</b>
-                <span class="partner-tag">Global Health</span>
-              </div>
-            </div>
-
-            <!-- 4. The Union (IUATLD) -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#FFFBEB;color:#D97706">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 4v16M8 8c-3 0-5 2-5 5s2 5 5 5h1M16 8c3 0 5 2 5 5s-2 5-5 5h-1" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">The Union</b>
-                <span class="partner-tag">IUATLD Lung Health</span>
-              </div>
-            </div>
-
-            <!-- 5. Unitaid -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#ECFDF5;color:#059669">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">Unitaid</b>
-                <span class="partner-tag">Access &amp; Innovation</span>
-              </div>
-            </div>
-
-            <!-- 6. WHO Collaborating Center -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#EFF6FF;color:#2563EB">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 6v12M9 10h6M10 14h4" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">WHO Center</b>
-                <span class="partner-tag">Collaborating Body</span>
+                <b class="partner-name">The Union (IUATLD)</b>
+                <span class="partner-tag">Lung Health Conference</span>
               </div>
             </div>
           </div>
 
-          <!-- Marquee Group 2 (Identical duplicate for seamless continuous scroll) -->
-          <div class="partners-marquee-group" aria-hidden="true" style="display:flex;gap:22px;padding-right:22px;flex-shrink:0">
-            <!-- 1. Stop TB Partnership -->
+          <!-- Marquee Group 2 (Identical duplicate for continuous scroll) -->
+          <div class="partners-marquee-group" aria-hidden="true">
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#FFF1F2;color:#E11D48">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 7v10M7 12h10" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M4 10h16M12 3l9 7H3l9-7zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">Ministry of Foreign Affairs</b>
+                <span class="partner-tag">The Netherlands</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L4 7v6c0 5 3.5 9.5 8 10.5 4.5-1 8-5.5 8-10.5V7l-8-4z"/><path d="M8 10h8M8 14h8"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">USAID</b>
+                <span class="partner-tag">Challenge TB Partner</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M9 10h6M10 14h4"/></svg>
+              </div>
+              <div class="partner-info">
+                <b class="partner-name">World Health Organization</b>
+                <span class="partner-tag">Global TB Programme</span>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg>
               </div>
               <div class="partner-info">
                 <b class="partner-name">Stop TB Partnership</b>
@@ -348,14 +360,9 @@
               </div>
             </div>
 
-            <!-- 2. The Global Fund -->
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#F0F9FF;color:#0284C7">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M3.6 9h16.8M3.6 15h16.8" />
-                  <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8"/></svg>
               </div>
               <div class="partner-info">
                 <b class="partner-name">The Global Fund</b>
@@ -363,57 +370,13 @@
               </div>
             </div>
 
-            <!-- 3. USAID Global Health -->
             <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#EFF6FF;color:#1E40AF">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3L4 7v6c0 5 3.5 9.5 8 10.5 4.5-1 8-5.5 8-10.5V7l-8-4z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
+              <div class="partner-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16M8 8c-3 0-5 2-5 5s2 5 5 5h1M16 8c3 0 5 2 5 5s-2 5-5 5h-1"/></svg>
               </div>
               <div class="partner-info">
-                <b class="partner-name">USAID</b>
-                <span class="partner-tag">Global Health</span>
-              </div>
-            </div>
-
-            <!-- 4. The Union (IUATLD) -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#FFFBEB;color:#D97706">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 4v16M8 8c-3 0-5 2-5 5s2 5 5 5h1M16 8c3 0 5 2 5 5s-2 5-5 5h-1" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">The Union</b>
-                <span class="partner-tag">IUATLD Lung Health</span>
-              </div>
-            </div>
-
-            <!-- 5. Unitaid -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#ECFDF5;color:#059669">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">Unitaid</b>
-                <span class="partner-tag">Access &amp; Innovation</span>
-              </div>
-            </div>
-
-            <!-- 6. WHO Collaborating Center -->
-            <div class="partner-card">
-              <div class="partner-icon-wrap" style="background:#EFF6FF;color:#2563EB">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 6v12M9 10h6M10 14h4" />
-                </svg>
-              </div>
-              <div class="partner-info">
-                <b class="partner-name">WHO Center</b>
-                <span class="partner-tag">Collaborating Body</span>
+                <b class="partner-name">The Union (IUATLD)</b>
+                <span class="partner-tag">Lung Health Conference</span>
               </div>
             </div>
           </div>
@@ -422,14 +385,14 @@
     </div>
   </section>
 
-  <!-- 6. CTA -->
-  <section class="section-white annot" data-note="06 · CTA — Start Learning" style="padding:64px 0 88px">
+  <!-- 7. CTA -->
+  <section class="section-white annot" data-note="07 · CTA: Start Learning" style="padding:64px 0 92px">
     <div class="container">
       <div class="cta-band reveal">
         <div class="cta-band-content">
           <span class="cta-accent-bar"></span>
-          <h2>Start learning today</h2>
-          <p>Join thousands of professionals building skills with KNCV.</p>
+          <h2>Start learning with KNCV TB Plus today</h2>
+          <p>Join thousands of healthcare professionals building clinical and programmatic skills worldwide.</p>
         </div>
         <div class="cta-band-actions">
           <a class="btn btn-primary" id="cta-start-learning" href="courses.html">Start Learning →</a>
@@ -440,44 +403,5 @@
   </section>
 </main>
 <script src="assets/layout.js"></script>
-<script>
-  // Strategic Synergy Interactive Hover Linking
-  document.addEventListener('DOMContentLoaded', () => {
-    const pillars = document.querySelectorAll('.pillar-item');
-    const vennGroups = document.querySelectorAll('.venn-group');
-
-    pillars.forEach(pillar => {
-      const targetCircleId = pillar.getAttribute('data-circle');
-      const targetCircle = document.getElementById(targetCircleId);
-
-      pillar.addEventListener('mouseenter', () => {
-        pillar.classList.add('active');
-        if (targetCircle) {
-          const circleEl = targetCircle.querySelector('.venn-circle');
-          if (circleEl) circleEl.style.transform = 'scale(1.04)';
-        }
-      });
-      pillar.addEventListener('mouseleave', () => {
-        pillar.classList.remove('active');
-        if (targetCircle) {
-          const circleEl = targetCircle.querySelector('.venn-circle');
-          if (circleEl) circleEl.style.transform = '';
-        }
-      });
-    });
-
-    vennGroups.forEach(vg => {
-      const targetPillarClass = vg.getAttribute('data-target');
-      const targetPillar = document.querySelector('.' + targetPillarClass);
-
-      vg.addEventListener('mouseenter', () => {
-        if (targetPillar) targetPillar.classList.add('active');
-      });
-      vg.addEventListener('mouseleave', () => {
-        if (targetPillar) targetPillar.classList.remove('active');
-      });
-    });
-  });
-</script>
 </body>
 </html>

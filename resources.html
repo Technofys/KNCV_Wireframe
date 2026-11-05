@@ -3,65 +3,57 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Resources · KNCV Knowledge Exchange</title>
-<meta name="description" content="KNCV Knowledge Exchange Resources: Toolkit, Webinars, Publications, People-Centered Framework Knowledge Hub, Global DAT Task Force Learning Hub, and Knowledge Base.">
+<meta name="description" content="KNCV Knowledge Exchange Resources: Toolkits, KNCV Webinar Series, Scientific Publications, People-Centred Framework Knowledge Hub, Global DAT Task Force Learning Hub, and Clinical Knowledge Base.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="resources">
-<main>
+<body data-page="resources" class="hide-notes">
+<main id="main-content" tabindex="-1">
   <!-- 1. PAGE HERO -->
   <section class="page-hero annot" data-note="01 · Resources & Knowledge Hubs overview">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / Resources</nav>
-      <span class="eyebrow">Resource Library &amp; Hubs</span>
       <h1>Resources &amp; Knowledge Hubs</h1>
-      <p class="lead" style="margin-top:14px">Access field-tested implementation toolkits, specialized webinars, and peer-reviewed scientific publications for global TB elimination.</p>
+      <p class="lead" style="margin-top:16px">Access field-tested implementation toolkits, specialized webinars, and peer-reviewed scientific publications for global TB elimination. Together we can end TB.</p>
     </div>
   </section>
 
   <!-- 2. KNOWLEDGE & RESOURCES EDITORIAL SECTION -->
-  <section class="editorial-section" id="resources-grid">
+  <section class="editorial-section annot" data-note="02 · 6-Card Knowledge & Resource Hubs Grid" id="resources-grid">
     <div class="container">
-      <div class="editorial-header reveal">
-        <div class="editorial-header-text">
-          <span class="editorial-eyebrow">KNOWLEDGE &amp; RESOURCES</span>
-          <h2 class="editorial-heading">Explore our knowledge and resources</h2>
-          <p class="editorial-lead">Discover practical tools, research, publications, and learning resources supporting better tuberculosis prevention, care, and public health outcomes.</p>
-        </div>
-      </div>
-
+      <h2 class="sr-only">Knowledge and Resource Hubs</h2>
       <div class="editorial-grid reveal">
-        
-        <!-- Card 1: Toolkit -->
-        <a class="editorial-card" href="toolkits.html" id="toolkit-main" aria-label="Toolkit - Implementation Toolkit">
+
+        <!-- Card 1: Toolkits -->
+        <a class="editorial-card" href="toolkits.html" id="toolkit-main">
           <div class="card-media">
-            <img src="assets/img/hub-ascent-toolkit.jpg" alt="Healthcare team reviewing clinical and operational TB toolkits" loading="lazy" style="object-position: center 35%;">
+            <img src="assets/img/hub-ascent-toolkit.jpg" alt="Healthcare team reviewing clinical and operational TB toolkits" loading="lazy" style="object-position: center 25%;">
           </div>
           <div class="card-body-editorial">
             <div class="card-header-group">
-              <span class="card-category cat-toolkit">Implementation Toolkit</span>
+              <span class="card-category">Implementation Toolkit</span>
               <div class="card-title-wrap">
-                <h3 class="card-title">Toolkit</h3>
+                <h3 class="card-title">Toolkits</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
               <p class="card-desc">Evidence-based clinical guidelines, operational toolkits, standard operating procedures, and algorithms for TB programs.</p>
             </div>
             <div class="card-footer-editorial">
-              <span class="card-action-text">View toolkit</span>
+              <span class="card-action-text">View toolkits</span>
               <span class="card-action-sub">Operational tools</span>
             </div>
           </div>
         </a>
 
-        <!-- Card 2: Our webinars -->
-        <a class="editorial-card" href="webinars.html" id="toolkit-webinars" aria-label="Our webinars - Webinar Series">
+        <!-- Card 2: KNCV Webinar Series -->
+        <a class="editorial-card" href="webinars.html" id="toolkit-webinars">
           <div class="card-media">
-            <img src="assets/img/hub-webinars.jpg" alt="International clinical expert panel discussing tuberculosis epidemiological data and radiographs" loading="lazy" style="object-position: center 40%;">
+            <img src="assets/img/hub-webinars.jpg" alt="International clinical expert panel discussing tuberculosis epidemiological data and radiographs" loading="lazy" style="object-position: center 30%;">
           </div>
           <div class="card-body-editorial">
             <div class="card-header-group">
               <span class="card-category">Webinar Series</span>
               <div class="card-title-wrap">
-                <h3 class="card-title">Our webinars</h3>
+                <h3 class="card-title">KNCV Webinar Series</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
               <p class="card-desc">Interactive clinical webinars, expert panels, and on-demand recordings addressing tuberculosis innovations.</p>
@@ -73,8 +65,8 @@
           </div>
         </a>
 
-        <!-- Card 3: Our Publications -->
-        <a class="editorial-card" href="publications.html" id="toolkit-publications" aria-label="Our Publications - Publications & Research">
+        <!-- Card 3: Scientific Publications -->
+        <a class="editorial-card" href="publications.html" id="toolkit-publications">
           <div class="card-media">
             <img src="assets/img/hub-publications.jpg" alt="Medical researcher presenting annual tuberculosis publication in research library" loading="lazy" style="object-position: center 20%;">
           </div>
@@ -82,7 +74,7 @@
             <div class="card-header-group">
               <span class="card-category">Publications &amp; Research</span>
               <div class="card-title-wrap">
-                <h3 class="card-title">Our Publications</h3>
+                <h3 class="card-title">Scientific Publications</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
               <p class="card-desc">Peer-reviewed scientific studies, operational research papers, policy briefs, and field-tested clinical guides.</p>
@@ -95,7 +87,7 @@
         </a>
 
         <!-- Card 4: People-Centred Framework Knowledge Hub -->
-        <a class="editorial-card" href="toolkits.html#pcf" id="toolkit-people-centred" aria-label="People-Centred Framework Knowledge Hub - Patient Care Framework">
+        <a class="editorial-card" href="toolkits.html#pcf-toolkit" id="toolkit-people-centred">
           <div class="card-media">
             <img src="assets/img/hub-people-centred.jpg" alt="Healthcare team reviewing People-Centred Framework care models" loading="lazy" style="object-position: center 20%;">
           </div>
@@ -116,7 +108,7 @@
         </a>
 
         <!-- Card 5: Global DAT Task Force - Learning Hub -->
-        <a class="editorial-card" href="toolkits.html#dat" id="toolkit-global-dat" aria-label="Global DAT Task Force - Learning Hub - Digital Health Hub">
+        <a class="editorial-card" href="toolkits.html#dat-toolkit" id="toolkit-global-dat">
           <div class="card-media">
             <img src="assets/img/hub-dat-learning.jpg" alt="Digital adherence clinician demonstrating smart medication pillbox and mobile tracking in clinic" loading="lazy" style="object-position: center 15%;">
           </div>
@@ -136,16 +128,16 @@
           </div>
         </a>
 
-        <!-- Card 6: Visit our knowledge base here -->
-        <a class="editorial-card" href="#toolkit-knowledge-base" id="toolkit-knowledge-base" aria-label="Visit our knowledge base here - Clinical Knowledge Base">
+        <!-- Card 6: Clinical Knowledge Base -->
+        <a class="editorial-card" href="#clinical-knowledge-base" id="toolkit-knowledge-base">
           <div class="card-media">
-            <img src="assets/img/hub-knowledge-base.jpg" alt="Clinical specialist reviewing diagnostic flowcharts and standard operating procedures on workstation" loading="lazy" style="object-position: center 35%;">
+            <img src="assets/img/hub-knowledge-base.jpg" alt="Clinical specialist reviewing diagnostic flowcharts and standard operating procedures on workstation" loading="lazy" style="object-position: center 30%;">
           </div>
           <div class="card-body-editorial">
             <div class="card-header-group">
-              <span class="card-category">Clinical Knowledge Base</span>
+              <span class="card-category">Clinical Reference</span>
               <div class="card-title-wrap">
-                <h3 class="card-title">Visit our knowledge base here</h3>
+                <h3 class="card-title">Clinical Knowledge Base</h3>
                 <span class="card-arrow" aria-hidden="true">→</span>
               </div>
               <p class="card-desc">Comprehensive repository of clinical algorithms, diagnostic protocols, FAQs, and healthcare worker job aids.</p>
@@ -161,17 +153,63 @@
     </div>
   </section>
 
-  <!-- 3. CAN'T FIND WHAT YOU NEED CTA -->
-  <section class="section-white" style="padding:72px 0 88px">
+  <!-- 3. CLINICAL KNOWLEDGE BASE QUICK-REFERENCE SECTION -->
+  <section id="clinical-knowledge-base" class="section-sand annot" data-note="03 · Clinical Knowledge Base & Job Aids">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Quick-Reference Repository</span>
+          <h2>Clinical Knowledge Base &amp; Job Aids</h2>
+          <p>Point-of-care diagnostic flowcharts, dosage calculators, and standard operating procedures ready for clinic download.</p>
+        </div>
+        <a class="btn btn-secondary" href="toolkits.html">View all 4 implementation toolkits →</a>
+      </div>
+
+      <div class="reveal">
+        <div class="res-row">
+          <div class="file-ico">SOP</div>
+          <div>
+            <div class="meta"><span class="tag solid">Clinical Algorithm</span><span class="tag">DR-TB</span></div>
+            <h3>6-Month BPaLM / BPaL Patient Eligibility &amp; Baseline Monitoring Flowchart</h3>
+            <p class="small muted">Quick-reference clinic wall chart · Updated October 2026 · PDF (1.1 MB)</p>
+          </div>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#download-bpalm-sop" data-modal-title="6-Month BPaLM / BPaL Clinical Flowchart (SOP)" data-modal-desc="Clinical wall chart covering patient eligibility criteria, baseline ECG/laboratory screening, and monthly linezolid peripheral neuropathy monitoring.">Download SOP ↓</a>
+        </div>
+
+        <div class="res-row">
+          <div class="file-ico">AID</div>
+          <div>
+            <div class="meta"><span class="tag">Job Aid</span><span class="tag">Diagnostics</span></div>
+            <h3>Rapid Molecular Triage: Xpert MTB/RIF Ultra &amp; CAD4TB Chest X-Ray Screening</h3>
+            <p class="small muted">Primary care &amp; mobile van screening protocol · September 2026 · PDF (890 KB)</p>
+          </div>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#download-triage-aid" data-modal-title="Rapid Molecular Triage & CAD4TB Job Aid" data-modal-desc="Step-by-step triage protocol integrating digital chest radiography AI scoring (CAD4TB) with rapid molecular sputum and stool testing.">Download Job Aid ↓</a>
+        </div>
+
+        <div class="res-row">
+          <div class="file-ico">SOP</div>
+          <div>
+            <div class="meta"><span class="tag">Paediatric</span><span class="tag">Laboratory</span></div>
+            <h3>Simple One-Step (SOS) Stool Processing Bench-Top Visual Guide</h3>
+            <p class="small muted">Illustrated laboratory bench aid for paediatric TB diagnosis · August 2026 · PDF (1.5 MB)</p>
+          </div>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#download-sos-guide" data-modal-title="Simple One-Step (SOS) Stool Processing Guide" data-modal-desc="Illustrated laboratory bench protocol for non-invasive paediatric stool sample preparation on Xpert MTB/RIF Ultra without centrifugation.">Download Bench Guide ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TECHNICAL SUPPORT CTA -->
+  <section class="section-white" style="padding:72px 0 92px">
     <div class="container">
       <div class="cta-band reveal">
         <div class="cta-band-content">
           <span class="cta-accent-bar"></span>
-          <h2>Can’t find what you need?</h2>
-          <p>Tell us what you’d like to learn or ask about tailored training for your organisation.</p>
+          <h2>Need tailored technical guidance?</h2>
+          <p>Reach out to our global technical consultants for tailored implementation guidance, SOP adaptation, or country programme support.</p>
         </div>
         <div class="cta-band-actions">
-          <a class="btn btn-primary" id="resources-request-course" href="contact.html">Request a course →</a>
+          <a class="btn btn-primary" id="resources-request-course" href="contact.html">Request technical support →</a>
         </div>
       </div>
     </div>

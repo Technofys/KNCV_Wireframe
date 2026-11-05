@@ -6,132 +6,161 @@
 <meta name="description" content="Watch recorded expert presentations, download slide decks, and register for upcoming live technical briefings in the KNCV Webinar Series.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="resources">
-<main>
+<body data-page="webinars" class="hide-notes">
+<main id="main-content" tabindex="-1">
   <!-- 1. PAGE HERO -->
   <section class="page-hero annot" data-note="01 · Webinars header & breadcrumb">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / <a href="resources.html">Resources</a> / Webinars</nav>
-      <span class="eyebrow">Interactive Learning</span>
       <h1>Our Webinars (KNCV Webinar Series)</h1>
       <p class="lead" style="margin-top:16px">Watch recorded expert presentations, download slide decks, and register for upcoming live technical briefings hosted by KNCV and global TB partners.</p>
     </div>
   </section>
 
   <!-- 2. WEBINARS SECTION -->
-  <section class="section-white annot" data-note="02 · Featured webinar & upcoming live sessions">
+  <section class="section-white annot" data-note="02 · Featured webinar & upcoming live sessions" style="padding-top:32px">
     <div class="container">
       <div class="section-head reveal">
         <div>
+          <span class="eyebrow">Live &amp; Recorded Briefings</span>
           <h2>Featured &amp; Upcoming Sessions</h2>
           <p>Join our interactive technical sessions or catch up on past clinical panels.</p>
         </div>
-        <div class="tabs"><button class="active">All Webinars</button><button>Upcoming</button><button>Recordings</button><button>Slide Decks</button></div>
+        <div class="tabs" id="webinar-tabs" role="tablist" aria-label="Filter webinars by format">
+          <button type="button" role="tab" aria-selected="true" tabindex="0" class="active" data-webinar-filter="all">All Webinars</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-webinar-filter="upcoming">Upcoming</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-webinar-filter="recordings">Recordings</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-webinar-filter="slides">Slide Decks</button>
+        </div>
       </div>
 
-      <div class="split reveal" style="align-items:stretch;margin-bottom:36px">
+      <div class="split reveal" id="webinar-featured-split" style="align-items:stretch;margin-bottom:56px">
         <!-- Featured Recording -->
-        <div class="card" style="padding:0;overflow:hidden">
-          <div style="height:300px;overflow:hidden;position:relative;background:#0d1117">
-            <img src="assets/img/hub-webinars.jpg" alt="Featured Webinar: DR-TB Regimens" style="width:100%;height:100%;object-fit:cover;display:block">
-            <div style="position:absolute;inset:0;background:rgba(0,0,0,0.25);display:grid;place-items:center">
-              <span style="background:rgba(255,255,255,0.95);color:var(--ink);width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:22px;box-shadow:0 6px 20px rgba(0,0,0,0.35);padding-left:3px">▶</span>
-            </div>
+        <div class="card" style="padding:0;overflow:hidden" data-webinar-item="recordings slides">
+          <div class="trailer-frame" style="margin-top:0;border:0;border-bottom:1px solid var(--line)">
+            <img src="assets/img/hub-webinars.jpg" alt="Featured Webinar: Optimizing 6-Month BPaLM/BPaL Regimens for DR-TB" style="object-position:center 30%">
+            <button type="button" class="trailer-play-btn js-resource-modal" aria-label="Watch Recording · 58:00: Optimizing 6-Month BPaLM/BPaL Regimens for DR-TB" data-modal-title="Webinar Recording · Optimizing 6-Month BPaLM/BPaL Regimens" data-modal-desc="58-minute recorded clinical symposium featuring KNCV TB Plus DR-TB specialists discussing patient eligibility, linezolid dose adjustments, and active drug safety monitoring.">
+              <span class="trailer-play-icon">Watch Recording · 58:00</span>
+            </button>
           </div>
           <div class="card-body">
             <div class="meta"><span class="tag solid">Featured Recording</span><span class="muted small">Recorded 18 Oct 2026 · 58 mins</span></div>
             <h3>Optimizing 6-Month BPaLM/BPaL Regimens for DR-TB</h3>
-            <p>Expert panel discussion with KNCV technical leads on practical field implementation, safety monitoring, and patient counseling.</p>
-            <div class="meta" style="margin-top:14px">
-              <a class="btn btn-secondary btn-sm" href="#">Watch Recording ▶</a>
-              <a class="btn btn-ghost btn-sm" href="#">Download Slides (PDF) ↓</a>
-              <a class="btn btn-ghost btn-sm" href="#">Q&amp;A Summary ↓</a>
+            <p>Expert panel discussion with KNCV TB Plus technical leads on practical field implementation, safety monitoring, and patient counseling.</p>
+            <div class="meta" style="margin-top:16px">
+              <a class="btn btn-secondary btn-sm js-resource-modal" href="#watch-bpalm" data-modal-title="Webinar Recording · Optimizing 6-Month BPaLM/BPaL Regimens" data-modal-desc="Streaming full 58-minute clinical webinar recording with English, French, and Spanish captions.">Watch Recording</a>
+              <a class="btn btn-ghost btn-sm js-resource-modal" href="#slides-bpalm" data-modal-title="Slide Deck · Optimizing 6-Month BPaLM/BPaL Regimens (PDF · 3.4 MB)" data-modal-desc="Complete 42-slide presentation deck including clinical eligibility tables and aDSM reporting templates.">Download Slides (PDF) ↓</a>
+              <a class="btn btn-ghost btn-sm js-resource-modal" href="#qa-bpalm" data-modal-title="Q&A Summary · BPaLM/BPaL Clinical Symposium (PDF · 620 KB)" data-modal-desc="Written responses from KNCV clinical faculty to 28 practitioner questions on neuropathy management and baseline testing.">Q&amp;A Summary ↓</a>
             </div>
           </div>
         </div>
 
-        <!-- Upcoming & Past Cards -->
-        <div class="grid" style="gap:16px">
-          <div class="feature" style="padding:22px">
-            <span class="tag solid" style="background:#0f8a6a;border-color:#0f8a6a">Upcoming Live Session</span>
-            <h4 style="margin-top:10px">Digital Adherence Technologies in High-Burden Settings</h4>
-            <p class="small muted">📅 12 November 2026 · 14:00 CET · Zoom Live</p>
-            <p class="small" style="margin-top:6px">Global DAT Task Force panel on scaling up smart pillboxes and video-supported treatment.</p>
-            <a class="btn btn-primary btn-sm" href="#" style="margin-top:14px">Register for Free →</a>
+        <!-- Upcoming & Past Editorial Sessions -->
+        <div class="grid" style="gap:28px">
+          <div class="feature" data-webinar-item="upcoming">
+            <div class="meta"><span class="tag solid">Upcoming Live Session</span><span class="small muted">12 November 2026 · 14:00 CET · Zoom Live</span></div>
+            <h3 style="margin-top:12px;font-size:20px">Digital Adherence Technologies in High-Burden Settings</h3>
+            <p class="small" style="margin-top:8px">Global DAT Task Force panel on scaling up smart pillboxes and video-supported treatment across decentralized clinics.</p>
+            <a class="btn btn-primary btn-sm js-resource-modal" href="#register-dat-webinar" style="margin-top:16px" data-modal-title="Webinar Registration · Digital Adherence Technologies" data-modal-desc="Register for the live KNCV & Global DAT Task Force briefing on 12 November 2026 at 14:00 CET. Calendar invitation and Zoom link are sent immediately upon registration.">Register for Free →</a>
           </div>
 
-          <div class="feature" style="padding:22px">
-            <span class="tag">Past Recording</span>
-            <h4 style="margin-top:10px">People-Centered TB Service Delivery in Primary Care</h4>
-            <p class="small muted">📅 24 September 2026 · 45 mins · Slide deck included</p>
-            <p class="small" style="margin-top:6px">Integrating patient counseling with community support and psychosocial services.</p>
-            <a class="link-arrow small" href="#" style="margin-top:10px">View details &amp; slides →</a>
+          <div class="feature" data-webinar-item="recordings slides">
+            <div class="meta"><span class="tag">Past Recording &amp; Slides</span><span class="small muted">24 September 2026 · 45:00 · Slide deck included</span></div>
+            <h3 style="margin-top:12px;font-size:20px">People-Centred TB Service Delivery in Primary Care</h3>
+            <p class="small" style="margin-top:8px">Integrating patient counseling with community support and psychosocial services.</p>
+            <a class="link-arrow small js-resource-modal" href="#details-pcf-webinar" style="margin-top:12px" data-modal-title="Webinar Archive · People-Centred TB Service Delivery" data-modal-desc="Includes the 45-minute video recording and downloadable 30-slide PDF presentation on primary care psychosocial support.">View details &amp; slides →</a>
           </div>
         </div>
       </div>
 
-      <!-- Archive Grid -->
-      <h3 class="reveal" style="margin:40px 0 20px">Webinar Archive &amp; Recordings</h3>
-      <div class="grid g4 reveal">
-        <div class="card" style="overflow:hidden">
-          <div style="height:120px;position:relative;background:#181c22;overflow:hidden">
-            <img src="assets/img/course-1-diagnosis.jpg" alt="Rapid Molecular Testing" style="width:100%;height:100%;object-fit:cover;display:block">
-            <span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.75);color:#fff;font-size:11px;padding:2px 6px;border-radius:4px;font-weight:600">▶ 42:10</span>
+      <!-- Archive Grid (6 Editorial Archive Cards) -->
+      <h2 class="reveal" id="webinar-archive-heading" style="margin:48px 0 24px;font-size:clamp(22px, 2.4vw, 28px)">Webinar Archive &amp; Recordings</h2>
+      <div class="grid g3 reveal" id="webinar-archive-grid">
+        <a class="card js-resource-modal" href="#archive-1" data-webinar-item="recordings slides" data-modal-title="Webinar Recording · Rapid Molecular Testing in Hard-to-Reach Areas" data-modal-desc="42-minute technical session on solar-powered GeneXpert and Truenat deployments, specimen transport, and quality assurance.">
+          <div class="card-thumb">
+            <img src="assets/img/course-1-diagnosis.jpg" alt="Rapid Molecular Testing" style="object-position:center 25%">
+            <span class="card-badge-video">42:10</span>
           </div>
           <div class="card-body">
-            <span class="tag">Diagnosis</span>
-            <h4>Rapid Molecular Testing in Hard-to-Reach Areas</h4>
-            <p class="small muted">GeneXpert and Truenat battery setups.</p>
+            <div class="meta"><span class="tag">Diagnosis</span></div>
+            <h3>Rapid Molecular Testing in Hard-to-Reach Areas</h3>
+            <p class="small muted">GeneXpert and Truenat battery setups and peripheral laboratory workflows.</p>
           </div>
           <div class="card-foot"><span>Jul 2026</span><span class="link-arrow">Watch →</span></div>
-        </div>
+        </a>
 
-        <div class="card" style="overflow:hidden">
-          <div style="height:120px;position:relative;background:#181c22;overflow:hidden">
-            <img src="assets/img/hub-people-centred.jpg" alt="Community-Led Monitoring" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
-            <span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.75);color:#fff;font-size:11px;padding:2px 6px;border-radius:4px;font-weight:600">▶ 55:00</span>
+        <a class="card js-resource-modal" href="#archive-2" data-webinar-item="recordings" data-modal-title="Webinar Recording · Community-Led Monitoring for TB Care" data-modal-desc="55-minute panel on empowering civil society and local advocacy groups to monitor facility readiness and reduce stigma.">
+          <div class="card-thumb">
+            <img src="assets/img/hub-people-centred.jpg" alt="Community-Led Monitoring" style="object-position:center 20%">
+            <span class="card-badge-video">55:00</span>
           </div>
           <div class="card-body">
-            <span class="tag">Community</span>
-            <h4>Community-Led Monitoring for TB Care</h4>
-            <p class="small muted">Empowering local advocacy groups.</p>
+            <div class="meta"><span class="tag">Community</span></div>
+            <h3>Community-Led Monitoring for TB Care</h3>
+            <p class="small muted">Empowering local advocacy groups and civil society scorecards.</p>
           </div>
           <div class="card-foot"><span>Jun 2026</span><span class="link-arrow">Watch →</span></div>
-        </div>
+        </a>
 
-        <div class="card" style="overflow:hidden">
-          <div style="height:120px;position:relative;background:#181c22;overflow:hidden">
-            <img src="assets/img/course-4-data.jpg" alt="Routine TB Data for Quality" style="width:100%;height:100%;object-fit:cover;display:block">
-            <span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.75);color:#fff;font-size:11px;padding:2px 6px;border-radius:4px;font-weight:600">▶ 38:15</span>
+        <a class="card js-resource-modal" href="#archive-3" data-webinar-item="recordings slides" data-modal-title="Webinar Recording · Using Routine TB Data for Programme Quality" data-modal-desc="38-minute walkthrough of DHIS2 surveillance dashboards, cascade-of-care analysis, and quarterly district data reviews.">
+          <div class="card-thumb">
+            <img src="assets/img/course-4-data.jpg" alt="Routine TB Data for Quality" style="object-position:center 25%">
+            <span class="card-badge-video">38:15</span>
           </div>
           <div class="card-body">
-            <span class="tag">Data</span>
-            <h4>Using Routine TB Data for Programme Quality</h4>
-            <p class="small muted">DHIS2 dashboards &amp; indicators.</p>
+            <div class="meta"><span class="tag">Data</span></div>
+            <h3>Using Routine TB Data for Programme Quality</h3>
+            <p class="small muted">DHIS2 dashboards, quarterly reviews, and cascade indicators.</p>
           </div>
           <div class="card-foot"><span>May 2026</span><span class="link-arrow">Watch →</span></div>
-        </div>
+        </a>
 
-        <div class="card" style="overflow:hidden">
-          <div style="height:120px;position:relative;background:#181c22;overflow:hidden">
-            <img src="assets/img/course-6-leadership.jpg" alt="Financing Transition" style="width:100%;height:100%;object-fit:cover;display:block">
-            <span style="position:absolute;bottom:8px;right:8px;background:rgba(0,0,0,0.75);color:#fff;font-size:11px;padding:2px 6px;border-radius:4px;font-weight:600">▶ 49:30</span>
+        <a class="card js-resource-modal" href="#archive-4" data-webinar-item="recordings slides" data-modal-title="Webinar Recording · Financing Transition to Short-course DR-TB" data-modal-desc="49-minute health economics briefing on cost-effectiveness, domestic budget planning, and Global Fund grant reprogramming.">
+          <div class="card-thumb">
+            <img src="assets/img/course-6-leadership.jpg" alt="Financing Transition" style="object-position:center 20%">
+            <span class="card-badge-video">49:30</span>
           </div>
           <div class="card-body">
-            <span class="tag">Policy</span>
-            <h4>Financing Transition to Short-course DR-TB</h4>
-            <p class="small muted">Cost-effectiveness &amp; grant support.</p>
+            <div class="meta"><span class="tag">Policy</span></div>
+            <h3>Financing Transition to Short-course DR-TB</h3>
+            <p class="small muted">Cost-effectiveness, procurement, and Global Fund grant support.</p>
           </div>
           <div class="card-foot"><span>Apr 2026</span><span class="link-arrow">Watch →</span></div>
-        </div>
+        </a>
+
+        <a class="card js-resource-modal" href="#archive-5" data-webinar-item="recordings slides" data-modal-title="Webinar Recording · Simple One-Step (SOS) Stool Testing for Childhood TB" data-modal-desc="46-minute laboratory demonstration of non-invasive paediatric stool specimen processing on Xpert MTB/RIF Ultra.">
+          <div class="card-thumb">
+            <img src="assets/img/hub-stool-testing.jpg" alt="Simple One-Step Stool Testing for Childhood TB" style="object-position:center 20%">
+            <span class="card-badge-video">46:20</span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Paediatric</span></div>
+            <h3>Simple One-Step (SOS) Stool Testing for Childhood TB</h3>
+            <p class="small muted">Non-invasive paediatric molecular diagnosis without centrifugation.</p>
+          </div>
+          <div class="card-foot"><span>Mar 2026</span><span class="link-arrow">Watch →</span></div>
+        </a>
+
+        <a class="card js-resource-modal" href="#archive-6" data-webinar-item="recordings slides" data-modal-title="Webinar Recording · AI-Powered Chest X-Ray Triage (CAD4TB) in Mobile Vans" data-modal-desc="51-minute operational symposium on active case finding using portable digital X-ray systems and artificial intelligence triage.">
+          <div class="card-thumb">
+            <img src="assets/img/hero-knowledge-exchange.jpg" alt="AI-Powered Chest X-Ray Triage (CAD4TB)" style="object-position:center 25%">
+            <span class="card-badge-video">51:45</span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Innovation</span></div>
+            <h3>AI-Powered Chest X-Ray Triage (CAD4TB) in Mobile Vans</h3>
+            <p class="small muted">Threshold calibration and active case-finding workflows.</p>
+          </div>
+          <div class="card-foot"><span>Feb 2026</span><span class="link-arrow">Watch →</span></div>
+        </a>
       </div>
 
-      <nav class="pagination reveal" aria-label="Pagination" style="margin-top:40px"><a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">›</a></nav>
+      <nav class="pagination reveal" id="webinar-archive-pagination" aria-label="Pagination" style="margin-top:40px"><a href="#webinar-archive-grid" aria-label="Previous page">‹</a><a class="active" href="#webinar-archive-grid" aria-current="page">1</a><a href="#webinar-archive-grid">2</a><a href="#webinar-archive-grid">3</a><a href="#webinar-archive-grid" aria-label="Next page">›</a></nav>
     </div>
   </section>
 
   <!-- BACK TO RESOURCES -->
-  <section class="annot" data-note="03 · Navigation back to Resources Hub">
+  <section class="section-sand annot" data-note="03 · Navigation back to Resources Hub" style="padding:56px 0">
     <div class="container center">
       <a class="btn btn-secondary" href="resources.html">← Back to Resources &amp; Hubs</a>
     </div>

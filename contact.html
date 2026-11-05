@@ -3,88 +3,123 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact · KNCV Knowledge Exchange</title>
-<meta name="description" content="Contact the KNCV Knowledge Exchange – general enquiries, learner and technical support, FAQs and privacy information.">
+<meta name="description" content="Contact the KNCV Knowledge Exchange: general enquiries, learner and technical support, FAQs and privacy information.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="contact">
-<main>
-  <section class="page-hero">
+<body data-page="contact" class="hide-notes">
+<main id="main-content" tabindex="-1">
+  <section class="page-hero annot" data-note="01 · Contact & support header">
     <div class="container">
       <nav class="breadcrumb"><a href="home.html">Home</a> / Contact</nav>
-      <span class="eyebrow">Get in touch</span>
       <h1>Contact &amp; support</h1>
-      <p class="lead" style="margin-top:16px">Questions about courses, partnerships or your account? We’re here to help.</p>
+      <p class="lead" style="margin-top:16px">Questions about courses, technical assistance, partnerships, or your account? Reach out to our global headquarters in The Hague or our dedicated support teams. Together we can end TB.</p>
     </div>
   </section>
 
-  <section style="padding:48px 0 64px">
+  <section class="section-white annot" data-note="02 · Headquarters Contact Info & Support Channels">
     <div class="container">
-      <div class="grid g2" style="gap:32px;align-items:stretch">
-        <!-- CONTACT INFORMATION -->
-        <div class="block reveal" style="padding:40px 32px;margin:0;display:flex;flex-direction:column;justify-content:space-between">
-          <div>
-            <span class="eyebrow" style="margin-bottom:8px">Headquarters</span>
-            <h2 style="font-size:24px;margin-bottom:18px">Contact Information</h2>
-            <div class="info-item"><div class="ico">✉</div><div><h4>Email</h4><p class="small muted"><a href="mailto:knowledge@kncvtbc.org" style="color:var(--ink);font-weight:600">knowledge@kncvtbc.org</a></p></div></div>
-            <div class="info-item"><div class="ico">☎</div><div><h4>Phone</h4><p class="small muted">+31 (0)70 000 0000 · Mon–Fri, 9:00–17:00 CET</p></div></div>
+      <div class="contact-layout">
+        <!-- OFFICIAL HEADQUARTERS CONTACT INFORMATION (Brand Guide Page 14) -->
+        <div class="reveal">
+          <span class="eyebrow">Global Office · The Netherlands</span>
+          <h2 style="font-size:28px;margin-bottom:24px;text-transform:uppercase">Headquarters &amp; Direct Channels</h2>
+
+          <div class="info-item">
+            <span class="info-label">Telephone</span>
+            <div>
+              <p><a href="tel:+31704167222" style="font-weight:700">+31 (0)70 416 7222</a></p>
+              <p class="small muted">Monday - Friday, 09:00 - 17:00 CET</p>
+            </div>
           </div>
-          <div style="height:190px;overflow:hidden;border-radius:10px;margin-top:20px;border:1px solid var(--line);position:relative">
-            <img src="assets/img/kncv-map.jpg" alt="Map location: The Hague, Netherlands" style="width:100%;height:100%;object-fit:cover;display:block">
-            <div style="position:absolute;bottom:8px;left:8px;background:rgba(255,255,255,0.92);padding:4px 8px;border-radius:4px;font-size:12px;font-weight:600;color:var(--ink)">📍 The Hague, Netherlands</div>
+
+          <div class="info-item">
+            <span class="info-label">Corporate Web</span>
+            <div>
+              <p><a href="https://www.kncvtbc.org/en/" target="_blank" rel="noopener" style="color:var(--kncv-red);font-weight:700;text-decoration:underline">kncvtbc.org/en</a> · <a href="https://www.kncvtbc.org" target="_blank" rel="noopener">www.kncvtbc.org</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-label">Visiting &amp; Postal</span>
+            <div>
+              <p><b>KNCV Tuberculosefonds (KNCV TB Plus)</b></p>
+              <p class="small muted">Maanweg 174, 2516 AB Den Haag, The Netherlands<br>P.O. Box 146, 2501 CC Den Haag, The Netherlands</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <div>
+              <p><a href="mailto:info@kncvtbc.org" style="font-weight:700">info@kncvtbc.org</a> · <a href="mailto:knowledge@kncvtbc.org">knowledge@kncvtbc.org</a></p>
+            </div>
           </div>
         </div>
 
-        <!-- TECHNICAL & LEARNER SUPPORT -->
-        <div id="support" class="block reveal" style="padding:40px 32px;margin:0;display:flex;flex-direction:column">
-          <span class="eyebrow" style="margin-bottom:8px">Direct Assistance</span>
-          <h2 style="font-size:24px;margin-bottom:18px">Technical &amp; Learner Support</h2>
-          <div class="info-item"><div class="ico">🎓</div><div><h4>Learner support</h4><p class="small muted">Course content, certificates, and enrolment assistance.</p><a class="link-arrow small" href="mailto:learners@kncvtbc.org" style="margin-top:6px;font-weight:600">learners@kncvtbc.org →</a></div></div>
-          <div class="info-item"><div class="ico">⚙</div><div><h4>Technical support</h4><p class="small muted">Platform access, login, password and LMS platform issues.</p><a class="link-arrow small" href="#lms" style="margin-top:6px;font-weight:600">LMS Help Centre ↗</a></div></div>
-          <div class="info-item"><div class="ico">🤝</div><div><h4>Partnerships &amp; Consulting</h4><p class="small muted">Technical assistance for National TB Programs and global health partners.</p><a class="link-arrow small" href="mailto:partnerships@kncvtbc.org" style="margin-top:6px;font-weight:600">partnerships@kncvtbc.org →</a></div></div>
+        <!-- TECHNICAL & LEARNER SUPPORT + MAP -->
+        <div class="reveal" id="support">
+          <span class="eyebrow">Dedicated Desks</span>
+          <h2 style="font-size:28px;margin-bottom:24px;text-transform:uppercase">Technical &amp; Learner Support</h2>
+          <div class="info-item">
+            <span class="info-label">Learner Support</span>
+            <p class="small muted">Course content, certificates, and enrolment: <a href="mailto:learners@kncvtbc.org" style="color:var(--kncv-red);font-weight:700">learners@kncvtbc.org</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">LMS Helpdesk</span>
+            <p class="small muted">Platform access, login, and password support: <a href="#lms" style="color:var(--kncv-red);font-weight:700">LMS Help Centre ↗</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Partnerships</span>
+            <p class="small muted">Technical assistance for National TB Programmes: <a href="mailto:info@kncvtbc.org" style="color:var(--kncv-red);font-weight:700">info@kncvtbc.org</a></p>
+          </div>
+
+          <div style="height:210px;overflow:hidden;margin-top:28px;position:relative;background:var(--fill)">
+            <img src="assets/img/kncv-map.jpg" alt="Map location: Maanweg 174, 2516 AB Den Haag, The Netherlands" style="width:100%;height:100%;object-fit:cover;display:block">
+            <div style="position:absolute;bottom:0;left:0;background:var(--kncv-black);padding:6px 12px;font-size:12px;font-weight:700;color:var(--kncv-white)">Maanweg 174, 2516 AB Den Haag, The Netherlands</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section-white annot" data-note="04 · FAQ / support links">
+  <section id="faq" class="section-sand annot" data-note="03 · FAQ / support links">
     <div class="container split" style="align-items:start">
       <div class="reveal">
         <span class="eyebrow">FAQ</span>
         <h2>Frequently asked questions</h2>
         <p class="lead" style="margin-top:14px">Quick answers to common questions. Can’t find yours? Get in touch with our team.</p>
-        <div class="grid g2" style="margin-top:28px;gap:12px">
-          <a class="feature" href="#lms" style="padding:18px"><h4>Help Centre ↗</h4><p>LMS guides</p></a>
-          <a class="feature" href="courses.html" style="padding:18px"><h4>Course catalogue</h4><p>Browse courses</p></a>
+        <div class="grid g2" style="margin-top:32px;gap:24px">
+          <a class="feature" href="#lms"><span class="ico">01</span><h3>Help Centre ↗</h3><p>LMS platform &amp; account guides</p></a>
+          <a class="feature" href="courses.html"><span class="ico">02</span><h3>Course catalogue →</h3><p>Browse accredited courses</p></a>
         </div>
       </div>
       <div class="faq reveal">
-        <details open><summary>How do I enrol in a course?</summary><div>Answer placeholder — choose a course, click “Enroll Now” and sign in or register on the learning platform.</div></details>
-        <details><summary>Are the courses free?</summary><div>Answer placeholder text.</div></details>
-        <details><summary>Will I receive a certificate?</summary><div>Answer placeholder text.</div></details>
-        <details><summary>I forgot my password — what do I do?</summary><div>Answer placeholder text.</div></details>
-        <details><summary>Can my organisation request tailored training?</summary><div>Answer placeholder text.</div></details>
-        <details><summary>Which languages are courses available in?</summary><div>Answer placeholder text.</div></details>
+        <details open><summary>How do I enrol in a course?</summary><div>Select any course in the Course Catalogue, click “Enroll Now”, and sign in or create a free learner account on the KNCV Learning Management System (LMS).</div></details>
+        <details><summary>Are the courses free?</summary><div>Yes. The majority of KNCV Knowledge Exchange self-paced courses, webinars, and implementation toolkits are open-access and free of charge for healthcare professionals and public-health practitioners worldwide.</div></details>
+        <details><summary>Will I receive a certificate?</summary><div>Yes. Upon completing all required modules and passing the course assessment, you can download a verifiable KNCV TB Plus Certificate of Completion directly from your LMS profile.</div></details>
+        <details><summary>I forgot my password: what do I do?</summary><div>Open the KNCV Learning Management System via “Learner dashboard ↗” in the site footer (or click “Enroll Now” on any course page) and select “Forgot password?” on the LMS login screen to receive an automated password reset link via email.</div></details>
+        <details><summary>Can my organisation request tailored training?</summary><div>Yes. KNCV TB Plus works closely with Ministries of Health, National TB Programmes, and implementing partners to deliver tailored cohorts and blended country trainings. Contact us via email at <a href="mailto:info@kncvtbc.org" style="color:var(--kncv-red);font-weight:700">info@kncvtbc.org</a>.</div></details>
+        <details><summary>Which languages are courses available in?</summary><div>Courses and toolkits are primarily offered in English, with core clinical and programmatic courses also available in French, Spanish, and Russian depending on regional programme needs.</div></details>
       </div>
     </div>
   </section>
 
   <!-- PRIVACY NOTICE & CONSENT -->
-  <section id="privacy" class="annot" data-note="05 · Privacy notice & consent information">
+  <section id="privacy" class="section-white annot" data-note="04 · Privacy notice & consent information">
     <div class="container">
-      <div class="block reveal" style="padding:32px">
-        <div style="display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap">
-          <div class="ico" style="width:52px;height:52px;border-radius:10px;background:var(--fill-2);display:grid;place-items:center;font-size:22px">🔒</div>
-          <div style="flex:1;min-width:280px">
-            <h3>Privacy Notice &amp; Consent Information</h3>
-            <p class="small muted" style="margin-top:6px">In accordance with GDPR and applicable international data protection standards, KNCV Tuberculosis Foundation processes personal data solely to respond to your inquiries, facilitate course enrolments, and provide learner support.</p>
-            <div class="grid g3" style="gap:16px;margin-top:20px">
-              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Data Controller</h4><p class="small muted">KNCV Tuberculosis Foundation, The Hague, Netherlands.</p></div>
-              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Your Rights</h4><p class="small muted">You may request access, rectification, or deletion of your data at privacy@kncvtbc.org.</p></div>
-              <div class="feature" style="padding:16px"><h4 style="font-size:13px">Consent Withdrawal</h4><p class="small muted">You can revoke inquiry consent at any time without penalty.</p></div>
+      <div class="editorial-callout reveal">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:28px;flex-wrap:wrap">
+          <div style="flex:1;min-width:0">
+            <span class="eyebrow">Data Protection &amp; GDPR</span>
+            <h2 style="font-size:24px;margin-bottom:8px">Privacy Notice &amp; Consent Information</h2>
+            <p class="small muted" style="margin-top:8px">In accordance with GDPR and applicable international data protection standards, KNCV Tuberculosefonds (KNCV TB Plus) processes personal data solely to respond to your inquiries, facilitate course enrolments, and provide learner support.</p>
+            <div class="grid g3" style="gap:24px;margin-top:24px">
+              <div class="feature"><h3 style="font-size:14px">Data Controller</h3><p class="small muted">KNCV Tuberculosefonds, Maanweg 174, 2516 AB Den Haag, The Netherlands.</p></div>
+              <div class="feature"><h3 style="font-size:14px">Your Rights</h3><p class="small muted">You may request access, rectification, or deletion of your data at info@kncvtbc.org.</p></div>
+              <div class="feature"><h3 style="font-size:14px">Consent Withdrawal</h3><p class="small muted">You can revoke inquiry consent at any time without penalty.</p></div>
             </div>
           </div>
-          <div><a class="btn btn-secondary btn-sm" href="#">Download Full Policy (PDF) ↓</a></div>
+          <div><a class="btn btn-secondary btn-sm js-resource-modal" href="#download-privacy-pdf" data-modal-title="KNCV TB Plus Privacy Notice & GDPR Policy (PDF · 410 KB)" data-modal-desc="Official KNCV Tuberculosefonds data protection, learner privacy, and GDPR compliance policy.">Download Full Policy (PDF) ↓</a></div>
         </div>
       </div>
     </div>

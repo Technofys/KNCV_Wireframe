@@ -4,38 +4,71 @@
 <title>Courses · KNCV Knowledge Exchange (Simple Wireframe)</title>
 <link rel="stylesheet" href="simple.css"></head>
 <body data-page="courses">
-<main class="wrap">
-  <section class="sec">
+<main class="wrap" id="main-content" tabindex="-1">
+  <section class="sec" style="border:0">
     <h1>Courses</h1>
     <div class="txt m"></div>
     <br>
     <p class="sec-title">Search</p>
-    <div class="field">🔍 Search courses…</div>
+    <label for="simple-course-search" class="sr-only">Search courses</label>
+    <div class="field"><span aria-hidden="true" style="margin-right:8px">🔍</span><input id="simple-course-search" type="search" placeholder="Search courses…" style="border:0;outline:none;font:inherit;width:100%" aria-label="Search courses"></div>
     <p class="sec-title">Categories</p>
-    <span class="pill on">All</span><span class="pill">Category 1</span><span class="pill">Category 2</span><span class="pill">Category 3</span><span class="pill">Category 4</span>
+    <div role="group" aria-label="Categories">
+      <button type="button" class="pill on" aria-pressed="true">All</button>
+      <button type="button" class="pill" aria-pressed="false">Diagnosis</button>
+      <button type="button" class="pill" aria-pressed="false">Treatment</button>
+      <button type="button" class="pill" aria-pressed="false">Drug-resistant TB</button>
+      <button type="button" class="pill" aria-pressed="false">Community</button>
+    </div>
   </section>
 
   <section class="sec" style="border:0">
+    <h2 class="sr-only">Course Catalogue &amp; Filters</h2>
     <div class="g side">
-      <aside class="box">
+      <aside class="box" aria-label="Course Filters">
         <p class="sec-title">Filters</p>
-        <h3>Level</h3><p>☐ Beginner<br>☐ Intermediate<br>☐ Advanced</p><br>
-        <h3>Duration</h3><p>☐ Under 2 hrs<br>☐ 2–10 hrs<br>☐ 10+ hrs</p><br>
-        <h3>Format</h3><p>☐ Self-paced<br>☐ Facilitated</p><br>
-        <a class="btn" style="width:100%;text-align:center">Apply</a>
+        <fieldset style="border:0;padding:0;margin-bottom:14px">
+          <legend><h3>Level</h3></legend>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="lvl"> Beginner</label>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="lvl"> Intermediate</label>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="lvl"> Advanced</label>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin-bottom:14px">
+          <legend><h3>Duration</h3></legend>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="dur"> Under 2 hrs</label>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="dur"> 2-10 hrs</label>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="dur"> 10+ hrs</label>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin-bottom:14px">
+          <legend><h3>Format</h3></legend>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="fmt"> Self-paced</label>
+          <label style="display:block;margin:4px 0"><input type="checkbox" name="fmt"> Facilitated</label>
+        </fieldset>
+        <button type="button" class="btn" style="width:100%;text-align:center">Apply filters</button>
       </aside>
       <div>
-        <div class="row" style="margin-bottom:12px"><p class="small">Showing 9 courses</p><div class="field" style="margin:0;width:180px">Sort by ▾</div></div>
-        <p class="sec-title">Course cards – level, duration, description</p>
-        <div class="g c3">
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-1-diagnosis.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Introduction to TB Diagnosis</h3><p class="small">Beginner · 6 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-2-drtb.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Drug-resistant TB Management</h3><p class="small">Intermediate · 12 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-3-community.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Community-based TB Care</h3><p class="small">Advanced · 8 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-4-data.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Data for Decision-making</h3><p class="small">Beginner · 4 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-5-treatment.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Patient-centred Treatment</h3><p class="small">Intermediate · 10 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
-          <a class="card" href="course-detail.html"><img src="../assets/img/course-6-leadership.jpg" alt="Course" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Leading TB Programmes</h3><p class="small">Advanced · 15 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
+        <div class="row" style="margin-bottom:12px">
+          <p class="small">Showing 2 courses</p>
+          <label for="simple-course-sort" class="sr-only">Sort by</label>
+          <select id="simple-course-sort" class="field" style="margin:0;width:180px;height:36px" aria-label="Sort courses">
+            <option>Sort: Most popular</option>
+            <option>Newest</option>
+            <option>A - Z</option>
+          </select>
         </div>
-        <p class="center" style="margin-top:20px">‹ 1 2 3 ›</p>
+        <p class="sec-title">Course cards: level, duration, description</p>
+        <h2>Available Courses</h2>
+        <div class="g c2">
+          <a class="card" href="course-detail.html"><img src="../assets/img/course-contact-investigation.jpg" alt="Community health worker and clinician reviewing tuberculosis contact investigation and screening data at a Community Health Center" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Source and Contact Investigation for Tuberculosis</h3><p class="small">Intermediate · 8 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
+          <a class="card" href="course-detail.html"><img src="../assets/img/course-sos-stool-testing.jpg" alt="Simple One-Step (SOS) Stool Testing for Tuberculosis" style="width:100%;height:130px;object-fit:cover"><div class="in"><h3>Simple One-Step (SOS) Stool Testing for Tuberculosis</h3><p class="small">Beginner · 6 hrs</p><div class="txt"></div><div class="txt s"></div></div></a>
+        </div>
+        <nav class="pagination" aria-label="Pagination" style="display:flex;gap:8px;justify-content:center;margin-top:20px">
+          <a class="small" href="#" aria-label="Previous page">‹</a>
+          <a class="small" href="#" aria-label="Page 1" aria-current="page">1</a>
+          <a class="small" href="#" aria-label="Page 2">2</a>
+          <a class="small" href="#" aria-label="Page 3">3</a>
+          <a class="small" href="#" aria-label="Next page">›</a>
+        </nav>
       </div>
     </div>
   </section>

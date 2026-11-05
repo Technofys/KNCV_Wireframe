@@ -4,49 +4,49 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Community of Practice · KNCV Knowledge Exchange</title>
 <meta name="description" content="KNCV Knowledge Exchange Community of Practice: peer-to-peer discussions, thematic working groups, events, announcements, member contributions, and shared resources.">
-<link rel="stylesheet" href="assets/wireframe.css?v=20261029c">
+<link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="community">
-<main>
+<body data-page="community" class="hide-notes">
+<main id="main-content" tabindex="-1">
   <!-- 1. HERO / COMMUNITY OVERVIEW -->
   <section class="page-hero annot" data-note="01 · Community Overview">
     <div class="container split">
       <div>
         <nav class="breadcrumb"><a href="home.html">Home</a> / Community of Practice</nav>
-        <span class="eyebrow">05 · Peer Exchange</span>
         <h1>Community of Practice</h1>
-        <p class="lead" style="margin-top:16px">Connect with healthcare providers, programme managers, researchers, and technical advisors worldwide to share practical TB solutions, discuss complex cases, and collaborate.</p>
+        <p class="lead" style="margin-top:16px">Connect with healthcare providers, programme managers, researchers, and technical advisors worldwide to share practical TB solutions, discuss complex cases, and collaborate. Together we can end TB.</p>
         <div class="hero-actions" style="margin-top:28px">
-          <a class="btn btn-primary btn-lms" id="btn-join-community" href="#lms">Join the Community ↗</a>
+          <a class="btn btn-primary btn-lms" id="btn-join-community" href="#lms">Join the Community</a>
           <a class="btn btn-secondary" href="#groups">Explore Groups</a>
           <a class="btn btn-ghost" href="#discussions">View Discussions</a>
         </div>
-        <div class="hero-stats" style="margin-top:32px">
-          <div class="hero-stat-item"><b class="stat-number" data-target="2400" data-format="comma" data-suffix="+" style="color:#000000 !important">2,400+</b><span>Global Members</span></div>
-          <div class="hero-stat-item"><b class="stat-number" data-target="14" data-suffix="" style="color:#000000 !important">14</b><span>Thematic Groups</span></div>
-          <div class="hero-stat-item"><b class="stat-number" data-target="56" data-suffix="" style="color:#000000 !important">56</b><span>Countries</span></div>
-          <div class="hero-stat-item"><b class="stat-number" data-target="180" data-suffix="+" style="color:#000000 !important">180+</b><span>Shared Tools</span></div>
+        <div class="hero-stats" style="margin-top:36px">
+          <div class="hero-stat-item"><b class="stat-number" data-target="2400" data-format="comma" data-suffix="+">2,400+</b><span>Global Members</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="14" data-suffix="">14</b><span>Thematic Groups</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="56" data-suffix="">56</b><span>Countries</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="180" data-suffix="+">180+</b><span>Shared Tools</span></div>
         </div>
       </div>
-      <div class="reveal" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1.5px solid var(--line);min-height:360px">
-        <img src="assets/img/hub-ascent-toolkit.jpg" alt="KNCV Community of Practice Technical Consultation" style="width:100%;height:100%;min-height:360px;object-fit:cover;display:block">
+      <div class="reveal framed-photo">
+        <img src="assets/img/hub-ascent-toolkit.jpg" alt="KNCV Community of Practice Technical Consultation" style="object-position:center 25%">
       </div>
     </div>
   </section>
 
   <!-- 2. ANNOUNCEMENTS -->
-  <section class="annot" data-note="02 · Community Announcements" style="padding:48px 0">
+  <section class="annot" data-note="02 · Community Announcements" style="padding:24px 0 48px">
     <div class="container">
-      <div class="block reveal" style="background:var(--note-bg);border-color:var(--note);border-left:5px solid var(--note);margin:0;padding:24px 28px">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+      <h2 class="sr-only">Community Announcements</h2>
+      <div class="editorial-callout reveal">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
           <div>
-            <span class="tag solid" style="background:var(--note);border-color:var(--note);color:#fff">Announcement · November 2026</span>
-            <h3 style="margin-top:8px">Quarterly Peer Consultation: Implementing 6-Month BPaLM Regimens</h3>
+            <span class="tag solid">Announcement · November 2026</span>
+            <h3 style="margin-top:10px">Quarterly Peer Consultation: Implementing 6-Month BPaLM Regimens</h3>
             <p class="small" style="color:var(--ink-2);margin-top:4px">Registration is now open for the upcoming interactive case-review session hosted by the DR-TB Thematic Group. Limited to 150 participants.</p>
           </div>
           <div style="display:flex;gap:10px">
             <a class="btn btn-primary btn-sm" href="#events">View Event Details</a>
-            <a class="btn btn-secondary btn-sm" href="#">All Announcements</a>
+            <a class="btn btn-secondary btn-sm" href="#discussions">All Announcements</a>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
   </section>
 
   <!-- 3. THEMATIC GROUPS -->
-  <section id="groups" class="section-white annot" data-note="03 · Thematic Groups">
+  <section id="groups" class="section-sand annot" data-note="03 · Thematic Groups">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -62,33 +62,36 @@
           <h2>Thematic Focus Groups</h2>
           <p>Join specialized groups aligned with your clinical, programmatic, or technical domain to share focused resources and participate in targeted discussions.</p>
         </div>
-        <div class="tabs"><button class="active">All Groups (14)</button><button>Clinical</button><button>Digital Health</button><button>Programme</button></div>
+        <div class="tabs" id="community-group-tabs" role="tablist" aria-label="Filter thematic groups">
+          <button type="button" role="tab" aria-selected="true" tabindex="0" class="active" data-group-filter="all">All Groups (14)</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-group-filter="clinical">Clinical</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-group-filter="digital">Digital Health</button>
+          <button type="button" role="tab" aria-selected="false" tabindex="-1" data-group-filter="programme">Programme</button>
+        </div>
       </div>
 
-      <div class="grid g3">
+      <div class="grid g3" id="community-groups-grid">
         <!-- Group 1 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="clinical">
           <div class="card-body">
             <div class="meta"><span class="tag solid">Clinical</span><span class="tag">640 Members</span></div>
             <h3>DR-TB Clinical Management</h3>
             <p>Peer discussion on diagnosis, drug safety monitoring, audiometry, and complex co-morbidity treatment strategies.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 42</span><span>·</span><span>Last post: 2h ago</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 42</span><span>·</span><span>Last post: 2h ago</span></div>
           </div>
           <div class="card-foot">
-            <span class="small muted">Lead: Dr. Clinical Advisor</span>
+            <span class="small muted">Lead: Dr. Carlos Rodriguez</span>
             <a class="btn btn-secondary btn-sm btn-lms" href="#lms">Join Group</a>
           </div>
         </div>
 
         <!-- Group 2 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="digital programme">
           <div class="card-body">
-            <div class="meta"><span class="tag solid">Digital Health</span><span class="tag">520 Members</span></div>
+            <div class="meta"><span class="tag">Digital Health</span><span class="tag">520 Members</span></div>
             <h3>Digital Adherence Technologies (DAT)</h3>
             <p>Collaborative group supporting implementers of smart pillboxes, video-observed therapy (VOT), and adherence platforms.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 35</span><span>·</span><span>Last post: 5h ago</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 35</span><span>·</span><span>Last post: 5h ago</span></div>
           </div>
           <div class="card-foot">
             <span class="small muted">Lead: Global DAT Task Force</span>
@@ -97,61 +100,57 @@
         </div>
 
         <!-- Group 3 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="programme clinical">
           <div class="card-body">
-            <div class="meta"><span class="tag solid">Care Models</span><span class="tag">410 Members</span></div>
-            <h3>People-Centered Care &amp; Stigma</h3>
+            <div class="meta"><span class="tag">Care Models</span><span class="tag">410 Members</span></div>
+            <h3>People-Centred Care &amp; Stigma</h3>
             <p>Strategies for community support, mental health integration, patient rights, and reducing healthcare-related stigma.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 28</span><span>·</span><span>Last post: Yesterday</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 28</span><span>·</span><span>Last post: Yesterday</span></div>
           </div>
           <div class="card-foot">
-            <span class="small muted">Lead: KNCV Community Lead</span>
+            <span class="small muted">Lead: Grace Mensah, MPH</span>
             <a class="btn btn-secondary btn-sm btn-lms" href="#lms">Join Group</a>
           </div>
         </div>
 
         <!-- Group 4 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="clinical">
           <div class="card-body">
             <div class="meta"><span class="tag">Diagnostics</span><span class="tag">380 Members</span></div>
             <h3>Laboratory &amp; Diagnostic Networks</h3>
             <p>Troubleshooting GeneXpert, Truenat, culture, and sample transportation in rural and decentralized facilities.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 19</span><span>·</span><span>Last post: 2 days ago</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 19</span><span>·</span><span>Last post: 2 days ago</span></div>
           </div>
           <div class="card-foot">
-            <span class="small muted">Lead: Lab Specialist</span>
+            <span class="small muted">Lead: Dr. Michel Kasongo</span>
             <a class="btn btn-secondary btn-sm btn-lms" href="#lms">Join Group</a>
           </div>
         </div>
 
         <!-- Group 5 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="clinical">
           <div class="card-body">
             <div class="meta"><span class="tag">Paediatric</span><span class="tag">290 Members</span></div>
             <h3>Childhood &amp; Adolescent TB</h3>
             <p>Case finding, stool-based testing, contact tracing, and child-friendly formulation rollout.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 22</span><span>·</span><span>Last post: 3 days ago</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 22</span><span>·</span><span>Last post: 3 days ago</span></div>
           </div>
           <div class="card-foot">
-            <span class="small muted">Lead: Paediatric Consultant</span>
+            <span class="small muted">Lead: Dr. Elena Rostova</span>
             <a class="btn btn-secondary btn-sm btn-lms" href="#lms">Join Group</a>
           </div>
         </div>
 
         <!-- Group 6 -->
-        <div class="card reveal">
+        <div class="card reveal" data-group-cat="programme">
           <div class="card-body">
             <div class="meta"><span class="tag">Programme</span><span class="tag">350 Members</span></div>
             <h3>National Programme Managers</h3>
             <p>Peer leadership forum for policy formulation, transition funding, procurement, and surveillance optimization.</p>
-            <div class="line w90"></div>
-            <div class="meta small muted" style="margin-top:8px"><span>Active discussions: 16</span><span>·</span><span>Last post: 4 days ago</span></div>
+            <div class="meta small muted" style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2)"><span>Active discussions: 16</span><span>·</span><span>Last post: 4 days ago</span></div>
           </div>
           <div class="card-foot">
-            <span class="small muted">Lead: Strategic Advisor</span>
+            <span class="small muted">Lead: Dr. Samuel Okafor</span>
             <a class="btn btn-secondary btn-sm btn-lms" href="#lms">Join Group</a>
           </div>
         </div>
@@ -160,7 +159,7 @@
   </section>
 
   <!-- 4. DISCUSSIONS & PEER FORUM -->
-  <section id="discussions" class="annot" data-note="04 · Community Discussions & Forum">
+  <section id="discussions" class="section-white annot" data-note="04 · Community Discussions & Forum">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -174,57 +173,57 @@
       <div class="reveal">
         <!-- Thread 1 -->
         <div class="res-row">
-          <img src="assets/img/faculty-1.jpg" alt="Dr. A. Rahman" style="width:48px;height:48px;border-radius:50%;object-fit:cover;display:block">
+          <div class="avatar-monogram" aria-hidden="true">AR</div>
           <div>
             <div class="meta"><span class="tag">DR-TB Clinical</span><span class="tag solid">Case Study</span></div>
-            <h4>Managing persistent peripheral neuropathy on BPaL regimen: clinical alternatives?</h4>
-            <p class="small muted">Started by Dr. A. Rahman (District Medical Officer) · 14 replies · Last reply 1 hour ago by Dr. Senior Faculty</p>
+            <h3>Managing persistent peripheral neuropathy on BPaL regimen: clinical alternatives?</h3>
+            <p class="small muted">Started by Dr. A. Rahman (District Medical Officer) · 14 replies · Last reply 1 hour ago by Dr. Elena Rostova</p>
           </div>
-          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread →</a>
+          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread</a>
         </div>
 
         <!-- Thread 2 -->
         <div class="res-row">
-          <img src="assets/img/faculty-3.jpg" alt="M. Mensah" style="width:48px;height:48px;border-radius:50%;object-fit:cover;display:block">
+          <div class="avatar-monogram" aria-hidden="true">MM</div>
           <div>
             <div class="meta"><span class="tag">Digital Health (DAT)</span></div>
-            <h4>Server integration between smart pillboxes and national TB registry (DHIS2): best practice workflows</h4>
-            <p class="small muted">Started by M. Mensah (M&amp;E Specialist) · 9 replies · Last reply 3 hours ago</p>
+            <h3>Server integration between smart pillboxes and national TB registry (DHIS2): best practice workflows</h3>
+            <p class="small muted">Started by M. Mensah (M&amp;E Specialist) · 9 replies · Last reply 3 hours ago by Grace Mensah, MPH</p>
           </div>
-          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread →</a>
+          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread</a>
         </div>
 
         <!-- Thread 3 -->
         <div class="res-row">
-          <img src="assets/img/faculty-2.jpg" alt="S. Patel" style="width:48px;height:48px;border-radius:50%;object-fit:cover;display:block">
+          <div class="avatar-monogram" aria-hidden="true">SP</div>
           <div>
-            <div class="meta"><span class="tag">People-Centered Care</span><span class="tag">Community</span></div>
-            <h4>Experience with nutritional voucher distribution alongside community-observed therapy</h4>
-            <p class="small muted">Started by S. Patel (Civil Society Lead) · 21 replies · Last reply yesterday</p>
+            <div class="meta"><span class="tag">People-Centred Care</span><span class="tag">Community</span></div>
+            <h3>Experience with nutritional voucher distribution alongside community-observed therapy</h3>
+            <p class="small muted">Started by S. Patel (Civil Society Lead) · 21 replies · Last reply yesterday by Dr. Samuel Okafor</p>
           </div>
-          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread →</a>
+          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread</a>
         </div>
 
         <!-- Thread 4 -->
         <div class="res-row">
-          <img src="assets/img/faculty-4.jpg" alt="T. Mwangi" style="width:48px;height:48px;border-radius:50%;object-fit:cover;display:block">
+          <div class="avatar-monogram" aria-hidden="true">TM</div>
           <div>
             <div class="meta"><span class="tag">Diagnostics</span></div>
-            <h4>Decentralized GeneXpert battery backup solutions in erratic power grids</h4>
-            <p class="small muted">Started by T. Mwangi (Laboratory Advisor) · 8 replies · Last reply 2 days ago</p>
+            <h3>Decentralized GeneXpert battery backup solutions in erratic power grids</h3>
+            <p class="small muted">Started by T. Mwangi (Laboratory Advisor) · 8 replies · Last reply 2 days ago by Dr. Carlos Rodriguez</p>
           </div>
-          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread →</a>
+          <a class="btn btn-secondary btn-sm btn-lms" href="#lms">View Thread</a>
         </div>
       </div>
 
-      <div class="center" style="margin-top:28px">
-        <a class="btn btn-secondary btn-lms" href="#lms">Browse All Forum Threads ↗</a>
+      <div style="margin-top:32px">
+        <a class="btn btn-secondary btn-lms" href="#lms">Browse All Forum Threads</a>
       </div>
     </div>
   </section>
 
   <!-- 5. EVENTS & PEER EXCHANGES -->
-  <section id="events" class="section-white annot" data-note="05 · Community Events & Peer Sessions">
+  <section id="events" class="section-sand annot" data-note="05 · Community Events & Peer Sessions">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -232,42 +231,44 @@
           <h2>Upcoming Events &amp; Working Sessions</h2>
           <p>Join live virtual workshops, case study review panels, and regional peer-to-peer dialogues.</p>
         </div>
-        <select class="input" style="width:200px"><option>All Event Types</option><option>Case Review</option><option>Working Group</option><option>Webinar</option></select>
+        <select class="input" id="event-type-filter" aria-label="Filter events by type" style="width:200px">
+          <option value="all">All Event Types</option>
+          <option value="Case Review">Case Review</option>
+          <option value="Working Group">Working Group</option>
+          <option value="Workshop">Workshop</option>
+        </select>
       </div>
 
-      <div class="grid g3 reveal">
-        <div class="feature">
+      <div class="grid g3 reveal" id="community-events-grid">
+        <div class="feature" data-event-type="Case Review">
           <div class="meta"><span class="tag solid">Case Review</span><span class="small muted">Live Zoom</span></div>
-          <h3 style="margin-top:10px">Clinical Case Consultation: Pediatric DR-TB Management</h3>
-          <p class="small muted" style="margin-top:4px">📅 18 November 2026 · 13:00–14:30 CET</p>
+          <h3 style="margin-top:12px">Clinical Case Consultation: Pediatric DR-TB Management</h3>
+          <p class="small muted" style="margin-top:4px">18 November 2026 · 13:00 - 14:30 CET</p>
           <p class="small" style="margin-top:8px">Present your challenging pediatric cases to KNCV senior pediatric clinicians and peer participants.</p>
-          <div class="line w75"></div>
-          <a class="btn btn-primary btn-sm" href="#" style="margin-top:14px">RSVP / Register</a>
+          <a class="btn btn-primary btn-sm js-resource-modal" href="#rsvp-pediatric" style="margin-top:16px" data-modal-title="Event RSVP · Pediatric DR-TB Case Consultation" data-modal-desc="Live peer consultation on 18 November 2026 (13:00 - 14:30 CET) chaired by Dr. Elena Rostova. Participants may submit anonymized case summaries up to 48 hours prior.">RSVP / Register</a>
         </div>
 
-        <div class="feature">
-          <div class="meta"><span class="tag solid">Working Group</span><span class="small muted">Members Only</span></div>
-          <h3 style="margin-top:10px">Global DAT Task Force: Country Experience Exchange</h3>
-          <p class="small muted" style="margin-top:4px">📅 26 November 2026 · 15:00–16:30 CET</p>
+        <div class="feature" data-event-type="Working Group">
+          <div class="meta"><span class="tag">Working Group</span><span class="small muted">Members Only</span></div>
+          <h3 style="margin-top:12px">Global DAT Task Force: Country Experience Exchange</h3>
+          <p class="small muted" style="margin-top:4px">26 November 2026 · 15:00 - 16:30 CET</p>
           <p class="small" style="margin-top:8px">Quarterly exchange on overcoming implementation barriers, device procurement, and user acceptance.</p>
-          <div class="line w75"></div>
-          <a class="btn btn-primary btn-sm btn-lms" href="#lms" style="margin-top:14px">Join via LMS</a>
+          <a class="btn btn-primary btn-sm btn-lms" href="#lms" style="margin-top:16px">Join via LMS</a>
         </div>
 
-        <div class="feature">
+        <div class="feature" data-event-type="Workshop">
           <div class="meta"><span class="tag">Workshop</span><span class="small muted">Open Access</span></div>
-          <h3 style="margin-top:10px">Stigma Measurement Toolkit: Practitioner Walkthrough</h3>
-          <p class="small muted" style="margin-top:4px">📅 03 December 2026 · 14:00–15:15 CET</p>
-          <p class="small" style="margin-top:8px">Hands-on walkthrough of the People-Centered Framework stigma assessment scorecard and reporting tools.</p>
-          <div class="line w75"></div>
-          <a class="btn btn-primary btn-sm" href="#" style="margin-top:14px">RSVP / Register</a>
+          <h3 style="margin-top:12px">Stigma Measurement Toolkit: Practitioner Walkthrough</h3>
+          <p class="small muted" style="margin-top:4px">03 December 2026 · 14:00 - 15:15 CET</p>
+          <p class="small" style="margin-top:8px">Hands-on walkthrough of the People-Centred Framework stigma assessment scorecard and reporting tools.</p>
+          <a class="btn btn-primary btn-sm js-resource-modal" href="#rsvp-stigma-workshop" style="margin-top:16px" data-modal-title="Workshop Registration · Stigma Measurement Toolkit" data-modal-desc="Open-access practitioner workshop on 03 December 2026 (14:00 - 15:15 CET) covering Van Rie TB Stigma Scale administration and facility action planning.">RSVP / Register</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 6. MEMBER CONTRIBUTIONS & FIELD STORIES -->
-  <section class="annot" data-note="06 · Member Contributions & Field Stories">
+  <section class="section-white annot" data-note="06 · Member Contributions & Field Stories">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -275,13 +276,13 @@
           <h2>Member Contributions &amp; Field Stories</h2>
           <p>Articles, practical case reports, and lessons learned authored directly by community members.</p>
         </div>
-        <a class="btn btn-secondary" href="#">Submit Your Story →</a>
+        <a class="btn btn-secondary js-resource-modal" href="#submit-story" data-modal-title="Submit a Field Story or Case Report" data-modal-desc="Share implementation lessons, district case studies, or operational innovations from your TB programme with the KNCV Community of Practice. Editorial guidelines and submission templates are available in the LMS.">Submit Your Story →</a>
       </div>
 
       <div class="grid g3 reveal">
-        <div class="card" style="overflow:hidden">
-          <div style="height:170px;overflow:hidden;background:#181c22">
-            <img src="assets/img/hub-people-centred.jpg" alt="Field Clinic Nigeria" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block">
+        <a class="card js-resource-modal" href="#story-nigeria" data-modal-title="Field Story · Decentralizing DR-TB Treatment in Rural Primary Health Centers (Nigeria)" data-modal-desc="By Dr. O. Adeleke (October 2026): By pairing mobile clinical mentorship teams with evriMED smart pillboxes and monthly community nursing visits across 18 rural primary health centres, our district programme reduced DR-TB loss-to-follow-up from 19% to 6.5% over 12 months while cutting patient travel costs by 70%.">
+          <div class="card-thumb">
+            <img src="assets/img/hub-people-centred.jpg" alt="Field Clinic Nigeria" style="object-position:center 20%">
           </div>
           <div class="card-body">
             <div class="meta"><span class="tag">Field Story</span><span class="tag">Nigeria</span></div>
@@ -290,11 +291,11 @@
             <p class="small muted" style="margin-top:8px">By Dr. O. Adeleke · Published Oct 2026</p>
           </div>
           <div class="card-foot"><span class="small muted">5 min read</span><span class="link-arrow">Read Story →</span></div>
-        </div>
+        </a>
 
-        <div class="card" style="overflow:hidden">
-          <div style="height:170px;overflow:hidden;background:#181c22">
-            <img src="assets/img/hub-dat-learning.jpg" alt="Patient Counseling and Smart Pillbox" style="width:100%;height:100%;object-fit:cover;display:block">
+        <a class="card js-resource-modal" href="#story-indonesia" data-modal-title="Practitioner Insight · Engaging Community Peer Champions to Support Stigma Reduction (Indonesia)" data-modal-desc="By R. Kusuma (September 2026): Former TB survivors trained using the KNCV TB Stigma Reduction Toolkit provided structured peer counseling at diagnosis across 12 urban puskesmas clinics. Patient treatment initiation within 7 days rose from 74% to 93%, and self-stigma scores declined by 41%.">
+          <div class="card-thumb">
+            <img src="assets/img/hub-dat-learning.jpg" alt="Patient Counseling and Smart Pillbox" style="object-position:center 15%">
           </div>
           <div class="card-body">
             <div class="meta"><span class="tag">Practitioner Insight</span><span class="tag">Indonesia</span></div>
@@ -303,11 +304,11 @@
             <p class="small muted" style="margin-top:8px">By R. Kusuma · Published Sep 2026</p>
           </div>
           <div class="card-foot"><span class="small muted">6 min read</span><span class="link-arrow">Read Story →</span></div>
-        </div>
+        </a>
 
-        <div class="card" style="overflow:hidden">
-          <div style="height:170px;overflow:hidden;background:#181c22">
-            <img src="assets/img/hero-knowledge-institute.jpg" alt="Field Technical Work" style="width:100%;height:100%;object-fit:cover;display:block">
+        <a class="card js-resource-modal" href="#story-uganda" data-modal-title="Implementation Note · Optimizing Specimen Transport with Motorcycle Couriers (Uganda)" data-modal-desc="By E. Namubiru (September 2026): GPS-tracked motorcycle hub riders equipped with insulated triple-packaging carriers connected 44 peripheral clinics to 6 Xpert MTB/RIF Ultra testing hubs, reducing median diagnostic turnaround time from 5 days to under 18 hours.">
+          <div class="card-thumb">
+            <img src="assets/img/hero-knowledge-institute.jpg" alt="Field Technical Work" style="object-position:center 25%">
           </div>
           <div class="card-body">
             <div class="meta"><span class="tag">Implementation</span><span class="tag">Uganda</span></div>
@@ -316,13 +317,13 @@
             <p class="small muted" style="margin-top:8px">By E. Namubiru · Published Sep 2026</p>
           </div>
           <div class="card-foot"><span class="small muted">4 min read</span><span class="link-arrow">Read Story →</span></div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- 7. SHARED RESOURCES & TOOL EXCHANGE -->
-  <section class="section-white annot" data-note="07 · Shared Resources & Tool Exchange">
+  <section class="section-sand annot" data-note="07 · Shared Resources & Tool Exchange">
     <div class="container">
       <div class="section-head reveal">
         <div>
@@ -330,7 +331,7 @@
           <h2>Shared Resources &amp; Practical Tools</h2>
           <p>Calculators, clinic templates, translated patient leaflets, and training slides shared by community peers.</p>
         </div>
-        <a class="btn btn-secondary btn-sm" href="#">+ Share a Tool</a>
+        <a class="btn btn-secondary btn-sm btn-lms" href="#lms">+ Share a Tool</a>
       </div>
 
       <div class="reveal">
@@ -338,37 +339,37 @@
           <div class="file-ico">XLSX</div>
           <div>
             <div class="meta"><span class="tag">Spreadsheet Tool</span><span class="tag">Contributed by Member</span></div>
-            <h4>Automated DR-TB Drug Dosage and Sputum Conversion Tracking Sheet</h4>
-            <p class="small muted">Uploaded by District TB Coordinator · 1.2 MB · 420 downloads · ★ 4.9</p>
+            <h3>Automated DR-TB Drug Dosage and Sputum Conversion Tracking Sheet</h3>
+            <p class="small muted">Uploaded by District TB Coordinator · 1.2 MB · 420 downloads · Rated 4.9</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#tool-xlsx" data-modal-title="Automated DR-TB Drug Dosage & Conversion Sheet (XLSX · 1.2 MB)" data-modal-desc="Weight-banded BPaLM/BPaL dosing calculator and monthly culture/smear conversion tracker contributed by the DR-TB Clinical Management Group.">Download ↓</a>
         </div>
 
         <div class="res-row">
           <div class="file-ico">PPTX</div>
           <div>
             <div class="meta"><span class="tag">Slide Deck</span><span class="tag">Training</span></div>
-            <h4>Clinic Staff Training Deck: Recognizing Early Linezolid Toxicities</h4>
-            <p class="small muted">Uploaded by Clinical Pharmacist Lead · 4.8 MB · 310 downloads · ★ 4.8</p>
+            <h3>Clinic Staff Training Deck: Recognizing Early Linezolid Toxicities</h3>
+            <p class="small muted">Uploaded by Clinical Pharmacist Lead · 4.8 MB · 310 downloads · Rated 4.8</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#tool-pptx" data-modal-title="Clinic Staff Training Deck: Linezolid Toxicities (PPTX · 4.8 MB)" data-modal-desc="Editable 24-slide clinical in-service training deck covering peripheral neuropathy screening (BPNS) and visual acuity checks.">Download ↓</a>
         </div>
 
         <div class="res-row">
           <div class="file-ico">DOCX</div>
           <div>
             <div class="meta"><span class="tag">Checklist</span><span class="tag">Quality Assurance</span></div>
-            <h4>Primary Healthcare TB Infection Control Facility Audit Checklist</h4>
-            <p class="small muted">Uploaded by IPC Technical Officer · 240 KB · 580 downloads · ★ 4.9</p>
+            <h3>Primary Healthcare TB Infection Control Facility Audit Checklist</h3>
+            <p class="small muted">Uploaded by IPC Technical Officer · 240 KB · 580 downloads · Rated 4.9</p>
           </div>
-          <a class="btn btn-secondary btn-sm" href="#">Download ↓</a>
+          <a class="btn btn-secondary btn-sm js-resource-modal" href="#tool-docx" data-modal-title="Primary Healthcare TB IPC Facility Audit Checklist (DOCX · 240 KB)" data-modal-desc="Quarterly facility inspection checklist for administrative triage, natural ventilation assessment, and N95 respirator fit-testing.">Download ↓</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. PRIMARY CTA — JOIN THE COMMUNITY -->
-  <section class="section-white annot" data-note="08 · Call to Action — Join Community" style="padding:64px 0 88px">
+  <!-- 8. PRIMARY CTA: JOIN THE COMMUNITY -->
+  <section class="section-white annot" data-note="08 · Call to Action: Join Community" style="padding:64px 0 92px">
     <div class="container">
       <div class="cta-band reveal">
         <div class="cta-band-content">
@@ -376,8 +377,8 @@
           <h2>Ready to connect with global TB colleagues?</h2>
           <p>Join the KNCV Community of Practice today to join discussions, participate in monthly case reviews, and access shared tools.</p>
         </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary btn-lms" id="cta-join-now" href="#lms">Join the Community ↗</a>
+        <div class="cta-band-actions">
+          <a class="btn btn-primary btn-lms" id="cta-join-now" href="#lms">Join the Community</a>
           <a class="btn btn-secondary" href="courses.html">Explore Courses</a>
         </div>
       </div>
